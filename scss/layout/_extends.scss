@@ -1,11 +1,14 @@
-footer {
+.container-dark {
     color: white;
-    background-color: black;
+    background-color: #323544;
     display: flex;
     flex-direction: row;
+    width:100%;
+    justify-content: space-evenly;
   }
 
-  .footer-bottom{
+  .container-x-dark{
 color: white;    
 background-color: #212330;
+width: 100%;
   }

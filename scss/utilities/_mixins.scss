@@ -1,0 +1,45 @@
+//===========
+//  Mixins
+//===========
+
+
+
+
+
+// Media Queries
+
+
+@mixin mq($break) {
+
+    @if $break == "small"{
+    @media (min-width: $breakpoint-xs) and (max-width: $breakpoint-s) {
+			@content;
+    	}
+	}
+
+
+	@else if $break == "medium"{
+    @media (min-width: $breakpoint-s + 1) and (max-width: $breakpoint-m) {
+			@content;
+    }
+	}	
+
+
+	@else if $break == "large"{
+    @media (min-width: $breakpoint-m + 1) and (max-width: $breakpoint-l) {
+			@content;
+    }
+	}
+
+	@else if $break == "extra-large"{
+    @media (min-width: $breakpoint-l + 1) {
+			@content;
+    }
+	}
+
+	@else {
+		@error "Whoops, no value could be retrieved for '#{break}'."
+	}
+}
+
+
