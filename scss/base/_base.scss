@@ -5,13 +5,13 @@
 }
 
 
-main{
+body{
 display: flex;
 flex-direction: column;
 min-height: 100vh;
 background-color: $white;
-margin-left: 5%;
-margin-right: 5%;
+margin: 0% 5%;
+
 }
 
 
@@ -24,6 +24,7 @@ a{
 ul{
 	list-style-type: none;
 	padding: 0px;
+	
 }
 
 li{
@@ -33,23 +34,5 @@ li{
 		
 }
 
-footer{
-	width: 100%;
-	margin-top: auto;
-
-	@include mq(medium) {
-		display: flex;
-		flex-direction: column;
-		flex-wrap: wrap;
-	}
-	
-}
-
-.footer__list{
-	display: flex;
-	flex-direction: column;
-	align-items: left;
-	text-align: left;
-}
 
 

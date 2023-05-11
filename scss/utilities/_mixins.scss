@@ -19,22 +19,22 @@
 
 
 	@else if $break == "medium"{
-    @media (min-width: $breakpoint-s + 1) and (max-width: $breakpoint-m) {
+    @media (min-width: $breakpoint-s + 1px) and (max-width: $breakpoint-m) {
 			@content;
-    }
+    	}	
 	}	
 
 
 	@else if $break == "large"{
-    @media (min-width: $breakpoint-m + 1) and (max-width: $breakpoint-l) {
+    @media (min-width: $breakpoint-m + 1px) and (max-width: $breakpoint-l) {
 			@content;
-    }
+    	}
 	}
 
 	@else if $break == "extra-large"{
-    @media (min-width: $breakpoint-l + 1) {
+    @media (min-width: $breakpoint-l + 1px) {
 			@content;
-    }
+    	}
 	}
 
 	@else {

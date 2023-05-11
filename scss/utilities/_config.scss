@@ -12,26 +12,41 @@ $font-family--primary   : 'Poppins', sans-serif;
 
 $black           : #212330;
 $black-light     : #323544;
-$grey-light      : #666;
+$grey            : #666;
+$grey-light      : #ddd;
 $white           : #fff;
 
 
 // Other colors
 
-$blue            : #4183d7;
-$blue-pale       : #67809f;
-$green           : #2ecc7a;
-$red             : #d64541;
-$purple          : #926fb1;
-$red-pink         : #f62459;
-$orange          : #ce4125;
+$blue-pale-primary         : #67809f;
+$blue-pale-dark-secondary  : #526781;
+$blue-primary              : #4183d7;
+$blue-secondary            : #286abd;
+$green-primary             : #2ecc7a;
+$green-secondary           : #25a25a;
+$red-primary               : #d64541;
+$red-secondary             : #bc2c28;
+$purple-primary            : #926fb1;
+$purple-secondary          : #49539a;
+$red-pink-primary          : #f62459;
+$red-pink-primary          : #de093f;
+$orange-primary            : #ce4125;
+$orange-secondary          : #a3331d;
+
+//Social Media colors
+
+$blue-fb          : #3b5998;
+$blue-li          : #0077b5;
+$blue-twtr        : #00aced;
+$pink-ig          : #d93175;
 
 
 
 // Breakpoints 
 
-$breakpoint-xs    :485px;
-$breakpoint-s     :752px;
+$breakpoint-xs     :485px;
+$breakpoint-s      :752px;
 $breakpoint-m      :976px;
 $breakpoint-l      :1244px;
 
