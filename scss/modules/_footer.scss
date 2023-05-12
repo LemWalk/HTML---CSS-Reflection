@@ -2,7 +2,9 @@
 footer{
 // width: 100%;
 margin-top: auto;
-flex: 1 100%;
+color: white;
+	background-color: $black-light;
+// flex: 1 100%;
 }
 
 .footer__list{
@@ -12,14 +14,12 @@ flex: 1 100%;
 	text-align: left;
 }
 
-body{background-color:$grey-light;}
-
 .container-dark{
 	display: flex;
 	flex-direction: row;
-	color: white;
-	background-color: $black-light;
 	justify-content: space-evenly;
+	margin-right: 5%;
+	margin-left: 5%;
 }
 
 .container-x-dark{
@@ -27,16 +27,13 @@ body{background-color:$grey-light;}
 	flex-direction: row;
 	color: white;
 	background-color: $black;
+	padding: 5 0 10;
 	}
 
 .socials{
-justify-content: space-evenly;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+
 }
 
-
-// justify-content: flex-start;
-// 	align-items: flex-start;
-// 	text-align: center;
-
-// /align-items: flex-start;
-//text-align: left;
