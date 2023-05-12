@@ -354,6 +354,7 @@ footer {
   margin-top: auto;
   color: white;
   background-color: #323544;
+  width: 100%;
 }
 
 .footer__list {
@@ -367,8 +368,6 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  margin-right: 5%;
-  margin-left: 5%;
 }
 
 .container-x-dark {
@@ -383,12 +382,20 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  background-color: #212330;
+  padding: 30px;
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  padding: 0px;
+}
+.centered ::before {
+  padding: 0px;
 }
 
 .btn {
   text-decoration: none;
-}
-
-.btn-soc-med {
-  color: #fff;
 }/*# sourceMappingURL=application.css.map */

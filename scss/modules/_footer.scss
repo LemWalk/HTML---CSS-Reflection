@@ -1,10 +1,9 @@
 
 footer{
-// width: 100%;
 margin-top: auto;
 color: white;
 	background-color: $black-light;
-// flex: 1 100%;
+width: 100%;
 }
 
 .footer__list{
@@ -18,8 +17,8 @@ color: white;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
-	margin-right: 5%;
-	margin-left: 5%;
+	// margin-right: 5%;
+	// margin-left: 5%;
 }
 
 .container-x-dark{
@@ -34,6 +33,16 @@ color: white;
 display: flex;
 flex-direction: row;
 justify-content: space-between;
-
+background-color: $black;
+padding: 30px;
 }
 
+.centered{
+	display: flex;
+	justify-content: center;
+	align-items: baseline;
+	padding: 0px;
+	::before{
+		padding: 0px;
+	} 
+}
