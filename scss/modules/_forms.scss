@@ -1,0 +1,11 @@
+.light-grey{
+    background-color: $grey-light;
+    a{
+        color: inherit;
+        &:hover{
+        text-decoration: underline;  
+        color: black;  
+        } 
+        
+    }
+}

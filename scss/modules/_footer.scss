@@ -33,8 +33,12 @@ width: 100%;
 display: flex;
 flex-direction: row;
 justify-content: space-between;
-background-color: $black;
-padding: 30px;
+
+}
+
+.social-links{
+	background-color: $black;
+	padding: 18px;
 }
 
 .centered{
@@ -45,4 +49,8 @@ padding: 30px;
 	::before{
 		padding: 0px;
 	} 
+}
+
+.padding{
+	padding-top:47px;
 }

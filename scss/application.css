@@ -350,6 +350,17 @@ a {
   flex-wrap: wrap;
 }
 
+.light-grey {
+  background-color: #ddd;
+}
+.light-grey a {
+  color: inherit;
+}
+.light-grey a:hover {
+  text-decoration: underline;
+  color: black;
+}
+
 footer {
   margin-top: auto;
   color: white;
@@ -382,8 +393,11 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.social-links {
   background-color: #212330;
-  padding: 30px;
+  padding: 18px;
 }
 
 .centered {
@@ -394,6 +408,10 @@ footer {
 }
 .centered ::before {
   padding: 0px;
+}
+
+.padding {
+  padding-top: 47px;
 }
 
 .btn {
