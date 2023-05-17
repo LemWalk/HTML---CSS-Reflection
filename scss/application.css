@@ -416,4 +416,11 @@ footer {
 
 .btn {
   text-decoration: none;
+}
+
+.btn-blk {
+  color: #323544;
+}
+.btn-blk:hover {
+  color: #212330;
 }/*# sourceMappingURL=application.css.map */

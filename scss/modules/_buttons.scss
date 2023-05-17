@@ -1,3 +1,10 @@
 .btn{
 text-decoration: none;
 }
+
+.btn-blk{
+    color: $black-light;
+    &:hover{
+        color: $black;
+    }
+}
