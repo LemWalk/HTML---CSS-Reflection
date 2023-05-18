@@ -322,16 +322,16 @@ body {
 }
 
 a {
-  color: #fff;
   text-decoration: none;
 }
 
-.footer__list ul, .footer__list li {
+.footer__list ul, .footer__list li, .footer__list a {
+  color: #fff;
   list-style-type: none;
   padding: 0px;
   font-size: 13px;
 }
-.footer__list ul :visited, .footer__list ul :hover, .footer__list li :visited, .footer__list li :hover {
+.footer__list ul :visited, .footer__list ul :hover, .footer__list li :visited, .footer__list li :hover, .footer__list a :visited, .footer__list a :hover {
   text-decoration: underline;
 }
 
@@ -348,6 +348,15 @@ a {
 .flex-wrap {
   display: flex;
   flex-wrap: wrap;
+}
+
+.news-item {
+  width: 90%;
+}
+
+.news-img img {
+  height: 200px;
+  width: 370px;
 }
 
 .light-grey {

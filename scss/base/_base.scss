@@ -15,12 +15,13 @@ color: $grey;
 
 
 a{
-	color: $white;
+	// color: $white;
 	text-decoration: none;
 }
 
 .footer__list{	
-ul, li{
+ul, li, a{
+		color: $white;
 		list-style-type: none;
 		padding: 0px;
 		:visited, :hover{
@@ -28,3 +29,4 @@ ul, li{
 		font-size: 13px;
 		}
 	}
+	
