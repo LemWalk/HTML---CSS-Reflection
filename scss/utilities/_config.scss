@@ -45,8 +45,16 @@ $pink-ig          : #d93175;
 
 // Breakpoints 
 
-$breakpoint-xs     :485px;
-$breakpoint-s      :752px;
-$breakpoint-m      :976px;
-$breakpoint-l      :1244px;
+$breakpoint-s     :485px;
+$breakpoint-m      :752px;
+$breakpoint-l      :976px;
+$breakpoint-xl      :1244px;
+
+
+// Second Breakpoints
+
+$brk-sm   : 576px;
+$brk-med  : 768px;
+$brk-l    : 992px;
+$brk-xl   : 1200px;
 

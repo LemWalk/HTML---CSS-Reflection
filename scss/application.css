@@ -313,7 +313,7 @@ template {
   font-family: "Poppins", sans-serif;
 }
 
-body {
+.container {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -325,16 +325,6 @@ a {
   text-decoration: none;
 }
 
-.footer__list ul, .footer__list li, .footer__list a {
-  color: #fff;
-  list-style-type: none;
-  padding: 0px;
-  font-size: 13px;
-}
-.footer__list ul :visited, .footer__list ul :hover, .footer__list li :visited, .footer__list li :hover, .footer__list a :visited, .footer__list a :hover {
-  text-decoration: underline;
-}
-
 .flex-row {
   display: flex;
   flex-direction: row;
@@ -342,7 +332,7 @@ a {
 
 .flex-col {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .flex-wrap {
@@ -352,6 +342,13 @@ a {
 
 .news-item {
   width: 90%;
+}
+
+@media (min-width: 752px) {
+  #footer-lo {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .news-img img {
@@ -383,16 +380,25 @@ footer {
   align-items: left;
   text-align: left;
 }
+.footer__list ul, .footer__list li, .footer__list a {
+  color: #fff;
+  list-style-type: none;
+  padding: 0px;
+  font-size: 13px;
+}
+.footer__list ul :visited, .footer__list ul :hover, .footer__list li :visited, .footer__list li :hover, .footer__list a :visited, .footer__list a :hover {
+  text-decoration: underline;
+}
 
 .container-dark {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-evenly;
 }
 
 .container-x-dark {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   color: white;
   background-color: #212330;
   padding: 5 0 10;
@@ -401,17 +407,22 @@ footer {
 .socials {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: left;
+  gap: 20px;
 }
 
 .social-links {
   background-color: #212330;
   padding: 18px;
+  color: #fff;
+}
+
+.fb:hover {
+  background-color: #3b5998;
 }
 
 .centered {
-  display: flex;
-  justify-content: center;
   align-items: baseline;
   padding: 0px;
 }
