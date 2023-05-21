@@ -351,6 +351,15 @@ a {
   }
 }
 
+@media (min-width: 752px) {
+  #news-lo {
+    display: flex;
+    flex-direction: row;
+    -moz-columns: 30%;
+         columns: 30%;
+  }
+}
+
 .news-img img {
   height: 200px;
   width: 370px;
@@ -419,6 +428,18 @@ footer {
 }
 
 .fb:hover {
+  background-color: #3b5998;
+}
+
+.li:hover {
+  background-color: #0077b5;
+}
+
+.twtr:hover {
+  background-color: #00aced;
+}
+
+.ig:hover {
   background-color: #3b5998;
 }
 

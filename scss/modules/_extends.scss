@@ -4,3 +4,12 @@
         flex-direction: row;
     }
 }
+
+%news-lo{
+    @include mq(medium) {
+        display: flex;
+        flex-direction: row;
+        columns: 30%;
+    }
+
+}

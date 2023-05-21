@@ -41,6 +41,9 @@ width: 100%;
 		@extend %footer-lo;
 	}
 	
+	#news-lo{
+		@extend %news-lo
+	}
 
 .socials{
 display: flex;
@@ -59,10 +62,27 @@ gap: 20px;
 
 .fb{
 	&:hover{
-		background-color: $blue-fb;
+	background-color: $blue-fb;
 	}
 }
 
+.li{
+	&:hover{
+	background-color: $blue-li;
+	}
+}
+
+.twtr{
+	&:hover{
+	background-color: $blue-twtr;
+	}
+}
+
+.ig{
+	&:hover{
+	background-color: $blue-fb;
+	}
+}				
 
 .centered{
 	//display: flex;
