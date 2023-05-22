@@ -1,6 +1,21 @@
 
 //flex row
+.container-dark{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	background-color: $black-light;
+	color: white;
+}
 
+.container-x-dark{
+		display: flex;
+	flex-direction: column;
+	color: white;
+	background-color: $black;
+	padding: 5 0 10;
+	}
+    
 .flex-row{
     display: flex;
     flex-direction: row;

@@ -5,11 +5,20 @@
     }
 }
 
-%news-lo{
+%news-lo-m{
+
     @include mq(medium) {
+        display: flex;
+        flex-direction: row;
+        columns: 50%;
+    }       
+}
+
+%news-lo-l{
+    @include mq(large) {
         display: flex;
         flex-direction: row;
         columns: 30%;
     }
-
 }
+

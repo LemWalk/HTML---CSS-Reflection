@@ -355,6 +355,14 @@ a {
   #news-lo {
     display: flex;
     flex-direction: row;
+    -moz-columns: 50%;
+         columns: 50%;
+  }
+}
+@media (min-width: 976px) {
+  #news-lo {
+    display: flex;
+    flex-direction: row;
     -moz-columns: 30%;
          columns: 30%;
   }

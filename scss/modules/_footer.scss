@@ -23,27 +23,13 @@ width: 100%;
 }
 
 
-.container-dark{
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
-}
 
-.container-x-dark{
-		display: flex;
-	flex-direction: column;
-	color: white;
-	background-color: $black;
-	padding: 5 0 10;
-	}
 
 	#footer-lo{
 		@extend %footer-lo;
 	}
 	
-	#news-lo{
-		@extend %news-lo
-	}
+	
 
 .socials{
 display: flex;
