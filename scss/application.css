@@ -325,6 +325,22 @@ a {
   text-decoration: none;
 }
 
+.container-dark {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #323544;
+  color: white;
+}
+
+.container-x-dark {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background-color: #212330;
+  padding: 5 0 10;
+}
+
 .flex-row {
   display: flex;
   flex-direction: row;
@@ -352,15 +368,16 @@ a {
 }
 
 @media (min-width: 752px) {
-  #news-lo {
+  #news-lo-m {
     display: flex;
     flex-direction: row;
     -moz-columns: 50%;
          columns: 50%;
   }
 }
+
 @media (min-width: 976px) {
-  #news-lo {
+  #news-lo-l {
     display: flex;
     flex-direction: row;
     -moz-columns: 30%;
@@ -384,6 +401,10 @@ a {
   color: black;
 }
 
+.p-red {
+  color: red;
+}
+
 footer {
   margin-top: auto;
   color: white;
@@ -405,20 +426,6 @@ footer {
 }
 .footer__list ul :visited, .footer__list ul :hover, .footer__list li :visited, .footer__list li :hover, .footer__list a :visited, .footer__list a :hover {
   text-decoration: underline;
-}
-
-.container-dark {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-
-.container-x-dark {
-  display: flex;
-  flex-direction: column;
-  color: white;
-  background-color: #212330;
-  padding: 5 0 10;
 }
 
 .socials {
@@ -469,7 +476,12 @@ footer {
 
 .btn-blk {
   color: #323544;
+  color: #fff;
 }
 .btn-blk:hover {
   color: #212330;
+}
+
+.btn-news {
+  position: absolute;
 }/*# sourceMappingURL=application.css.map */
