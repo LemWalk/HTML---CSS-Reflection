@@ -1,0 +1,47 @@
+
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color:$black-light;
+    
+}
+
+nav ul li{
+list-style: none;
+position: relative;
+}
+
+nav ul li a{
+    display: block;
+    padding: 20px 25px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+}
+
+
+
+.dropdown li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.dropdown{
+    width: 100%;
+    background-color: $blue-secondary;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+nav ul li a:hover{
+    background-color: $blue-secondary;
+}
+
+nav ul li:hover ul.dropdown {
+    display: block;
+}
