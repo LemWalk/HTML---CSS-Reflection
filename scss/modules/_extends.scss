@@ -8,17 +8,17 @@
 %news-lo-m{
 
     @include mq(medium) {
-        display: flex;
-        flex-direction: row;
-        columns: 50%;
+        display: block;
+        columns: 2;
+        align-items: baseline;
     }       
 }
 
 %news-lo-l{
     @include mq(large) {
-        display: flex;
-        flex-direction: row;
-        columns: 30%;
+        display: block;
+        columns: 3;
+        align-items: baseline;
     }
 }
 

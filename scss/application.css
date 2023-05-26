@@ -369,25 +369,31 @@ a {
 
 @media (min-width: 752px) {
   #news-lo-m {
-    display: flex;
-    flex-direction: row;
-    -moz-columns: 50%;
-         columns: 50%;
+    display: block;
+    -moz-columns: 2;
+         columns: 2;
+    align-items: baseline;
   }
 }
 
 @media (min-width: 976px) {
   #news-lo-l {
-    display: flex;
-    flex-direction: row;
-    -moz-columns: 30%;
-         columns: 30%;
+    display: block;
+    -moz-columns: 3;
+         columns: 3;
+    align-items: baseline;
   }
 }
 
 .news-img img {
   height: 200px;
   width: 370px;
+}
+
+.hero-container {
+  height: 550px;
+  background-image: url(../img/thumbnails/img1.png);
+  color: #fff;
 }
 
 .light-grey {
@@ -490,17 +496,27 @@ nav ul {
   list-style: none;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   background-color: #323544;
+  margin: 0;
+  padding: 0;
 }
 
 nav ul li {
   list-style: none;
-  position: relative;
+  justify-content: center;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 nav ul li a {
-  display: block;
+  display: flex;
+  flex-direction: column;
   padding: 20px 25px;
   color: #fff;
   text-decoration: none;
@@ -512,20 +528,28 @@ nav ul li a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 
 .dropdown {
   width: 100%;
-  background-color: #286abd;
   position: absolute;
   z-index: 999;
   display: none;
 }
 
-nav ul li a:hover {
-  background-color: #286abd;
+nav ul li:hover {
+  background-color: #67809f;
+}
+nav ul li:hover .nav-icon {
+  color: #fff;
 }
 
 nav ul li:hover ul.dropdown {
   display: block;
+  align-items: baseline;
+  -moz-columns: 3;
+       columns: 3;
+  background-color: #526781;
 }/*# sourceMappingURL=application.css.map */

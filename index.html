@@ -27,9 +27,29 @@
 
   <header class="header">
     <div>
+
       <div>
-        
+        <img src="img/nm-logo-dark.png" alt="Netmatters Logo">
       </div>
+
+      <div>
+        <button><i class="fa-solid fa-computer-mouse" style="color: #a4beea;"></i>SUPPORT</button>
+      </div>
+
+      <div>
+        <button><i class="fa-light fa-paper-plane" style="color: #3e3e74;"></i>CONTACT</button>
+      </div>
+
+      <div class="search-bar">
+        <input type="text" placeholder="Search...">
+        <i class="fa-solid fa-magnifying-glass" style="color: #adc0e1;"></i>
+      </div>
+
+      <div class="burger-menu">
+        <i class="fa-solid fa-bars" style="color: #89a4d1;"></i>        
+      </div>
+
+
     </div>
   </header>
 
@@ -43,8 +63,10 @@
         <ul>
 
           <li class="">
-            <span><i class="fa-solid fa-laptop" style="color: #67809f;"></i></span>
+          <div class="nav-item">
+            <span class="nav-icon"><i class="fa-solid fa-laptop" style="color: #67809f;"></i></span>
             <a href="#">Bespoke Software </a>
+          </div>
               <ul class="dropdown">
                 <li><a href="#"><i class="fa-solid fa-gears" style="color: #afc6ef;"></i>Bespoke CRM</a></li>
                 <li><a href="#"><i class="fa-solid fa-mobile-screen-button" style="color: #b3c2db;"></i>Mobile App Development</a></li>
@@ -60,6 +82,44 @@
                 <li><a href="#"><i class="fa-sharp fa-solid fa-earth-americas" style="color: #b2c9f0;"></i>Reporting Hub</a></li>
               </ul>
           </li> 
+
+
+          <!-- ==============code snippet========== -->
+
+          <div class="bubble">CSS Speech Bubble</div>
+
+          <style>
+            .bubble {
+                position: relative;
+                background: #000000;
+                color: #FFFFFF;
+                font-family: Arial;
+                font-size: 20px;
+                line-height: 120px;
+                text-align: center;
+                width: 200px;
+                height: 120px;
+                border-radius: 0px;
+                padding: 0px;
+            }
+            .bubble:after {
+                content: '';
+                position: absolute;
+                display: block;
+                width: 0;
+                z-index: 1;
+                border-style: solid;
+                border-color: #000000 transparent;
+                border-width: 41px 100px 0;
+                bottom: -41px;
+                left: 50%;
+                margin-left: -100px;
+            }
+
+            </style>
+
+
+
 
           <li>
             <span><i class="fa-sharp fa-solid fa-display" style="color: #4183d7;"></i></span>
@@ -95,13 +155,32 @@
       </div>
     </nav>
 
-
+<!-- =======================================
+    ========Main Start ==================== -->
 
   <main>
 
     <!-- =======================================
     ========Hero Banner ==================== -->
+  <div class="hero-banner">
+    <div class="hero-container">
 
+      <div>
+        <h2>The East of England's Leading Technology Company</h2>
+      </div>
+
+      <div>
+        <p>Performance-driven digital and technology services with complete transparency </p>
+      </div>
+
+      <div>
+        <button>WHY CHOOSE US?</button>
+        <i class="fa-solid fa-arrow-right" style="color:white;"></i>
+      </div>
+
+
+    </div>
+  </div>
 
     <!-- =========================================
     ====== Our Services ===================== -->
@@ -342,13 +421,13 @@
   ========Latest News ==================== -->
 
   <div class="news">
-    <div id="news-lo">
+    <div id="news-lo-m">
 
       <div class="flex-row">
         <h1>LATEST NEWS</h1>
       </div>
 
-      <div class="flex-col" id="news-lo">
+      <div class="flex-col" id="news-lo ">
 
       <div class="flex-col">
         <div class="news-item">
