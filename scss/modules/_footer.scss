@@ -2,9 +2,15 @@
 footer{
 margin-top: auto;
 color: white;
-	background-color: $black-light;
+background-color: $black-light;
 width: 100%;
+padding: 15px;
+font-weight: 100;
+h4{
+	font-weight: 100;
+	}
 }
+
 
 
 .footer__list{
@@ -15,73 +21,45 @@ width: 100%;
 	ul, li, a{
 		color: $white;
 		list-style-type: none;
-		padding: 0px;
-		:visited, :hover{
+		padding: 3px 0px;
+		:hover{
 		text-decoration: underline;}
 		font-size: 13px;
 		}
 }
 
+.company-info{
+	justify-content: center;
+	align-items: center;
 
-
+}
 
 	#footer-lo{
 		@extend %footer-lo;
 	}
 	
 	
-
-.socials{
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-justify-content: left;
-gap: 20px;
-
-}
-
-.social-links{
+.footer-bottom{
 	background-color: $black;
-	padding: 18px;
-	color: $white;
-		}
-
-.fb{
-	&:hover{
-	background-color: $blue-fb;
-	}
+	color: white;
+	padding: 0;
+	margin: 0;
 }
 
-.li{
-	&:hover{
-	background-color: $blue-li;
-	}
+
+.footer-bottom p, ul, a{
+	font-size: 13px;
+	padding: 5px 15px;
+	margin: 0;
+	justify-content: left;
+	
 }
 
-.twtr{
-	&:hover{
-	background-color: $blue-twtr;
-	}
+	
+
+.sm-dis{
+	display: none;
 }
 
-.ig{
-	&:hover{
-	background-color: $blue-fb;
-	}
-}				
-
-.centered{
-	//display: flex;
-	//justify-content: center;
-	align-items: baseline;
-	padding: 0px;
-	::before{
-		padding: 0px;
-	} 
-}
-
-.padding{
-	padding-top:47px;
-}
 
 

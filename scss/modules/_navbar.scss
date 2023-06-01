@@ -30,7 +30,7 @@ nav ul li a{
     color: #fff;
     text-decoration: none;
     text-align: center;
-    font-size: 16px;
+    font-size: 16px;    
 }
 
 
@@ -49,6 +49,7 @@ nav ul li a{
     z-index: 999;
     display: none;
 }
+
 
 nav ul li:hover{
     background-color: $blue-pale-primary;

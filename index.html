@@ -19,7 +19,7 @@
   ===========BODY - START==================== -->
 
 <body>
-<div class="container">  
+<div class="container-outer">  
 
 
   <!-- =======================================
@@ -63,11 +63,14 @@
         <ul>
 
           <li class="">
+
           <div class="nav-item">
             <span class="nav-icon"><i class="fa-solid fa-laptop" style="color: #67809f;"></i></span>
-            <a href="#">Bespoke Software </a>
-          </div>
-              <ul class="dropdown">
+            <a href="#">Bespoke Software </a>            
+          </div>            
+          
+              <ul class="dropdown">  
+                <li><a href="#"> Our Bespoke Software Services</li></a>              
                 <li><a href="#"><i class="fa-solid fa-gears" style="color: #afc6ef;"></i>Bespoke CRM</a></li>
                 <li><a href="#"><i class="fa-solid fa-mobile-screen-button" style="color: #b3c2db;"></i>Mobile App Development</a></li>
                 <li><a href="#"><i class="fa-sharp fa-solid fa-download" style="color: #b9cdee;"></i>Operational systems</a></li>
@@ -81,11 +84,13 @@
                 <li><a href="#"><i class="fa-solid fa-tv" style="color: #c6d6f0;"></i></i>Internet of Things (IOT) Development</a></li>
                 <li><a href="#"><i class="fa-sharp fa-solid fa-earth-americas" style="color: #b2c9f0;"></i>Reporting Hub</a></li>
               </ul>
+            </div>
+            
           </li> 
 
 
           <!-- ==============code snippet========== -->
-
+<!-- 
           <div class="bubble">CSS Speech Bubble</div>
 
           <style>
@@ -116,7 +121,7 @@
                 margin-left: -100px;
             }
 
-            </style>
+            </style> -->
 
 
 
@@ -156,7 +161,7 @@
     </nav>
 
 <!-- =======================================
-    ========Main Start ==================== -->
+    ======== Main Start ==================== -->
 
   <main>
 
@@ -562,20 +567,19 @@
 ======= Footer ============ -->
 
   <footer class="footer">
-    <div class="container-dark padding">
+    <div class="container-inner">
 
         <div class="flex-col" id="footer-lo">
 
           <div class="company-info">
-            <span><img src="img/nm-logo-white-med.png" ></span>
+            <span class="nm-logo-white"><img src="img/nm-logo-white-med.png" ></span>
             <span></span><h4>Follow us on:</h4></span>
             <div class="socials">
               <a class="social-links fb" href="#"><i class="fa-brands fa-facebook-f fa-2xl"></i></a>
               <a class="social-links li" href="#"><i class="fa-brands fa-linkedin-in fa-2xl"></i></a>
               <a class="social-links twtr" href="#"><i class="fa-brands fa-twitter fa-2xl" ></i></a>
               <a class="social-links ig" href="#"><i class="fa-brands fa-instagram fa-2xl"></i></a>
-            </div>
-        
+            </div>        
       </div>
       
       <div class="footer__list">
@@ -634,21 +638,21 @@
   <!-- =======================================
   ========Footer-Bottom ==================== -->
 
-  <footer class="footer-bottom ">
-    <div Class="container-x-dark" id="footer-lo">
-      <div>&copy; Copyright Netmatters 2023.</div>
-      <div> All rights reserved.</div>
+  <div class="footer-bottom ">
+    <div Class="container-inner" id="footer-lo">
+      <p>&copy; Copyright Netmatters 2023.</p>
+      <p>All rights reserved.</p>
+      <p class="sm-dis">-</p>
       <Ul class="footer__list">
         <li>
-          <a href="#">- Sitemap</a>
+          <a href="#">Sitemap</a>
         </li>
       </Ul>
     </div>
-  </footer>
+  </div>
+
 
 </div>
-
 </body>
-
 </html>
 
