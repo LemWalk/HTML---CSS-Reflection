@@ -9,13 +9,11 @@
             flex-direction: row;
     }
 
-
     @include mq(medium) {
                 display:flex;
                 flex-direction: row;
                 .sm-dis{
-                    display: flex;
-                
+                    display: flex;                
                 }
     }
 
@@ -37,4 +35,5 @@
         align-items: baseline;
     }
 }
+
 

@@ -1,14 +1,35 @@
-.light-grey{
+form{
     background-color: $grey-light;
-    a{
-        color: inherit;
-        &:hover{
-        text-decoration: underline;  
-        color: black;  
-        } 
-        
-    }
 }
+
+form h2 {
+  padding: 20px 0px;
+  font-size: 32px;
+
+}
+
+.data-input{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px;
+}
+
+.checkbox{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    color:$black;
+    font-weight: 800;
+    padding: 15px 0px;
+    
+}
+
+.tickbox{
+    height: 32px;
+    width: 32px;
+    color: black;
+}
+
 
 .p-red{
 color: red;

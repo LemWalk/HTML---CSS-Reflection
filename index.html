@@ -346,8 +346,8 @@
   <!-- =======================================
   ========Intro and Reviews ==================== -->
 
-  <div class="company-info">
-    <div class="container-dark">
+  <div class="company-intro">
+    <div class="container-inner">
 
       <div>
 
@@ -364,11 +364,11 @@
         </div>
 
           <div>
-            <a><button class="btn-blk">WHY CHOOSE US? <i class="fa-solid fa-arrow-right" style="color:white;"></i></button></a>
+            <a><button class="btn-blk-dark">WHY CHOOSE US? <i class="fa-solid fa-arrow-right" style="color:white;"></i></button></a>
           </div>
 
           <div>
-            <a><button class="btn-blk">OUR CULTURE <i class="fa-solid fa-arrow-right" style="color:white;"></i></button></a>
+            <a><button class="btn-blk-dark">OUR CULTURE <i class="fa-solid fa-arrow-right" style="color:white;"></i></button></a>
           </div>
         </div>
 
@@ -426,9 +426,9 @@
   ========Latest News ==================== -->
 
   <div class="news">
-    <div id="news-lo-m">
+    <div class="container-inner" id="news-lo-m">
 
-      <div class="flex-row">
+      <div class="">
         <h1>LATEST NEWS</h1>
       </div>
 
@@ -450,7 +450,8 @@
             <hr>            
             <div>
               <img src="img/nm-logo-dark-small.png" alt="Netmatters Logo">
-              <P>Posted by Netmatters <br> 10 May 2023</P>            
+              <P>Posted by Netmatters <br> 10 May 2023</P> 
+              <button class="btn-news-blue">READ MORE</button>           
             </div>
           </div>         
           
@@ -474,7 +475,8 @@
             <hr>            
             <div>
               <img src="img/nm-logo-dark-small.png" alt="Netmatters Logo">
-              <P>Posted by Netmatters <br> 10 May 2023</P>            
+              <P>Posted by Netmatters <br> 10 May 2023</P> 
+              <button class="btn-news-blue">READ MORE</button>           
             </div>
           </div>         
           
@@ -498,16 +500,17 @@
             <hr>            
             <div>
               <img src="img/nm-logo-dark-small.png" alt="Netmatters Logo">
-              <P>Posted by Netmatters <br> 10 May 2023</P>            
+              <P>Posted by Netmatters <br> 10 May 2023</P> 
+              <button class="btn-news-purple">READ MORE</button>           
             </div>
           </div>         
           
-          <div class="flex-row">
-            <h2>View All</h2>
-            <i class="fa-solid fa-arrow-right" style="color:inherit;"></i>
-          </div>
-
         </div>
+
+        <div class="view-all">
+          <h2><a>View All</a></h2><i class="fa-solid fa-arrow-right" style="color:inherit;"></i>
+        </div>
+
       </div>
     </div>
 
@@ -526,36 +529,33 @@
   ====== Form (Newsletter sign up) ======== -->
 
   <form action="#" method="get">
-		<div class="light-grey">
+		<div class="container-inner">
 
 			<div>
 				<h2>E-MAIL NEWSLETTER SIGN-UP</h2>
 			</div>
 
 			<div>
-				<div>
-
-					<div>
-						<label for="name">Your Name *</label>
+			
+					<div class="data-input">
+						<label for="name">Your Name <span class="p-red">*</span></label>
 						<input type="text">
 					</div>
 
-					<div>
-						<label for="e-mail">Your Email *</label>
+					<div class="data-input">
+						<label for="e-mail">Your Email <span class="p-red">*</span></label>
 						<input type="text, number">
 					</div>
 
-				</div>				
+				</div>
+
+			<div class="checkbox">
+				<input type="checkbox" class="tickbox" id="#" name="#" value="#">
+				<span><strong>Please tick this box if you wish to receive marketing information from us. Please see our <a href="#" class="link-blk">Privacy Policy</a> for more information on how we keep your data safe.</strong></span>
 			</div>
 
 			<div>
-				<label for="checkbox"></label>
-				<input type="checkbox" id="#" name="#" value="#">
-				<p><strong>tick this box if you wish to receive marketing information from us. Please see our <a href="#">Privacy Policy</a> for more information on how we keep your data safe.</strong></p>
-			</div>
-
-			<div>
-				<button>Subscribe</button>
+				<button class="btn-blk">Subscribe</button>
 			</div>
 		</div>
 	</form>  

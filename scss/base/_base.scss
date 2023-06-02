@@ -20,9 +20,18 @@ padding:0;
 
 }
 
-
 a{
 	text-decoration: none;
+	color: #000;
+	}
+
+
+.link-blk{
+	color: inherit;
+	font-size: inherit;
+	margin: 0;
+	padding: 0;
+	&:hover{
+		text-decoration: underline;
+	}
 }
-
-

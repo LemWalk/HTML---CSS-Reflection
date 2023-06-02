@@ -3,15 +3,39 @@ text-decoration: none;
 }
 
 .btn-blk{
-    color: $black-light;
-    &:hover{
-        color: $black;
-    }
+    background-color: $black-mid;
     color: #fff;
+    border-radius: 3px;
+    border: 0;
+    padding: 15px 15px;
+    &:hover{
+        background-color: $black;
+    }
+}
+
+.btn-blk-dark{
+    background-color: $black-btn;
+    color: #fff;
+    border-radius: 3px;
+    border: 0;
+    padding: 15px 15px;
+    &:hover{
+        background-color: $black-dark;
+    }
+}
+
+.btn-news-purple{
+    color: #fff;
+    background-color: $purple-primary;
+    border: 0;
+    padding: 5px;
+}
+
+.btn-news-blue{
+    color: #fff;
+    background-color: $blue-primary;
+    border: 0;
+    padding: 5px;
 }
 
 
-.btn-news{
-    position: absolute;
-
-}
