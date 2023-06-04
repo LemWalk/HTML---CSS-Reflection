@@ -1,5 +1,19 @@
 .hero-container{
     height: 550px;
     background-image: url(../img/thumbnails/img1.png);
+    background-repeat: no-repeat;
+    background-size:cover ;
     color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-title{
+font-size: 40px;
+}
+
+.hero-text{
+    font-size: 30px;
 }

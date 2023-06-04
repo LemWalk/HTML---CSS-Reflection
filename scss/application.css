@@ -416,7 +416,51 @@ a {
 .hero-container {
   height: 550px;
   background-image: url(../img/thumbnails/img1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-title {
+  font-size: 40px;
+}
+
+.hero-text {
+  font-size: 30px;
+}
+
+.container-service {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #212330;
+  border: solid grey 3px;
+  border-radius: 3px;
+  transition: transform ease 300ms;
+}
+
+.container-service:hover {
+  transform: translate(0px, -10px);
+  color: #fff;
+  background-color: #67809f;
+}
+.container-service:hover .icn-service-blue-pale {
+  background-color: #fff;
+  color: #67809f;
+}
+.container-service:hover .btn-service-blue-pale {
+  color: #67809f;
+  background-color: #fff;
+}
+
+.bes-soft {
+  color: #000;
+  background-color: #fff;
 }
 
 form {
@@ -451,6 +495,11 @@ form h2 {
 
 .p-red {
   color: red;
+}
+
+.company-intro {
+  background-color: #323544;
+  color: #fff;
 }
 
 footer {
@@ -544,6 +593,24 @@ footer h4 {
   padding: 5px;
 }
 
+.btn-service-blue-pale {
+  color: white;
+  background-color: #67809f;
+  border: 0;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.btn-service-blue {
+  color: white;
+  background-color: #4183d7;
+  border: 0;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
 .news-item {
   border: solid #ddd 1px;
   box-shadow: 0px 0px 10px 10px;
@@ -616,6 +683,35 @@ nav ul li:hover ul.dropdown {
   -moz-columns: 3;
        columns: 3;
   background-color: #526781;
+}
+
+.nav-top-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav-hidden {
+  display: none;
+}
+
+.burger-menu {
+  background-color: black;
+  padding: 20px;
+}
+
+.icn-grey-light {
+  background-color: #ddd;
+  padding: 15px;
+}
+
+.icn-service-blue-pale {
+  background-color: #67809f;
+  color: #fff;
+  padding: 15px;
+  border-radius: 50px;
+  margin-top: 10px;
 }
 
 .socials {

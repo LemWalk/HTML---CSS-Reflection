@@ -1,3 +1,23 @@
+.icn-grey-light{
+background-color: $grey-light;
+padding: 15px;
+}
+
+//=========Service Icons===================
+
+.icn-service-blue-pale{
+    background-color: $blue-pale-primary;
+    color: #fff;
+    padding: 15px;
+    border-radius: 50px;
+    margin-top: 10px;
+}
+
+
+
+
+// =========== footer socials ===========
+
 .socials{
     display: flex;
     flex-direction: row;
