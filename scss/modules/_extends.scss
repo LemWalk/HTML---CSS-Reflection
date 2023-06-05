@@ -1,19 +1,15 @@
 %footer-lo {
-    @include mq(extra-large) {
-        display:flex;
-        flex-direction: row;
-    }
-
-    @include mq(large) {
-            display:flex;
-            flex-direction: row;
-    }
 
     @include mq(medium) {
                 display:flex;
                 flex-direction: row;
+                justify-content: left;
+                align-items: baseline;
                 .sm-dis{
                     display: flex;                
+                }
+                p{
+                    padding: 3px;
                 }
     }
 

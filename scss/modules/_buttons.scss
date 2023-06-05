@@ -8,6 +8,7 @@ text-decoration: none;
     border-radius: 3px;
     border: 0;
     padding: 15px 15px;
+    margin: 30px 0px 50px;
     &:hover{
         background-color: $black;
     }
@@ -19,6 +20,7 @@ text-decoration: none;
     border-radius: 3px;
     border: 0;
     padding: 15px 15px;
+    margin-bottom: 20px;
     &:hover{
         background-color: $black-dark;
     }
@@ -28,20 +30,25 @@ text-decoration: none;
     color: #fff;
     background-color: $purple-primary;
     border: 0;
-    padding: 5px;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 20px 0px;
 }
 
 .btn-news-blue{
     color: #fff;
     background-color: $blue-primary;
     border: 0;
-    padding: 5px;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 20px 0px;
 }
 
 .btn-service-blue-pale{
     color: white;
     background-color: $blue-pale-primary;
     border: 0;
+    border-radius: 10px;
     padding: 10px;
     font-size: 16px;
     margin-bottom: 15px;    

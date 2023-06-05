@@ -1,59 +1,73 @@
 
+.main-nav{
+    background-color:$black-light;
+}
+
 
 nav ul{
     list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color:$black-light;
     margin: 0;
     padding: 0;
 }
 
 nav ul li{
 list-style: none;
-justify-content: center;
+position: relative;
 }
-
 
 .nav-item{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: centre;
 }
 
+.nav-p1{
+    font-size: 13px;
+    padding: 0;
+    margin: 0;
+    }
+    
+    .nav-p2{
+        font-size: 20px;
+        padding: 0; 
+        margin: 0;
+    }
+
 nav ul li a{
-    display: flex;
-    flex-direction: column;
+    display: block;
     padding: 20px 25px;
     color: #fff;
     text-decoration: none;
     text-align: center;
-    font-size: 16px;    
-}
-
-
-
-.dropdown li{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
+    font-size: 16px;
+    .nav-dropdown-item:hover{
+        text-decoration:underline ;
+    }    
 }
 
 .dropdown{
-    width: 100%;
     position: absolute;
     z-index: 999;
     display: none;
 }
 
+.dropdown li{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
 
-nav ul li:hover{
+
+
+
+.nav-bar-item:hover{
     background-color: $blue-pale-primary;
-    .nav-icon{
+    .nav-icon-blue-pale, .nav-icon-blue, .nav-icon-green, .nav-icon-purple, .nav-icon-red, .nav-icon-red-pink, .nav-icon-orange{
         color: #fff;
     }
 }
@@ -62,7 +76,19 @@ nav ul li:hover{
 
 nav ul li:hover ul.dropdown {
     display: block;
-    align-items: baseline;
-    columns: 3;
     background-color: $blue-pale-secondary;
+    align-items: left;
+    columns: 3 auto;
+    align-content: baseline;
+    width: auto;
+    }
+
+
+
+.nav-dropdown-title{
+    color: #fff;
+    display: inline-block;
+    position: relative;
+    font-size: 20px;
+    align-self: center;
 }
