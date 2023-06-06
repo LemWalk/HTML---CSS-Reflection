@@ -342,6 +342,22 @@ a {
   color: #000;
 }
 
+.link-white {
+  color: #fff;
+  font-size: inherit;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+.link-white:hover {
+  text-decoration: underline;
+}
+
+.text-grey {
+  color: #666;
+  font-weight: 500;
+}
+
 .container-dark {
   display: flex;
   flex-direction: column;
@@ -510,6 +526,10 @@ input[type=checkbox] {
   color: #fff;
 }
 
+.fa-star {
+  padding: 2px;
+}
+
 footer {
   margin-top: auto;
   color: white;
@@ -589,6 +609,32 @@ footer h4 {
   background-color: #121318;
 }
 
+.btn-intro-blue-l {
+  color: #fff;
+  background-color: #4183d7;
+  font-size: 20px;
+  border: 0;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 20px 0px 5px;
+}
+.btn-intro-blue-l:hover {
+  background-color: #286abd;
+}
+
+.btn-intro-green-l {
+  color: #fff;
+  background-color: #2ecc7a;
+  font-size: 20px;
+  border: 0;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 20px 0px 30px;
+}
+.btn-intro-green-l:hover {
+  background-color: #25a25a;
+}
+
 .btn-news-purple {
   color: #fff;
   background-color: #926fb1;
@@ -626,12 +672,21 @@ footer h4 {
   margin-bottom: 15px;
 }
 
+.news-title {
+  margin-top: 50px;
+}
+
 .news-item {
   display: flex;
   flex-direction: column;
   border: solid #ddd 1px;
   box-shadow: 0px 0px 5px 0.5px #dddddd;
   margin: 30px 0px;
+  transition: transform ease 300ms;
+}
+
+.news-item:hover {
+  transform: translate(0px, -10px);
 }
 
 hr {
@@ -642,21 +697,40 @@ hr {
   margin: 0% 5%;
 }
 
-.top-right {
+.top-right-purple {
   position: absolute;
   background-color: #926fb1;
   right: 15px;
   margin: 0;
   padding: 0;
 }
-.top-right h5 {
+.top-right-purple h5 {
   color: #fff;
   font-size: 12px;
   font-weight: 300;
   padding: 0;
   margin: -10px 10px;
 }
-.top-right a:hover {
+.top-right-purple a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.top-right-blue {
+  position: absolute;
+  background-color: #4183d7;
+  right: 15px;
+  margin: 0;
+  padding: 0;
+}
+.top-right-blue h5 {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 300;
+  padding: 0;
+  margin: -10px 10px;
+}
+.top-right-blue a:hover {
   text-decoration: underline;
   color: #fff;
 }

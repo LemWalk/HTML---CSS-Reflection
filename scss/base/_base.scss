@@ -37,12 +37,18 @@ a{
 	}
 }
 
-//.link-white{
-// 	color: #fff;
-// 	font-size: inherit;
-// 	margin: 0;
-// 	padding: 0;
-// 	&:hover{
-// 		text-decoration: underline;
-// 	}
-// }
+.link-white{
+	color: #fff;
+	font-size: inherit;
+	font-weight: 500;
+	margin: 0;
+	padding: 0;
+	&:hover{
+		text-decoration: underline;
+	}
+}
+
+.text-grey{
+	color: $grey;
+	font-weight: 500;
+}
