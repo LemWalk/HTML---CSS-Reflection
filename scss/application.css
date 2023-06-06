@@ -656,6 +656,31 @@ a {
   background-color: #fff;
 }
 
+.carousel-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.carousel-greyscale {
+  filter: grayscale(100%);
+}
+.carousel-greyscale:hover {
+  filter: grayscale(0%);
+}
+
+.pop-up {
+  display: none;
+}
+.pop-up img:hover {
+  display: flex;
+  position: absolute;
+  background-color: #323544;
+  color: #fff;
+}
+
 form {
   background-color: #ddd;
 }
