@@ -11,10 +11,22 @@
 }
 
 .burger-menu{
-    background-color: black;
-    padding: 20px;
+    background-color: $black-light;
+    margin: 10px;
+    padding: 22px 15px;
+    border-radius: 3px;
 }
 
 .search-bar{
-
+    background-color: $grey-light;
+    border: solid #999 2px ;
+    border-radius: 3px;
+    box-shadow: 0px 0px 10px 0.5px rgba($color: $grey-light, $alpha: 3.0);
+    margin: 15px 0px;
+    justify-content: right;
+    
+input[type=text]{
+    background-color: inherit;
+    width: 90%;
+}
 }

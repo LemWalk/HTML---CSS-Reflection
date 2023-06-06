@@ -10,6 +10,20 @@
 margin-top: 50px;
 }
 
+.text-blue{
+    color: $blue-primary;
+}
+
+.text-purple{
+    color: $purple-primary;
+}
+
+.text-grey{
+    color: #888;
+    font-size: 14px;
+    font-weight: 300;
+}
+
 .news-item{
     display: flex;
     flex-direction: column;
@@ -78,8 +92,8 @@ hr{
     display: flex;
     flex: row;
     align-items: baseline;
-    color: $black;
-    
+    color: $black;  
+    justify-content: center;
     h2{
         font-size: 20px;
         padding-right: 10px;

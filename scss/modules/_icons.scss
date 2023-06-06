@@ -1,6 +1,14 @@
 .icn-grey-light{
+    color: $black-light;
 background-color: $grey-light;
-padding: 15px;
+padding: 0;
+margin: 0;
+border: 0;
+}
+
+.icn-black-light{
+    color: $black-light;
+    margin: 10px;
 }
 //========Nav Icons ======================
 
@@ -42,6 +50,55 @@ padding: 15px;
     border-radius: 50px;
     margin-top: 10px;
 }
+
+.icn-service-blue{
+    background-color: $blue-primary;
+    color: #fff;
+    padding: 15px;
+    border-radius: 50px;
+    margin-top: 10px;
+}
+
+.icn-service-green{
+    background-color: $green-primary;
+    color: #fff;
+    padding: 15px;
+    border-radius: 50px;
+    margin-top: 10px;
+}
+
+.icn-service-red{
+    background-color: $red-primary;
+    color: #fff;
+    padding: 15px;
+    border-radius: 50px;
+    margin-top: 10px;
+}
+
+.icn-service-purple{
+    background-color: $purple-primary;
+    color: #fff;
+    padding: 15px;
+    border-radius: 50px;
+    margin-top: 10px;
+}
+
+.icn-service-red-pink{
+    background-color: $red-pink-primary;
+    color: #fff;
+    padding: 15px;
+    border-radius: 50px;
+    margin-top: 10px;
+}
+
+.icn-service-orange{
+    background-color: $orange-primary;
+    color: #fff;
+    padding: 15px;
+    border-radius: 50px;
+    margin-top: 10px;
+}
+
 
 
 

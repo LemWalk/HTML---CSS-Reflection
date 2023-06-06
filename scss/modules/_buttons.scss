@@ -2,6 +2,8 @@
 text-decoration: none;
 }
 
+//============general buttons ============
+
 .btn-blk{
     background-color: $black-mid;
     color: #fff;
@@ -17,6 +19,7 @@ text-decoration: none;
 .btn-blk-dark{
     background-color: $black-btn;
     color: #fff;
+    font-size: 20px;
     border-radius: 3px;
     border: 0;
     padding: 15px 15px;
@@ -25,6 +28,21 @@ text-decoration: none;
         background-color: $black-dark;
     }
 }
+
+.btn-slider-purple{
+    color: #fff;
+    background-color: $purple-primary;
+    font-size: 20px;
+    border: 0;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 20px 0px;
+    &:hover{
+        background-color: $purple-secondary;
+    }
+}
+
+//========== intro buttons ==================
 
 .btn-intro-blue-l{
     color: #fff;
@@ -52,6 +70,7 @@ text-decoration: none;
     }
 }
 
+//==========news buttons =====================
 
 .btn-news-purple{
     color: #fff;
@@ -71,11 +90,13 @@ text-decoration: none;
     margin: 20px 0px;
 }
 
+//========== service buttons============
+
 .btn-service-blue-pale{
     color: white;
     background-color: $blue-pale-primary;
     border: 0;
-    border-radius: 10px;
+    border-radius: 3px;
     padding: 10px;
     font-size: 16px;
     margin-bottom: 15px;    
@@ -88,4 +109,55 @@ text-decoration: none;
     padding: 10px;
     font-size: 16px;
     margin-bottom: 15px;
+    border-radius: 3px;
+    }
+
+    .btn-service-green{
+    color: white;
+    background-color: $green-primary;
+    border: 0;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    }
+
+.btn-service-red{
+    color: white;
+    background-color: $red-primary;
+    border: 0;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    }
+
+.btn-service-purple{
+    color: white;
+    background-color: $purple-primary;
+    border: 0;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    }
+
+.btn-service-red-pink{
+    color: white;
+    background-color: $red-pink-primary;
+    border: 0;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    }
+
+.btn-service-orange{
+    color: white;
+    background-color: $orange-primary;
+    border: 0;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border-radius: 3px;
     }
