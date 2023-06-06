@@ -7,20 +7,20 @@ nav ul{
     list-style: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     margin: 0;
     padding: 0;
 }
 
 nav ul li{
 list-style: none;
-position: relative;
+padding: 0px 15px;
 }
 
 .nav-item{
     display: flex;
     flex-direction: column;
-    align-items: centre;
+    align-items: center;
 }
 
 .nav-p1{
@@ -36,7 +36,8 @@ position: relative;
     }
 
 nav ul li a{
-    display: block;
+    display: flex;
+    flex-direction: column;
     padding: 20px 25px;
     color: #fff;
     text-decoration: none;
@@ -49,45 +50,113 @@ nav ul li a{
 
 .dropdown{
     position: absolute;
+    left: 0;
+    right: 0;
     z-index: 999;
-    display: none;
+    display: none
 }
 
 .dropdown li{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     margin: 0;
     padding: 0;
 }
 
+//========== navbar item hovers============
 
-
-
-.nav-bar-item:hover{
+.nav-bar-item-blue-pale:hover{
     background-color: $blue-pale-primary;
-    .nav-icon-blue-pale, .nav-icon-blue, .nav-icon-green, .nav-icon-purple, .nav-icon-red, .nav-icon-red-pink, .nav-icon-orange{
+    .nav-icon-blue-pale{
         color: #fff;
     }
 }
 
+.nav-bar-item-blue:hover{
+    background-color: $blue-primary;
+    .nav-icon-blue {
+        color: #fff;
+    }
+}
 
+.nav-bar-item-green:hover{
+    background-color: $green-primary;
+    .nav-icon-green {
+        color: #fff;
+    }
+}
+
+.nav-bar-item-red:hover{
+    background-color: $red-primary;
+    .nav-icon-red {
+        color: #fff;
+    }
+}
+
+.nav-bar-item-purple:hover{
+    background-color: $purple-primary;
+    .nav-icon-purple{
+        color: #fff;
+    }
+}
+
+.nav-bar-item-red-pink:hover{
+    background-color: $red-pink-primary;
+    .nav-icon-red-pink {
+        color: #fff;
+    }
+}
+
+.nav-bar-item-orange:hover{
+    background-color: $orange-primary;
+    .nav-icon-orange {
+        color: #fff;
+    }
+}
+
+//======== Dropdown Hover Colors ========
 
 nav ul li:hover ul.dropdown {
-    display: block;
-    background-color: $blue-pale-secondary;
+    display: flex;
+    flex-direction: row;
     align-items: left;
-    columns: 3 auto;
     align-content: baseline;
-    width: auto;
     }
 
+nav ul li:hover ul.dd-blue-pale{
+    background-color: $blue-pale-secondary;
+    }
 
+nav ul li:hover ul.dd-blue{
+    background-color: $blue-secondary;
+        }
 
-.nav-dropdown-title{
-    color: #fff;
-    display: inline-block;
-    position: relative;
-    font-size: 20px;
-    align-self: center;
-}
+nav ul li:hover ul.dd-green{
+    background-color: $green-secondary;
+    }    
+
+    nav ul li:hover ul.dd-red{
+      background-color: $red-secondary;
+      } 
+
+      nav ul li:hover ul.dd-purple{
+        background-color: $purple-secondary;
+        } 
+
+        nav ul li:hover ul.dd-red-pink{
+          background-color: $red-pink-secondary;
+          } 
+
+          nav ul li:hover ul.dd-orange{
+            background-color: $orange-secondary;
+            } 
+    
+
+// .nav-dropdown-title{
+//     color: #fff;
+//     display: inline-block;
+//     position: relative;
+//     font-size: 20px;
+//     align-self: center;
+// }

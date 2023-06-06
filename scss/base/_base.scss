@@ -38,6 +38,8 @@ a{
 }
 
 .link-white{
+	display: flex;
+	flex-direction: row;
 	color: #fff;
 	font-size: inherit;
 	font-weight: 500;
