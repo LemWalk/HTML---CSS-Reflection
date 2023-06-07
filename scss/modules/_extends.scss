@@ -1,4 +1,7 @@
-%footer-lo {
+
+//==========Footer Layout =================
+
+%footer-bot-lo {
 
     @include mq(medium) {
                 display:flex;
@@ -8,23 +11,31 @@
                 .sm-dis{
                     display: flex;                
                 }
-                p{
+                p, ul {
                     padding: 3px;
+                    margin: 0;
                 }
     }
 
 }
 
-%news-lo-m{
+
+%footer-lo{
+    @include mq(medium) {
+        
+    }
+}
+
+//==========News Layout =================
+
+%news-lo{
 
     @include mq(medium) {
         display: block;
         columns: 2;
         align-items: baseline;
-    }       
-}
-
-%news-lo-l{
+    }   
+    
     @include mq(large) {
         display: block;
         columns: 3;
@@ -33,3 +44,4 @@
 }
 
 
+//==========Footer Layout =================
