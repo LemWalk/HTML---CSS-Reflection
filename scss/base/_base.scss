@@ -38,8 +38,7 @@ a{
 }
 
 .link-white{
-	display: flex;
-	flex-direction: row;
+	display: inline;
 	color: #fff;
 	font-size: inherit;
 	font-weight: 500;
@@ -52,7 +51,7 @@ a{
 
 .text-grey{
 	color: $grey;
-	font-weight: 6s00;
+	font-weight: 400;
 }
 
 .font-lite{

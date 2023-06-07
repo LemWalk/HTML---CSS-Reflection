@@ -1,4 +1,19 @@
 
+//=========== Footer Bot Layout ==========
+
+#footer-bot-lo{
+	@extend %footer-bot-lo;
+}
+
+
+//===========Footer Layout ===============
+
+#footer-lo{
+	@extend %footer-lo
+}
+
+
+
 footer{
 margin-top: auto;
 color: white;
@@ -34,10 +49,6 @@ h4{
 
 }
 
-	#footer-lo{
-		@extend %footer-lo;
-	}
-	
 	
 .footer-bottom{
 	background-color: $black;
@@ -60,6 +71,8 @@ h4{
 .sm-dis{
 	display: none;
 }
+
+
 
 
 

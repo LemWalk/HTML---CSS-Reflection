@@ -343,8 +343,7 @@ a {
 }
 
 .link-white {
-  display: flex;
-  flex-direction: row;
+  display: inline;
   color: #fff;
   font-size: inherit;
   font-weight: 500;
@@ -357,7 +356,7 @@ a {
 
 .text-grey {
   color: #666;
-  font-weight: 6s00;
+  font-weight: 400;
 }
 
 .font-lite {
@@ -388,31 +387,31 @@ a {
 }
 
 @media (min-width: 752px) {
-  #footer-lo {
+  #footer-bot-lo {
     display: flex;
     flex-direction: row;
     justify-content: left;
     align-items: baseline;
   }
-  #footer-lo .sm-dis {
+  #footer-bot-lo .sm-dis {
     display: flex;
   }
-  #footer-lo p {
+  #footer-bot-lo p, #footer-bot-lo ul {
     padding: 3px;
+    margin: 0;
   }
 }
 
 @media (min-width: 752px) {
-  #news-lo-m {
+  #news-lo {
     display: block;
     -moz-columns: 2;
          columns: 2;
     align-items: baseline;
   }
 }
-
 @media (min-width: 976px) {
-  #news-lo-l {
+  #news-lo {
     display: block;
     -moz-columns: 3;
          columns: 3;
@@ -1164,9 +1163,22 @@ nav ul li a .nav-dropdown-item:hover {
 
 nav ul li:hover ul.dropdown {
   display: flex;
+  flex-wrap: wrap;
+  height: auto;
+}
+
+nav ul li:hover ul.dropdown > * {
+  flex: 1 1 33%;
+  font-size: 20px;
+  padding: 20px 30px;
+  justify-content: left;
+  align-items: baseline;
+  text-align: left;
+}
+nav ul li:hover ul.dropdown > * :first-child {
+  display: flex;
   flex-direction: row;
-  align-items: left;
-  align-content: baseline;
+  padding-right: 15px;
 }
 
 nav ul li:hover ul.dd-blue-pale {

@@ -1,10 +1,11 @@
-#news-lo-m{
-    @extend %news-lo-m;
+//======== layout ===============
+
+#news-lo{
+    @extend %news-lo;
 }
 
-#news-lo-l{
-    @extend %news-lo-l;
-}
+
+//========= styles ================
 
 .news-title{
 margin-top: 50px;

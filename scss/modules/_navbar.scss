@@ -118,11 +118,34 @@ nav ul li a{
 //======== Dropdown Hover Colors ========
 
 nav ul li:hover ul.dropdown {
-    display: flex;
-    flex-direction: row;
-    align-items: left;
-    align-content: baseline;
+    display:flex;
+    flex-wrap: wrap;
+    height:auto ;
     }
+
+    nav ul li:hover ul.dropdown > * {
+        flex: 1 1 33%;
+        font-size: 20px;
+        padding: 20px 30px;
+        justify-content: left;
+        align-items: baseline;
+        text-align: left;
+        :first-child{
+            display: flex;
+            flex-direction: row;
+            padding-right: 15px;
+        }
+        
+    }
+
+
+    // .dd-title{
+    //     color: #fff;
+    //     display: flex;
+    //     flex: 3 1 100%;
+    //     font-size: 20px;
+    // }
+
 
 nav ul li:hover ul.dd-blue-pale{
     background-color: $blue-pale-secondary;
@@ -137,26 +160,19 @@ nav ul li:hover ul.dd-green{
     }    
 
     nav ul li:hover ul.dd-red{
-      background-color: $red-secondary;
-      } 
+    background-color: $red-secondary;
+    } 
 
-      nav ul li:hover ul.dd-purple{
-        background-color: $purple-secondary;
-        } 
+nav ul li:hover ul.dd-purple{
+    background-color: $purple-secondary;
+    } 
 
-        nav ul li:hover ul.dd-red-pink{
-          background-color: $red-pink-secondary;
-          } 
+nav ul li:hover ul.dd-red-pink{
+    background-color: $red-pink-secondary;
+    } 
 
-          nav ul li:hover ul.dd-orange{
-            background-color: $orange-secondary;
-            } 
+nav ul li:hover ul.dd-orange{
+    background-color: $orange-secondary;
+    } 
     
 
-// .nav-dropdown-title{
-//     color: #fff;
-//     display: inline-block;
-//     position: relative;
-//     font-size: 20px;
-//     align-self: center;
-// }
