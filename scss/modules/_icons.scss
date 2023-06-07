@@ -1,3 +1,6 @@
+
+//======= General ======================
+
 .icn-grey-light{
     color: $black-light;
 background-color: $grey-light;
@@ -116,8 +119,9 @@ border: 0;
     
     .social-links{
         background-color: $black;
-        padding: 18px;
+        padding: 20px;
         color: $white;
+        border-radius: 1px;
             }
     
     .fb{

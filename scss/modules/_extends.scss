@@ -1,5 +1,12 @@
+//========= Container Margin ==============
 
-//==========Footer Layout =================
+@include mq(large) {
+    .container-inner{
+        margin: 0 5%;
+    }
+}
+
+//==========Footer Bot Layout =================
 
 %footer-bot-lo {
 
@@ -19,13 +26,37 @@
 
 }
 
+//==========Footer Layout =================
 
 %footer-lo{
+
     @include mq(medium) {
-        
+        .footer-col{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .footer-col>*{
+            flex: 1 1 50%;
+        }
+    }
+
+    @include mq(large) {
+        .footer-col {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .footer-col>*{
+            flex: 1 1 25%;
+        }
+    }
+    @include mq(extra-large) {
+    .company-info{
+        float: left;
+        clear: right;
+        }
+
     }
 }
-
 //==========News Layout =================
 
 %news-lo{
@@ -42,6 +73,3 @@
         align-items: baseline;
     }
 }
-
-
-//==========Footer Layout =================

@@ -328,7 +328,6 @@ template {
 
 a {
   text-decoration: none;
-  color: #000;
 }
 
 .link-blk {
@@ -386,6 +385,11 @@ a {
   flex-wrap: wrap;
 }
 
+@media (min-width: 976px) {
+  .container-inner {
+    margin: 0 5%;
+  }
+}
 @media (min-width: 752px) {
   #footer-bot-lo {
     display: flex;
@@ -399,6 +403,31 @@ a {
   #footer-bot-lo p, #footer-bot-lo ul {
     padding: 3px;
     margin: 0;
+  }
+}
+
+@media (min-width: 752px) {
+  #footer-lo .footer-col {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #footer-lo .footer-col > * {
+    flex: 1 1 50%;
+  }
+}
+@media (min-width: 976px) {
+  #footer-lo .footer-col {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #footer-lo .footer-col > * {
+    flex: 1 1 25%;
+  }
+}
+@media (min-width: 1244px) {
+  #footer-lo .company-info {
+    float: left;
+    clear: right;
   }
 }
 
@@ -424,7 +453,7 @@ a {
 }
 
 .nm-logo-white {
-  padding: 27px 15px;
+  padding: 27px 15px 5px 0px;
 }
 
 .hero-container {
@@ -757,7 +786,12 @@ footer {
   font-weight: 100;
 }
 footer h4 {
+  font-size: 18px;
   font-weight: 100;
+}
+
+.footer-col {
+  padding-bottom: 15px;
 }
 
 .footer__list {
@@ -770,27 +804,32 @@ footer h4 {
   color: #fff;
   list-style-type: none;
   padding: 3px 0px;
-  font-size: 13px;
+  font-size: 14px;
 }
 .footer__list ul :hover, .footer__list li :hover, .footer__list a :hover {
   text-decoration: underline;
 }
 
 .company-info {
-  justify-content: center;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: -moz-fit-content;
+  width: fit-content;
+  justify-content: left;
+  align-items: left;
+  padding-bottom: 15px;
 }
 
 .footer-bottom {
   background-color: #212330;
   color: white;
-  padding: 0;
+  padding: 10px 0 0;
   margin: 0;
 }
 
 .footer-bottom p, ul, a {
   font-size: 13px;
-  padding: 5px 15px;
+  padding: 2px 15px;
   margin: 0;
   justify-content: left;
 }
@@ -1348,8 +1387,9 @@ nav ul li:hover ul.dd-orange {
 
 .social-links {
   background-color: #212330;
-  padding: 18px;
+  padding: 20px;
   color: #fff;
+  border-radius: 1px;
 }
 
 .fb:hover {
