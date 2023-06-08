@@ -57,19 +57,61 @@
 
     }
 }
+
+
+//========== Form Layout =================
+
+%form-lo{
+
+    @include mq(large) {
+        .input-boxes{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+
+        .input-boxes > *{
+            flex: 1 1 50%;
+        }
+    }
+}
+
 //==========News Layout =================
 
 %news-lo{
 
     @include mq(medium) {
-        display: block;
-        columns: 2;
-        align-items: baseline;
+        .news-col{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .news-col > *{
+            flex: 1 1 50%;
+            padding: 8px;            
+        }
+        .med-dis{
+            display: none;
+        }
+        .view-outer{
+            position: relative;
+            right: 0px;
+            
+        }
+        
     }   
+
     
-    @include mq(large) {
-        display: block;
-        columns: 3;
-        align-items: baseline;
+    @include mq(extra-large) {
+        .med-dis{
+            display: flex;
+        }
+        .news-col{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .news-col > *{
+            flex: 1 1 33%;
+            padding: 8px;            
+        }
     }
 }

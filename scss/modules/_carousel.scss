@@ -5,44 +5,57 @@ flex-direction: row;
 flex-wrap: nowrap;
 justify-content: space-evenly;
 align-items: center;
+padding: 30px;
 }
 
 .carousel-greyscale{
+    width: fit-content;
     filter: grayscale(100%);
     &:hover{
         filter: grayscale(0%);
     }
-
 }
 
-.pop-up{
-    display: none;
-img:hover{
-    display: flex;
-    position: absolute;
-    background-color: $black-light;
-    color: #fff;
-}
-}
 
-.gdst{
 
-}
 
-.ashcroft{
 
-}
 
-.one-traveller{
 
-}
+// .pop-up{
+//     display: none;
+// img:hover{
+//     display: flex;
+//     position: absolute;
+//     background-color: $black-light;
+//     color: #fff;
+//     }
+// }
 
-.xupes{
 
-}
 
-.busseys{
-    &:hover{
 
-    }
-}
+
+
+
+// .gdst{
+
+// }
+
+// .ashcroft{
+
+// }
+
+// .one-traveller{
+
+// }
+
+// .xupes{
+
+// }
+
+// .busseys{
+//     &:hover{
+
+//     }
+// }

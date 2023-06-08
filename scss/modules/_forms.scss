@@ -1,3 +1,7 @@
+#form-lo{
+  @extend %form-lo;
+}
+
 form{
     background-color: $grey-light;
 }
@@ -11,10 +15,16 @@ form h2 {
 
 }
 
+.input-boxes{
+  display: flex;
+  flex-direction: column;
+}
+
 .data-input{
     display: flex;
     flex-direction: column;
     padding-bottom: 20px;
+    row-gap: 10px;
 }
 
 .checkbox{
@@ -22,15 +32,17 @@ form h2 {
     flex-direction: row;
     align-items: flex-start;
     color:$black;
-    font-weight: 800;
+    font-weight: 300;
     padding: 15px 0px;
     gap: 15px;
+    line-height: 30px;
     
 }
 
 input[type=text] {
   border: $grey-light;
   height: 50px;
+  width: auto;
 }
 
 input[type=checkbox] {

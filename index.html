@@ -453,26 +453,29 @@
         <h1>LATEST NEWS</h1>
       </div>
 
-      <div class="flex-col" id="news-lo ">
+      <div class="news-col" id="news-lo ">
 
       <div class="flex-col">
         <div class="news-item">
+          <div class="top-right-outer">
           <div class="top-right-blue">
             <a href="#"><h5>Case Studies</h5></a>
           </div>
+        </div>
           <div class="news-img">
             <img src="img/news-1.png" alt="***DO LATER***">
           </div>
           <div class="news-text">
             <div>
               <h4 class="text-blue">Staying Secure and Connected With Netmatters -... <span class="text-grey">- 6 MINUTE READ</span></h4>
-              <p>Urban Mission Schools and Community (UMSC) is an independent school aiming to re-engage y...</p>
+              <p>Urban Mission Schools and Community (UMSC) is an independent school aiming to re-engage youth...</p>
             </div>
+            <button class="btn-news-blue">READ MORE</button>
             <hr>            
             <div>
               <img src="img/nm-logo-dark-small.png" alt="Netmatters Logo">
               <P>Posted by Netmatters <br> 11th May 2023</P> 
-              <button class="btn-news-blue">READ MORE</button>           
+            
             </div>
           </div>         
           
@@ -482,9 +485,11 @@
 
       <div class="flex-col">
         <div class="news-item">
+          <div class="top-right-outer">
           <div class="top-right-purple">
             <a href="#"><h5>Case Studies</h5></a>
           </div>
+        </div>
           <div class="news-img">
             <img src="img/news-2.png" alt="***DO LATER***">
           </div>
@@ -494,11 +499,11 @@
                 "> - 5 MINUTE READ</h4></span>
               <p>The Client - Since 2001, Glaven Valley has been a leading platform for the listing and booking of self-...</p>
             </div>
+            <button class="btn-news-purple">READ MORE</button>    
             <hr>            
             <div>
               <img src="img/nm-logo-dark-small.png" alt="Netmatters Logo">
               <P>Posted by Netmatters <br> 10th May 2023</P> 
-              <button class="btn-news-purple">READ MORE</button>           
             </div>
           </div>         
           
@@ -506,11 +511,14 @@
       </div>
 
 
-      <div class="flex-col">        
+      <div class="flex-col med-dis">        
         <div class="news-item">
-          <div class="top-right-purple">
-            <a href="#"><h5>NEWS </h5></a>
-          </div>          
+          <div class="top-right-outer">
+            <div class="top-right-purple">
+              <a href="#"><h5>NEWS </h5></a>
+            </div> 
+          </div>       
+
           <div class="news-img">
             <img src="img/news-3.png" alt="***DO LATER***">
           </div>          
@@ -530,14 +538,18 @@
           
         </div>
 
-        <div >
-          <a class="view-all" href="#">
-            <h2>View All</h2>
-            <i class="fa-solid fa-arrow-right fa-2xl" style="color:inherit;"></i>
-          </a>
-        </div>
+        
 
+      
       </div>
+
+      <div class="view-outer">
+        <a class="view-all" href="#">
+          <h2>View All</h2>
+          <i class="fa-solid fa-arrow-right fa-2xl" style="color:inherit;"></i>
+        </a>
+      </div>
+
     </div>
 
     </div>
@@ -551,7 +563,12 @@
       <div class="carousel-container">
       
         
-        <div class="carousel-greyscale  "><img src="../img/clients/girls_day_school_trust_logob.png" alt="customer logo">
+        <div class="img-container">
+          <div class="pop-up">
+            <p>Test Pop Up</p>
+          </div>
+          <img class="carousel-greyscale" src="../img/clients/girls_day_school_trust_logob.png" alt="customer logo"> 
+        </div>
         
         <div class="carousel-greyscale ashcroft"><img src="../img/clients/ashcroftlogo_landscape_goldblack_DP60P-small.png" alt="customer logo"></div>
       
@@ -569,14 +586,14 @@
   <!-- =========================================
   ====== Form (Newsletter sign up) ======== -->
 
-  <form action="#" method="get">
-		<div class="container-inner">
+  <form action="#" method="get" >
+		<div class="container-inner" id="form-lo">
 
 			<div>
 				<h2>E-MAIL NEWSLETTER SIGN-UP</h2>
 			</div>
 
-			<div>
+			<div class="input-boxes">
 			
 					<div class="data-input">
 						<label for="name">Your Name <span class="p-red">*</span></label>
