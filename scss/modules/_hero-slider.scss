@@ -1,3 +1,8 @@
+
+#hero-lo{
+    @extend %hero-lo;
+}
+
 .hero-container{
     height: 550px;
     background-image: url(../img/thumbnails/img1.png);

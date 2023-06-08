@@ -1,6 +1,12 @@
 
+#main-nav-lo{
+    @extend %main-nav-lo;
+}
+
+
 .main-nav{
     background-color:$black-light;
+    display: none;
 }
 
 nav ul{

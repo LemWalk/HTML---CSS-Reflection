@@ -116,7 +116,7 @@
 
 
 
-//============ Company Intro =================
+//============ Company Intro Layout =================
 
 %company-intro-lo{
     @include mq(medium) {
@@ -151,4 +151,64 @@
         }
     }
 
+}
+
+//========== Our Services Layout ==============
+
+%our-services-lo {
+    @include mq(medium){
+        .service-block-bot{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .service-block-bot>*{
+            flex: 1 1 50%;
+            margin-top: 10px;
+    }
+
+    @include mq(large){
+        .service-block-top{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .service-block-top>*{
+            flex: 1 1 33%;
+            margin-top: 10px;
+        }
+
+    }
+
+    @include mq(extra-large){
+        .service-block-bot{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .service-block-bot>*{
+            flex: 1 1 25%;
+            margin-top: 10px;
+            }
+        }
+    
+    }
+}
+
+
+//========== Hero slider layout ==================
+
+%hero-lo{
+    @include mq(large){
+        .hero-inner{
+            justify-content: left;
+        }
+    }
+}
+
+
+
+//============== Main Nav =======================
+
+%main-nav-lo{
+    @include mq(large) {
+        display: inline;
+    }
 }

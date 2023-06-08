@@ -1,4 +1,8 @@
 
+#our-services-lo{
+  @extend %our-services-lo;
+}
+
 .bes-soft{
   color: #000;
   background-color: #fff;
@@ -35,7 +39,7 @@
     color: $black;
     border: solid $grey-light 1px;
     box-shadow: 0px 0px 5px 0.5px rgba($color: $grey-light, $alpha: 3.0);
-    border-radius: 3px;
+    border-radius: 15px;
     transition: transform ease 300ms;
     text-align: center;
 
@@ -67,7 +71,7 @@
       color: $black;
       border: solid $grey-light 1px;
       box-shadow: 0px 0px 5px 0.5px rgba($color: $grey-light, $alpha: 3.0);
-      border-radius: 3px;
+      border-radius: 15px;
       transition: transform ease 300ms;
       text-align: center;
   
@@ -98,7 +102,7 @@
         color: $black;
         border: solid $grey-light 1px;
         box-shadow: 0px 0px 5px 0.5px rgba($color: $grey-light, $alpha: 3.0);
-        border-radius: 3px;
+        border-radius: 15px;
         transition: transform ease 300ms;
         text-align: center;
     
@@ -129,7 +133,7 @@
           color: $black;
           border: solid $grey-light 1px;
           box-shadow: 0px 0px 5px 0.5px rgba($color: $grey-light, $alpha: 3.0);
-          border-radius: 3px;
+          border-radius: 15px;
           transition: transform ease 300ms;
           text-align: center;
       
@@ -160,7 +164,7 @@
             color: $black;
             border: solid $grey-light 1px;
             box-shadow: 0px 0px 5px 0.5px rgba($color: $grey-light, $alpha: 3.0);
-            border-radius: 3px;
+            border-radius: 15px;
             transition: transform ease 300ms;
             text-align: center;
         
@@ -191,7 +195,7 @@
               color: $black;
               border: solid $grey-light 1px;
               box-shadow: 0px 0px 5px 0.5px rgba($color: $grey-light, $alpha: 3.0);
-              border-radius: 3px;
+              border-radius: 15px;
               transition: transform ease 300ms;
               text-align: center;
           
@@ -222,7 +226,7 @@
                 color: $black;
                 border: solid $grey-light 1px;
                 box-shadow: 0px 0px 5px 0.5px rgba($color: $grey-light, $alpha: 3.0);
-                border-radius: 3px;
+                border-radius: 15px;
                 transition: transform ease 300ms;
                 text-align: center;
             
