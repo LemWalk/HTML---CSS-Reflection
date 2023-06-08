@@ -359,6 +359,7 @@ a {
 }
 
 .font-lite {
+  line-height: 25px;
   font-weight: 300;
 }
 
@@ -458,7 +459,6 @@ a {
   }
   #news-lo .view-outer {
     position: relative;
-    right: 0px;
   }
 }
 @media (min-width: 1244px) {
@@ -472,6 +472,33 @@ a {
   #news-lo .news-col > * {
     flex: 1 1 33%;
     padding: 8px;
+  }
+}
+
+@media (min-width: 752px) {
+  #company-intro-lo .intro-btns {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media (min-width: 976px) {
+  #company-intro-lo .intro-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  #company-intro-lo .intro-container > * {
+    flex: 1 1 50%;
+  }
+  #company-intro-lo .intro-btns {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 1244px) {
+  #company-intro-lo .intro-btns {
+    display: flex;
+    flex-direction: row;
   }
 }
 
@@ -793,16 +820,29 @@ input[type=checkbox] {
   color: #fff;
 }
 
-.fa-star {
-  padding: 0px 2px 30px;
-}
-
 .intro-title {
   font-size: 30px;
 }
 
 .intro-title-container {
   padding: 20px 0px;
+}
+
+.review p {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600;
+}
+
+.fa-star {
+  transform: scale(1.5);
+  padding: 15px 10px;
+  margin-bottom: 10px;
+}
+
+.author-name p {
+  font-size: 18px;
+  line-height: 30px;
 }
 
 footer {
@@ -1024,6 +1064,8 @@ footer h4 {
 
 .news-title {
   margin-top: 50px;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .text-blue {

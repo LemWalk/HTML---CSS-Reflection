@@ -94,11 +94,9 @@
         }
         .view-outer{
             position: relative;
-            right: 0px;
-            
         }
+    }
         
-    }   
 
     
     @include mq(extra-large) {
@@ -114,4 +112,43 @@
             padding: 8px;            
         }
     }
+}
+
+
+
+//============ Company Intro =================
+
+%company-intro-lo{
+    @include mq(medium) {
+        .intro-btns{
+            display: flex;
+            flex-direction: row;
+        }
+        
+}
+
+    @include mq(large) {
+        .intro-container{
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            
+        }
+        .intro-container>*{
+            flex: 1 1 50%;
+        }
+
+        .intro-btns{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    @include mq(extra-large) {
+        .intro-btns{
+            display: flex;
+            flex-direction: row;
+        }
+    }
+
 }

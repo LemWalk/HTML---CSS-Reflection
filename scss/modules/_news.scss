@@ -8,6 +8,7 @@
 
 .news-title{
 margin-top: 50px;
+width: fit-content;
 }
 
 .text-blue{
@@ -106,7 +107,7 @@ hr{
 
 
 
-.view-all{
+.view-all {
     display: flex;
     flex: row;
     align-items: baseline;

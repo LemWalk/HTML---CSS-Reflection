@@ -1,12 +1,15 @@
 
+#company-intro-lo{
+    @extend %company-intro-lo;
+}
+
+
 .company-intro{
     background-color: $black-light;
     color: #fff;
 }
 
-.fa-star{
-    padding: 0px 2px 30px;
-}
+
 
 .intro-title{
     font-size: 30px;
@@ -14,4 +17,21 @@
 
 .intro-title-container{
 padding: 20px 0px;
+}
+
+.review p{
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+}
+
+.fa-star{
+    transform: scale(1.5);
+    padding: 15px 10px;
+    margin-bottom: 10px;
+}
+
+.author-name p{
+    font-size: 18px;
+    line-height: 30px;
 }
