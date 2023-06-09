@@ -205,11 +205,11 @@
 
 
 
-//============== Main Nav =======================
+//============== Nav-Bar =======================
 
 %main-nav-lo{
     @include mq(large) {
-        display: inline;
+        display: block;
     }
 }
 
@@ -226,7 +226,22 @@
             display: flex;
         }
         .icn-black-light{
-            display: hidden;
+            display: none;
         }
+    }
+    @include mq(large){
+        .nav-hidden{
+            display: flex;
+        }
+        .search-input-hidden{
+            display: none;
+        }
+    }
+
+    @include mq(extra-large){
+        .search-input-hidden{
+            display: flex;
+        }
+
     }
 }

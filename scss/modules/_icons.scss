@@ -9,8 +9,23 @@ margin: 0;
 border: 0;
 }
 
+.icn-grey{
+    color: #fff;
+background-color: #999;
+height: auto;
+padding: 25px;
+margin: 0;
+border: 0;
+align-items: center;
+&:hover{
+    background-color: #84858f ;
+}
+}
+
 .icn-black-light{
+    display: flex;
     color: $black-light;
+    padding: 15px;
     margin: 10px;
 }
 //========Nav Icons ======================
