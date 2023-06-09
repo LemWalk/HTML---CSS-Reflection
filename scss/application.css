@@ -545,6 +545,18 @@ a {
   }
 }
 
+@media (min-width: 752px) {
+  #nav-lo .search-bar {
+    display: none;
+  }
+  #nav-lo .search-bar-hidden {
+    display: flex;
+  }
+  #nav-lo .icn-black-light {
+    display: hidden;
+  }
+}
+
 .news-img img {
   width: 100%;
 }
@@ -1408,6 +1420,16 @@ nav ul li:hover ul.dd-orange {
 .search-bar input[type=text] {
   background-color: inherit;
   width: 90%;
+}
+
+.search-bar-hidden {
+  display: none;
+  background-color: #ddd;
+  border: solid #999 2px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 10px 0.5px #dddddd;
+  margin: 15px 0px;
+  justify-content: right;
 }
 
 .icn-grey-light {

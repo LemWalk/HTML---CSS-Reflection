@@ -212,3 +212,21 @@
         display: inline;
     }
 }
+
+
+
+//========= Nav =============================
+
+%nav-lo{
+    @include mq(medium) {
+        .search-bar{
+            display: none;
+        }
+        .search-bar-hidden{
+            display: flex;
+        }
+        .icn-black-light{
+            display: hidden;
+        }
+    }
+}
