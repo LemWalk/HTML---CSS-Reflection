@@ -458,7 +458,10 @@ a {
     display: none;
   }
   #news-lo .view-outer {
-    position: relative;
+    display: none;
+  }
+  #news-lo .view-outer-hidden {
+    display: flex;
   }
 }
 @media (min-width: 1244px) {
@@ -511,8 +514,14 @@ a {
     flex: 1 1 50%;
     margin-top: 10px;
   }
+  #our-services-lo .view-outer-hidden {
+    display: flex;
+  }
+  #our-services-lo .view-outer {
+    display: none;
+  }
 }
-@media (min-width: 752px) and (min-width: 976px) {
+@media (min-width: 976px) {
   #our-services-lo .service-block-top {
     display: flex;
     flex-wrap: wrap;
@@ -522,7 +531,7 @@ a {
     margin-top: 10px;
   }
 }
-@media (min-width: 752px) and (min-width: 1244px) {
+@media (min-width: 1244px) {
   #our-services-lo .service-block-bot {
     display: flex;
     flex-wrap: wrap;
@@ -534,8 +543,11 @@ a {
 }
 
 @media (min-width: 976px) {
-  #hero-lo .hero-inner {
-    justify-content: left;
+  #hero-lo .hero-title {
+    font-size: 64px;
+  }
+  #hero-lo .hero-text {
+    font-size: 30px;
   }
 }
 
@@ -595,14 +607,18 @@ a {
   align-items: center;
   padding: 0px 15px;
   text-align: center;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .hero-title {
+  display: flex;
   font-size: 40px;
 }
 
 .hero-text {
-  font-size: 30px;
+  display: flex;
+  font-size: 22px;
 }
 
 .bes-soft {
@@ -611,6 +627,10 @@ a {
 }
 
 .service-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
   font-size: 20px;
   text-align: center;
   color: #212330;
@@ -625,7 +645,7 @@ a {
   padding-right: 10px;
 }
 .view-link p {
-  font-size: 24px;
+  font-size: 30px;
 }
 .view-link:hover {
   text-decoration: underline;
@@ -820,6 +840,7 @@ a {
   justify-content: space-evenly;
   align-items: center;
   padding: 30px;
+  height: 100px;
 }
 
 .carousel-greyscale {
@@ -829,6 +850,63 @@ a {
 }
 .carousel-greyscale:hover {
   filter: grayscale(0%);
+}
+
+.img-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+}
+.img-container p {
+  font-size: 18px;
+}
+.img-container:hover .pop-con {
+  display: flex;
+  flex-direction: column;
+}
+.img-container:hover .pop-up {
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: -120px;
+  z-index: 5;
+  justify-content: center;
+}
+.img-container:hover .box-arrow {
+  display: block;
+  position: absolute;
+  top: -45px;
+  z-index: 5;
+}
+
+.pop-up {
+  display: flex;
+  flex-direction: column;
+  background-color: #323544;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  display: none;
+  border-radius: 1px;
+}
+
+.box-arrow {
+  width: 30px;
+  justify-content: center;
+  display: none;
+  border: solid transparent 0px;
+  border-color: transparent;
+  border-top-color: #323544;
+  border-width: 30px 30px;
+  z-index: 2;
+  margin-left: 70px;
+}
+.box-arrow::after {
+  content: "";
+  display: block;
+  position: relative;
 }
 
 form {
@@ -1168,9 +1246,9 @@ footer h4 {
 }
 
 .news-title {
-  margin-top: 50px;
   width: -moz-fit-content;
   width: fit-content;
+  align-items: center;
 }
 
 .text-blue {
@@ -1185,6 +1263,14 @@ footer h4 {
   color: #888;
   font-size: 14px;
   font-weight: 300;
+}
+
+.news-top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
 }
 
 .news-item {
@@ -1263,16 +1349,23 @@ hr {
   color: #fff;
 }
 
+.view-outer-hidden {
+  display: none;
+}
+
+.view-outer {
+  align-items: baseline;
+}
+
 .view-all {
   display: flex;
   flex: row;
-  align-items: baseline;
+  align-items: center;
   color: #212330;
   justify-content: center;
 }
-.view-all h2 {
+.view-all p {
   font-size: 30px;
-  padding-right: 10px;
 }
 .view-all:hover {
   text-decoration: underline;
@@ -1418,29 +1511,78 @@ nav ul li:hover ul.dropdown > * :first-child {
 nav ul li:hover ul.dd-blue-pale {
   background-color: #526781;
 }
+nav ul li:hover ul.dd-blue-pale::before {
+  content: "Our Bespoke Software Services";
+  width: 95%;
+  margin: 20px 15px;
+  font-size: 36px;
+  color: #fff;
+}
 
 nav ul li:hover ul.dd-blue {
   background-color: #286abd;
+}
+nav ul li:hover ul.dd-blue::before {
+  content: "Our IT Support Services";
+  width: 95%;
+  margin: 20px 15px;
+  font-size: 36px;
+  color: #fff;
 }
 
 nav ul li:hover ul.dd-green {
   background-color: #25a25a;
 }
+nav ul li:hover ul.dd-green::before {
+  content: "Our Digital Marketing Services";
+  width: 95%;
+  margin: 20px 15px;
+  font-size: 36px;
+  color: #fff;
+}
 
 nav ul li:hover ul.dd-red {
   background-color: #bc2c28;
+}
+nav ul li:hover ul.dd-red::before {
+  content: "Our Telecoms Services";
+  width: 95%;
+  margin: 20px 15px;
+  font-size: 36px;
+  color: #fff;
 }
 
 nav ul li:hover ul.dd-purple {
   background-color: #79539a;
 }
+nav ul li:hover ul.dd-purple::before {
+  content: "Our Web Design Services";
+  width: 95%;
+  margin: 20px 15px;
+  font-size: 36px;
+  color: #fff;
+}
 
 nav ul li:hover ul.dd-red-pink {
   background-color: #de093f;
 }
+nav ul li:hover ul.dd-red-pink::before {
+  content: "Our Cyber Security Services";
+  width: 95%;
+  margin: 20px 15px;
+  font-size: 36px;
+  color: #fff;
+}
 
 nav ul li:hover ul.dd-orange {
   background-color: #a3331d;
+}
+nav ul li:hover ul.dd-orange::before {
+  content: "Our Developer Course Services";
+  width: 95%;
+  margin: 20px 15px;
+  font-size: 36px;
+  color: #fff;
 }
 
 #dd-title {

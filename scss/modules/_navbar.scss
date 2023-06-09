@@ -134,6 +134,7 @@ nav ul li:hover ul.dropdown {
     display:flex;
     flex-wrap: wrap;
     height:auto ;
+
     }
 
 
@@ -148,7 +149,7 @@ nav ul li:hover ul.dropdown {
         :first-child{
             display: flex;
             flex-direction: row;
-            padding-right: 15px;
+            padding-right: 15px;                
         }
         
     }
@@ -157,30 +158,79 @@ nav ul li:hover ul.dropdown {
 
 nav ul li:hover ul.dd-blue-pale{
     background-color: $blue-pale-secondary;
+    &::before{
+        content:"Our Bespoke Software Services";
+        width: 95%;
+        margin: 20px 15px;
+        font-size: 36px;
+        color: #fff;
+    }
     }
 
 nav ul li:hover ul.dd-blue{
     background-color: $blue-secondary;
+    &::before{
+        content:"Our IT Support Services";
+        width: 95%;
+        margin: 20px 15px;
+        font-size: 36px;
+        color: #fff;
+    }
         }
 
 nav ul li:hover ul.dd-green{
     background-color: $green-secondary;
+    &::before{
+        content:"Our Digital Marketing Services";
+        width: 95%;
+        margin: 20px 15px;
+        font-size: 36px;
+        color: #fff;
+    }
     }    
 
     nav ul li:hover ul.dd-red{
     background-color: $red-secondary;
+    &::before{
+        content:"Our Telecoms Services";
+        width: 95%;
+        margin: 20px 15px;
+        font-size: 36px;
+        color: #fff;
+    }
     } 
 
 nav ul li:hover ul.dd-purple{
     background-color: $purple-secondary;
+    &::before{
+        content:"Our Web Design Services";
+        width: 95%;
+        margin: 20px 15px;
+        font-size: 36px;
+        color: #fff;
+    }
     } 
 
 nav ul li:hover ul.dd-red-pink{
     background-color: $red-pink-secondary;
+    &::before{
+        content:"Our Cyber Security Services";
+        width: 95%;
+        margin: 20px 15px;
+        font-size: 36px;
+        color: #fff;
+    }
     } 
 
 nav ul li:hover ul.dd-orange{
     background-color: $orange-secondary;
+    &::before{       
+        content:"Our Developer Course Services";
+        width: 95%;
+        margin: 20px 15px;
+        font-size: 36px;
+        color: #fff;
+    }
     } 
     
 

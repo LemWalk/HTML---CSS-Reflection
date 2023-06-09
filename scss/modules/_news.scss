@@ -7,8 +7,8 @@
 //========= styles ================
 
 .news-title{
-margin-top: 50px;
 width: fit-content;
+align-items: center;
 }
 
 .text-blue{
@@ -23,6 +23,14 @@ width: fit-content;
     color: #888;
     font-size: 14px;
     font-weight: 300;
+}
+
+.news-top{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
 }
 
 .news-item{
@@ -105,17 +113,22 @@ hr{
     }
 }
 
+.view-outer-hidden{
+    display: none;
+}
 
+.view-outer{
+    align-items: baseline;
+}
 
 .view-all {
     display: flex;
     flex: row;
-    align-items: baseline;
+    align-items: center;
     color: $black;  
     justify-content: center;
-    h2{
+    p{
         font-size: 30px;
-        padding-right: 10px;
     }
     &:hover{
         text-decoration: underline;

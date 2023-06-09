@@ -93,9 +93,13 @@
             display: none;
         }
         .view-outer{
-            position: relative;
+            display: none;
+        }
+        .view-outer-hidden{
+            display: flex;
         }
     }
+
         
 
     
@@ -165,6 +169,14 @@
             flex: 1 1 50%;
             margin-top: 10px;
     }
+    .view-outer-hidden{
+        display: flex;
+    }
+
+        .view-outer{
+            display: none;
+    }
+}
 
     @include mq(large){
         .service-block-top{
@@ -190,15 +202,19 @@
         }
     
     }
-}
+
 
 
 //========== Hero slider layout ==================
 
 %hero-lo{
     @include mq(large){
-        .hero-inner{
-            justify-content: left;
+        
+        .hero-title{
+        font-size: 64px; 
+        }
+        .hero-text{
+        font-size: 30px;    
         }
     }
 }

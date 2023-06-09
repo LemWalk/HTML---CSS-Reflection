@@ -15,12 +15,15 @@
     align-items: center;
     padding: 0px 15px;
     text-align: center;
+    width: fit-content;
 }
 
 .hero-title{
+    display: flex;
 font-size: 40px;
 }
 
 .hero-text{
-    font-size: 30px;
+    display: flex;
+    font-size: 22px;
 }
