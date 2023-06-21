@@ -34,7 +34,6 @@ h4{
 .footer__list{
 	display: flex;
 	flex-direction: column;
-	align-items: left;
 	text-align: left;
 	ul, li, a{
 		color: $white;
@@ -51,7 +50,6 @@ h4{
 	flex-direction: column;
 	width: fit-content;
 	justify-content: left;
-	align-items: left;
 	padding-bottom: 15px;
 
 }

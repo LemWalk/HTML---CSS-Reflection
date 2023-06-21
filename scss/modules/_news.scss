@@ -123,7 +123,7 @@ hr{
 
 .view-all {
     display: flex;
-    flex: row;
+    flex-direction: row;
     align-items: center;
     color: $black;  
     justify-content: center;

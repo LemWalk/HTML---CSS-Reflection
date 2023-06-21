@@ -21,7 +21,7 @@
 
 .view-link{
   display: flex;
-  flex: row;
+  flex-direction: row;
   justify-content: center;
   align-items: baseline;
   color: $black;
