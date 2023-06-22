@@ -20,15 +20,15 @@ nav ul{
 
 nav ul li{
 list-style: none;
-padding: 0px 15px;
+padding: 0px;
+margin: 0;
 }
 
 .nav-item{
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-grow: 1;
-    flex-shrink: 1;
+    
 }
 
 
@@ -83,12 +83,36 @@ nav ul li a{
     .nav-icon-blue-pale{
         color: #fff;
     }
+    &::after{
+        position: relative;
+        content: "";
+        width: 0;
+        height: 0;
+        margin: 0;
+        padding: 0;
+        top: 72px;
+        border: solid 70px transparent;
+        border-top-color:$blue-pale-primary;
+        z-index: 700;
+    }
 }
 
 .nav-bar-item-blue:hover{
     background-color: $blue-primary;
     .nav-icon-blue {
         color: #fff;
+    }
+    &::after{
+        position: relative;
+        content: "";
+        width: 0;
+        height: 0;
+        margin: 0;
+        padding: 0;
+        top: 72px;
+        border: solid 70px transparent;
+        border-top-color:$blue-primary;
+        z-index: 700;
     }
 }
 
@@ -97,6 +121,18 @@ nav ul li a{
     .nav-icon-green {
         color: #fff;
     }
+    &::after{
+        position: relative;
+        content: "";
+        width: 0;
+        height: 0;
+        margin: 0;
+        padding: 0;
+        top: 72px;
+        border: solid 76px transparent;
+        border-top-color:$green-primary ;
+        z-index: 700;
+    }
 }
 
 .nav-bar-item-red:hover{
@@ -104,12 +140,36 @@ nav ul li a{
     .nav-icon-red {
         color: #fff;
     }
+    &::after{
+        position: relative;
+        content: "";
+        width: 0;
+        height: 0;
+        margin: 0;
+        padding: 0;
+        top: 72px;
+        border: solid 70px transparent;
+        border-top-color:$red-primary ;
+        z-index: 700;
+    }
 }
 
 .nav-bar-item-purple:hover{
     background-color: $purple-primary;
     .nav-icon-purple{
         color: #fff;
+        }
+        &::after{
+            position: relative;
+            content: "";
+            width: 0;
+            height: 0;
+            margin: 0;
+            padding: 0;
+            top: 72px;
+            border: solid 70px transparent;
+            border-top-color:$purple-primary;
+            z-index: 700;
         }
     }
 
@@ -119,12 +179,36 @@ nav ul li a{
     .nav-icon-red-pink {
         color: #fff;
     }
+    &::after{
+        position: relative;
+        content: "";
+        width: 0;
+        height: 0;
+        margin: 0;
+        padding: 0;
+        top: 72px;
+        border: solid 70px transparent;
+        border-top-color:$red-pink-primary ;
+        z-index: 700;
+    }
 }
 
 .nav-bar-item-orange:hover{
     background-color: $orange-primary;
     .nav-icon-orange {
         color: #fff;
+    }
+    &::after{
+        position: relative;
+        content: "";
+        width: 0;
+        height: 0;
+        margin: 0;
+        padding: 0;
+        top: 72px;
+        border: solid 70px transparent;
+        border-top-color:$orange-primary ;
+        z-index: 700;
     }
 }
 
@@ -145,13 +229,7 @@ nav ul li:hover ul.dropdown {
         padding: 20px 30px;
         justify-content: left;
         align-items: baseline;
-        text-align: left;
-        :first-child{
-            display: flex;
-            flex-direction: row;
-            padding-right: 15px;                
-        }
-        
+        text-align: left;        
     }
 
 
@@ -164,6 +242,7 @@ nav ul li:hover ul.dd-blue-pale{
         margin: 20px 15px;
         font-size: 36px;
         color: #fff;
+        padding-top: 70px;
     }
     }
 
@@ -175,6 +254,7 @@ nav ul li:hover ul.dd-blue{
         margin: 20px 15px;
         font-size: 36px;
         color: #fff;
+        padding-top: 70px;
     }
         }
 
@@ -186,6 +266,7 @@ nav ul li:hover ul.dd-green{
         margin: 20px 15px;
         font-size: 36px;
         color: #fff;
+        padding-top: 70px;
     }
     }    
 
@@ -197,6 +278,7 @@ nav ul li:hover ul.dd-green{
         margin: 20px 15px;
         font-size: 36px;
         color: #fff;
+        padding-top: 70px;
     }
     } 
 
@@ -208,6 +290,7 @@ nav ul li:hover ul.dd-purple{
         margin: 20px 15px;
         font-size: 36px;
         color: #fff;
+        padding-top: 70px;
     }
     } 
 
@@ -219,6 +302,7 @@ nav ul li:hover ul.dd-red-pink{
         margin: 20px 15px;
         font-size: 36px;
         color: #fff;
+        padding-top: 70px;
     }
     } 
 
@@ -230,6 +314,7 @@ nav ul li:hover ul.dd-orange{
         margin: 20px 15px;
         font-size: 36px;
         color: #fff;
+        padding-top: 70px;
     }
     } 
     
@@ -239,6 +324,5 @@ nav ul li:hover ul.dd-orange{
         display: block;
         position: relative;
         float: left;
-        font-size: 40px;
-        
+        font-size: 40px;        
     }
