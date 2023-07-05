@@ -35,7 +35,9 @@
   }
 }
 
+
 .service-block-top, .service-block-bot{
+
 
   h2{
     font-size: 22px;
@@ -49,10 +51,13 @@
     line-height: 22px;
   }
 
-  // a{
-  //   padding: 0px 0px 15px 0px;
-    
-  // }
+  a{
+    padding: 0px;
+  }
+}
+
+.service-block-top>*{
+  margin-top: 15px;
 }
 
 
@@ -68,6 +73,7 @@
     transition: transform ease 300ms;
     text-align: center;
     height: 300px;
+    margin-bottom: 15px;
 
     &:hover{
       transform: translate(0px, -10px);
@@ -101,6 +107,7 @@
       transition: transform ease 300ms;
       text-align: center;
       height: 300px;
+      margin-bottom: 15px;
   
       &:hover{
         transform: translate(0px, -10px);
@@ -133,6 +140,7 @@
         transition: transform ease 300ms;
         text-align: center;
         height: 300px;
+        margin-bottom: 15px;
     
         &:hover{
           transform: translate(0px, -10px);
@@ -165,7 +173,8 @@
           transition: transform ease 300ms;
           text-align: center;
           height: 300px;
-      
+          margin-bottom: 15px;
+          
           &:hover{
             transform: translate(0px, -10px);
             color: #fff;
@@ -197,6 +206,7 @@
             transition: transform ease 300ms;
             text-align: center;
             height: 300px;
+            margin-bottom: 15px;
         
             &:hover{
               transform: translate(0px, -10px);
@@ -229,6 +239,7 @@
               transition: transform ease 300ms;
               text-align: center;
               height: 300px;
+              margin-bottom: 15px;
           
               &:hover{
                 transform: translate(0px, -10px);
@@ -261,6 +272,7 @@
                 transition: transform ease 300ms;
                 text-align: center;
                 height: 300px;
+                margin-bottom: 15px;
             
                 &:hover{
                   transform: translate(0px, -10px);

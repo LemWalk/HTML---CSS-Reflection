@@ -164,10 +164,11 @@
         .service-block-bot{
             display: flex;
             flex-wrap: wrap;
+            gap: 20px;
         }
         .service-block-bot>*{
-            flex: 1 1 50%;
-            margin-top: 10px;
+            flex: 1 1 calc(50% - 40px);
+            
     }
     .view-outer-hidden{
         display: flex;
@@ -182,10 +183,10 @@
         .service-block-top{
             display: flex;
             flex-wrap: wrap;
+            gap: 20px;
         }
         .service-block-top>*{
-            flex: 1 1 33%;
-            margin-top: 10px;
+            flex: 1 1 calc(33% - 40px);
         }
 
     }
@@ -194,10 +195,10 @@
         .service-block-bot{
             display: flex;
             flex-wrap: wrap;
+            gap: 20px;
         }
         .service-block-bot>*{
-            flex: 1 1 25%;
-            margin-top: 10px;
+            flex: 1 1 calc(25% - 40px);
             }
         }
     
@@ -214,8 +215,9 @@
         font-size: 64px; 
         }
         .hero-text{
-        font-size: 30px;    
+        font-size: 30px;
         }
+
     }
 }
 

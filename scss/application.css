@@ -516,10 +516,10 @@ a {
   #our-services-lo .service-block-bot {
     display: flex;
     flex-wrap: wrap;
+    gap: 20px;
   }
   #our-services-lo .service-block-bot > * {
-    flex: 1 1 50%;
-    margin-top: 10px;
+    flex: 1 1 calc(50% - 40px);
   }
   #our-services-lo .view-outer-hidden {
     display: flex;
@@ -532,20 +532,20 @@ a {
   #our-services-lo .service-block-top {
     display: flex;
     flex-wrap: wrap;
+    gap: 20px;
   }
   #our-services-lo .service-block-top > * {
-    flex: 1 1 33%;
-    margin-top: 10px;
+    flex: 1 1 calc(33% - 40px);
   }
 }
 @media (min-width: 1244px) {
   #our-services-lo .service-block-bot {
     display: flex;
     flex-wrap: wrap;
+    gap: 20px;
   }
   #our-services-lo .service-block-bot > * {
-    flex: 1 1 25%;
-    margin-top: 10px;
+    flex: 1 1 calc(25% - 40px);
   }
 }
 
@@ -607,6 +607,8 @@ a {
 .hero-container {
   height: 550px;
   background-image: url(../img/thumbnails/img1.png);
+  background-blend-mode: darken;
+  background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
@@ -670,6 +672,13 @@ a {
   font-size: 13px;
   line-height: 22px;
 }
+.service-block-top a, .service-block-bot a {
+  padding: 0px;
+}
+
+.service-block-top > * {
+  margin-top: 15px;
+}
 
 .container-service-blue-pale {
   display: flex;
@@ -683,6 +692,7 @@ a {
   transition: transform ease 300ms;
   text-align: center;
   height: 300px;
+  margin-bottom: 15px;
 }
 .container-service-blue-pale:hover {
   transform: translate(0px, -10px);
@@ -710,6 +720,7 @@ a {
   transition: transform ease 300ms;
   text-align: center;
   height: 300px;
+  margin-bottom: 15px;
 }
 .container-service-blue:hover {
   transform: translate(0px, -10px);
@@ -737,6 +748,7 @@ a {
   transition: transform ease 300ms;
   text-align: center;
   height: 300px;
+  margin-bottom: 15px;
 }
 .container-service-green:hover {
   transform: translate(0px, -10px);
@@ -764,6 +776,7 @@ a {
   transition: transform ease 300ms;
   text-align: center;
   height: 300px;
+  margin-bottom: 15px;
 }
 .container-service-red:hover {
   transform: translate(0px, -10px);
@@ -791,6 +804,7 @@ a {
   transition: transform ease 300ms;
   text-align: center;
   height: 300px;
+  margin-bottom: 15px;
 }
 .container-service-purple:hover {
   transform: translate(0px, -10px);
@@ -818,6 +832,7 @@ a {
   transition: transform ease 300ms;
   text-align: center;
   height: 300px;
+  margin-bottom: 15px;
 }
 .container-service-red-pink:hover {
   transform: translate(0px, -10px);
@@ -845,6 +860,7 @@ a {
   transition: transform ease 300ms;
   text-align: center;
   height: 300px;
+  margin-bottom: 15px;
 }
 .container-service-orange:hover {
   transform: translate(0px, -10px);
@@ -1064,13 +1080,13 @@ footer img {
   flex-direction: column;
   text-align: left;
 }
-.footer__list ul, .footer__list li, .footer__list a {
+.footer__list ul, .footer__list li a {
   color: #fff;
   list-style-type: none;
   padding: 3px 0px;
   font-size: 14px;
 }
-.footer__list ul :hover, .footer__list li :hover, .footer__list a :hover {
+.footer__list ul :hover, .footer__list li a :hover {
   text-decoration: underline;
 }
 
