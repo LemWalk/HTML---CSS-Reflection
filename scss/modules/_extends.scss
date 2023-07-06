@@ -210,13 +210,15 @@
 
 %hero-lo{
     @include mq(large){
+
         
         .hero-title{
         font-size: 64px; 
         }
         .hero-text{
-        font-size: 30px;
+        font-size: 26px;
         }
+
 
     }
 }

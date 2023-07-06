@@ -9,14 +9,12 @@
     color: #fff;
 }
 
-
-
 .intro-title{
     font-size: 30px;
 }
 
 .intro-title-container{
-padding: 20px 0px;
+padding: 15px;
 }
 
 .review p{
@@ -34,4 +32,10 @@ padding: 20px 0px;
 .author-name p{
     font-size: 18px;
     line-height: 30px;
+}
+
+.intro-btns{
+    a{
+        padding: 0px 15px 0px 0px;
+    }
 }
