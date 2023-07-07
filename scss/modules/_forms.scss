@@ -8,7 +8,7 @@ form{
 
 form h2 {
   color: $black-light;
-    padding: 50px 0px 10px;
+    padding: 50px 0px 15px;
     font-size: 28px;
     margin: 0;
     font-weight: 500;
@@ -25,18 +25,19 @@ form h2 {
     flex-direction: column;
     padding-bottom: 20px;
     row-gap: 10px;
+    font-weight: bold;
+    color:$black-light;
 }
 
 .checkbox{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    color:$black;
+    color:$black-light;
     font-weight: 300;
     padding: 15px 0px;
     gap: 15px;
     line-height: 30px;
-    
 }
 
 input[type=text] {
@@ -44,6 +45,12 @@ input[type=text] {
   height: 50px;
   width: auto;
 }
+
+#form-input {
+border: solid rgba($color: #999, $alpha: 0.4) 1px;
+border-radius: 2px;
+}
+
 
 input[type=checkbox] {
   transform: scale(3);
@@ -59,6 +66,12 @@ input[type=checkbox] {
     
 }
 
+.form-text{
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 32px;
+  letter-spacing: 1px;
+}
 
 .p-red{
 color: red;

@@ -74,6 +74,12 @@ nav ul li a{
     padding: 0;
 }
 
+.dropdown li a{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
 
 
 //========== navbar item hovers============
@@ -90,8 +96,9 @@ nav ul li a{
         height: 0;
         margin: 0;
         padding: 0;
-        top: 72px;
-        border: solid 70px transparent;
+        top: 47px;
+        border: solid transparent;
+        border-width: 45px 65px 0 74px;
         border-top-color:$blue-pale-primary;
         z-index: 700;
     }
@@ -109,8 +116,9 @@ nav ul li a{
         height: 0;
         margin: 0;
         padding: 0;
-        top: 72px;
-        border: solid 70px transparent;
+        top: 47px;
+        border: solid transparent;
+        border-width: 45px 65px 0 65px;
         border-top-color:$blue-primary;
         z-index: 700;
     }
@@ -128,9 +136,10 @@ nav ul li a{
         height: 0;
         margin: 0;
         padding: 0;
-        top: 72px;
-        border: solid 76px transparent;
-        border-top-color:$green-primary ;
+        top: 47px;
+        border: solid transparent;
+        border-width: 45px 75px 0 75px;
+        border-top-color:$green-primary;
         z-index: 700;
     }
 }
@@ -147,8 +156,9 @@ nav ul li a{
         height: 0;
         margin: 0;
         padding: 0;
-        top: 72px;
-        border: solid 70px transparent;
+        top: 47px;
+        border: solid transparent;
+        border-width: 45px 65px 0 69px;
         border-top-color:$red-primary ;
         z-index: 700;
     }
@@ -166,8 +176,9 @@ nav ul li a{
             height: 0;
             margin: 0;
             padding: 0;
-            top: 72px;
-            border: solid 70px transparent;
+            top: 47px;
+        border: solid transparent;
+        border-width: 45px 60px 0 60px;
             border-top-color:$purple-primary;
             z-index: 700;
         }
@@ -186,8 +197,9 @@ nav ul li a{
         height: 0;
         margin: 0;
         padding: 0;
-        top: 72px;
-        border: solid 70px transparent;
+        top: 47px;
+        border: solid transparent;
+        border-width: 45px 65px 0 65px;
         border-top-color:$red-pink-primary ;
         z-index: 700;
     }
@@ -205,8 +217,9 @@ nav ul li a{
         height: 0;
         margin: 0;
         padding: 0;
-        top: 72px;
-        border: solid 70px transparent;
+        top: 47px;
+        border: solid transparent;
+        border-width: 45px 65px 0 68px;
         border-top-color:$orange-primary ;
         z-index: 700;
     }
@@ -240,9 +253,9 @@ nav ul li:hover ul.dd-blue-pale{
         content:"Our Bespoke Software Services";
         width: 95%;
         margin: 20px 15px;
-        font-size: 36px;
+        font-size: 32px;
         color: #fff;
-        padding-top: 70px;
+        padding-top: 40px;
     }
     }
 
@@ -252,9 +265,9 @@ nav ul li:hover ul.dd-blue{
         content:"Our IT Support Services";
         width: 95%;
         margin: 20px 15px;
-        font-size: 36px;
+        font-size: 32px;
         color: #fff;
-        padding-top: 70px;
+        padding-top: 40px;
     }
         }
 
@@ -264,9 +277,9 @@ nav ul li:hover ul.dd-green{
         content:"Our Digital Marketing Services";
         width: 95%;
         margin: 20px 15px;
-        font-size: 36px;
+        font-size: 32px;
         color: #fff;
-        padding-top: 70px;
+        padding-top: 40px;
     }
     }    
 
@@ -276,9 +289,9 @@ nav ul li:hover ul.dd-green{
         content:"Our Telecoms Services";
         width: 95%;
         margin: 20px 15px;
-        font-size: 36px;
+        font-size: 32px;
         color: #fff;
-        padding-top: 70px;
+        padding-top: 40px;
     }
     } 
 
@@ -288,9 +301,9 @@ nav ul li:hover ul.dd-purple{
         content:"Our Web Design Services";
         width: 95%;
         margin: 20px 15px;
-        font-size: 36px;
+        font-size: 32px;
         color: #fff;
-        padding-top: 70px;
+        padding-top: 40px;
     }
     } 
 
@@ -300,9 +313,9 @@ nav ul li:hover ul.dd-red-pink{
         content:"Our Cyber Security Services";
         width: 95%;
         margin: 20px 15px;
-        font-size: 36px;
+        font-size: 32px;
         color: #fff;
-        padding-top: 70px;
+        padding-top: 40px;
     }
     } 
 
@@ -312,9 +325,9 @@ nav ul li:hover ul.dd-orange{
         content:"Our Developer Course Services";
         width: 95%;
         margin: 20px 15px;
-        font-size: 36px;
+        font-size: 32px;
         color: #fff;
-        padding-top: 70px;
+        padding-top: 40px;
     }
     } 
     

@@ -2,7 +2,7 @@
 
 @include mq(large) {
     .container-inner{
-        margin: 0 5%;
+        margin: 0 7%;
     }
 }
 
@@ -29,6 +29,12 @@
 //==========Footer Layout =================
 
 %footer-lo{
+    @include mq(small) {
+        .socials{
+            display: flex;
+            flex-direction: row;
+        }
+    }
 
     @include mq(medium) {
         .footer-col{
@@ -211,15 +217,32 @@
 %hero-lo{
     @include mq(large){
 
-        
+        .hero-container{
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .hero-item{
+            display: flex;
+            position: relative;
+            left: 0;
+            width: 100%;
+            align-items: center;
+        }
+
         .hero-title{
         font-size: 64px; 
+        text-align: left;
+        align-items: flex-end;
+        margin: 100px 0px 20px 0px;
         }
         .hero-text{
         font-size: 26px;
+        text-align: left;
+        margin: 10px 0px;
         }
 
-
+        
     }
 }
 

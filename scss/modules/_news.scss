@@ -9,6 +9,7 @@
 .news-title{
 width: fit-content;
 align-items: center;
+color: $black-light;
 }
 
 .text-blue{
@@ -49,14 +50,17 @@ align-items: center;
 
 hr{
     opacity: 60%;
+    margin: 20px 0px;
+
 }
 
 .news-text{
-    margin: 0% 5%;
+    margin: 0% 8%;
     p{
         color: $grey;
-        font-size: 14px;
+        font-size: 13px;
         font-weight: 300;
+        line-height: 20px;
     }
 }
 
@@ -74,6 +78,7 @@ hr{
     right: 0px;
     margin: 0;
     padding: 0;
+    line-height: 14px;
     
     h5{
     color: #fff;
@@ -98,12 +103,13 @@ hr{
     right: 0px;
     margin: 0;
     padding: 0;
+    line-height: 14px;
+    
     
     h5{
     color: #fff;
     font-size: 12px;
     font-weight: 300;
-    padding: 0;
     margin: -10px 10px;
     }
 
@@ -118,23 +124,26 @@ hr{
 }
 
 .view-outer{
-    align-items: baseline;
+    align-items: baseline;  
+    
 }
 
 .view-all {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    color: $black;  
-    justify-content: center;
     align-items: baseline;
+    color: $black-light;  
+    justify-content: center;
     p{
-        font-size: 30px;
+        font-size: 26px;
+        font-weight: bold;          
     }
     &:hover{
         text-decoration: underline;
     }
 }
+
+
 
 .news-bot{
     display: flex;
