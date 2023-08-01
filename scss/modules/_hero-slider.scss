@@ -5,14 +5,15 @@
 
 .hero-slider{
     background-image: url(../img/thumbnails/img1.png);
-    background-blend-mode: darken;
+    background-color: darkgrey;
+    background-blend-mode: multiply;
     height: 550px;    
     background-position: 50%;
     background-repeat: no-repeat;
     background-size:cover ;
 }
 
-.hero-container{    
+.hero-container{   
     color: #fff;
     display:flex;
     flex-direction: column;

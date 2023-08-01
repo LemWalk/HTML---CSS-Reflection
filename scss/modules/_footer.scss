@@ -19,8 +19,9 @@ margin-top: auto;
 color: white;
 background-color: $black-light;
 width: 100%;
-padding: 15px;
+padding: 0px;
 font-weight: 100;
+border: 0px;
 h4{
 	font-size: 18px;
 	font-weight: 100;
@@ -63,11 +64,12 @@ h4{
 	color: white;
 	padding: 10px 0px ;
 	margin: 0;
+	border: 0px;
 }
 
 
 .footer-bottom p, ul, a{
-	font-size: 13px;
+	font-size: 14px;
 	padding: 2px 15px;
 	margin: 0;
 	justify-content: left;	

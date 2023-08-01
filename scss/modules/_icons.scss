@@ -13,10 +13,11 @@ border: 0;
     color: #fff;
 background-color: #999;
 height: auto;
-padding: 25px;
+padding: 26px 16px;
 margin: 0;
 border: 0;
 align-items: center;
+border-radius: 3px;
 
 
 &:hover{
@@ -151,14 +152,12 @@ align-items: center;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: left;
-    gap: 20px;    
+    justify-content: left;   
     }
 
     .socials-top, .socials-bot{
         display: flex;
         flex-direction: row;
-        gap: 20px;        ;
     }
     
     .social-links{
@@ -170,7 +169,8 @@ align-items: center;
         color: $white;
         border-radius: 1px;
         height: 55px;
-        width: 65px;
+        width: 95px;
+        margin: 10px 10px 0px 0px;
             }
     
     .fb{

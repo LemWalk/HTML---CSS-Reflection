@@ -369,7 +369,25 @@ a {
   line-height: 30px;
   font-size: 16px;
   font-weight: 300;
+  letter-spacing: 0.4px;
   margin: 0;
+}
+
+.link-white-bold {
+  display: inline;
+  letter-spacing: 0.4px;
+  color: #fff;
+  font-size: inherit;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+.link-white-bold:hover {
+  text-decoration: underline;
+}
+
+#strong {
+  font-weight: bold;
 }
 
 .container-dark {
@@ -422,6 +440,9 @@ a {
   #footer-lo .socials {
     display: flex;
     flex-direction: row;
+  }
+  #footer-lo .social-links {
+    width: 65px;
   }
 }
 @media (min-width: 752px) {
@@ -587,6 +608,32 @@ a {
     display: block;
   }
 }
+@media (min-width: 1244px) {
+  #main-nav-lo .nav-item {
+    width: 170px;
+  }
+  #main-nav-lo .nav-bar-item-blue-pale:hover::after {
+    border-width: 45px 85px 0 85px;
+  }
+  #main-nav-lo .nav-bar-item-blue:hover::after {
+    border-width: 45px 85px 0 85px;
+  }
+  #main-nav-lo .nav-bar-item-red:hover::after {
+    border-width: 45px 85px 0 85px;
+  }
+  #main-nav-lo .nav-bar-item-green:hover::after {
+    border-width: 45px 85px 0 85px;
+  }
+  #main-nav-lo .nav-bar-item-purple:hover::after {
+    border-width: 45px 85px 0 85px;
+  }
+  #main-nav-lo .nav-bar-item-red-pink:hover::after {
+    border-width: 45px 85px 0 85px;
+  }
+  #main-nav-lo .nav-bar-item-orange:hover::after {
+    border-width: 45px 85px 0 85px;
+  }
+}
 
 @media (min-width: 752px) {
   #nav-lo .search-bar {
@@ -611,6 +658,9 @@ a {
   #nav-lo .search-input-hidden {
     display: flex;
   }
+  #nav-lo .icn-grey {
+    border-radius: 0px 3px 3px 0px;
+  }
 }
 
 .news-img img {
@@ -631,7 +681,8 @@ a {
 
 .hero-slider {
   background-image: url(../img/thumbnails/img1.png);
-  background-blend-mode: darken;
+  background-color: darkgrey;
+  background-blend-mode: multiply;
   height: 550px;
   background-position: 50%;
   background-repeat: no-repeat;
@@ -1008,7 +1059,7 @@ form {
 form h2 {
   color: #323544;
   padding: 50px 0px 15px;
-  font-size: 28px;
+  font-size: 34px;
   margin: 0;
   font-weight: 500;
 }
@@ -1082,7 +1133,7 @@ input[type=checkbox] {
 }
 
 .intro-title-container {
-  padding: 15px;
+  padding: 15px 0px;
 }
 
 .review p {
@@ -1115,8 +1166,9 @@ footer {
   color: white;
   background-color: #323544;
   width: 100%;
-  padding: 15px;
+  padding: 0px;
   font-weight: 100;
+  border: 0px;
 }
 footer h4 {
   font-size: 18px;
@@ -1159,10 +1211,11 @@ footer img {
   color: white;
   padding: 10px 0px;
   margin: 0;
+  border: 0px;
 }
 
 .footer-bottom p, ul, a {
-  font-size: 13px;
+  font-size: 14px;
   padding: 2px 15px;
   margin: 0;
   justify-content: left;
@@ -1400,7 +1453,7 @@ footer img {
   border: solid #ddd 1px;
   border-radius: 3px;
   box-shadow: 0px 0px 5px 0.5px #dddddd;
-  margin: 30px 0px;
+  margin: 10px 0px;
   transition: transform ease 300ms;
 }
 
@@ -1415,12 +1468,16 @@ hr {
 
 .news-text {
   margin: 0% 8%;
+  line-height: 20px;
 }
 .news-text p {
   color: #666;
   font-size: 13px;
   font-weight: 300;
-  line-height: 20px;
+}
+
+.news-para {
+  line-height: 24px;
 }
 
 .top-right-outer {
@@ -1438,13 +1495,15 @@ hr {
   margin: 0;
   padding: 0;
   line-height: 14px;
+  font-weight: bold;
 }
 .top-right-purple h5 {
   color: #fff;
   font-size: 12px;
-  font-weight: 300;
+  font-weight: bold;
   padding: 0;
   margin: -10px 10px;
+  letter-spacing: 0.5px;
 }
 .top-right-purple a:hover {
   text-decoration: underline;
@@ -1461,12 +1520,15 @@ hr {
   margin: 0;
   padding: 0;
   line-height: 14px;
+  font-weight: bold;
 }
 .top-right-blue h5 {
   color: #fff;
   font-size: 12px;
   font-weight: 300;
   margin: -10px 10px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
 }
 .top-right-blue a:hover {
   text-decoration: underline;
@@ -1890,7 +1952,7 @@ nav ul li:hover ul.dd-orange::before {
 }
 
 .search-input-hidden {
-  width: 150px;
+  width: 240px;
 }
 
 .icn-grey-light {
@@ -1905,10 +1967,11 @@ nav ul li:hover ul.dd-orange::before {
   color: #fff;
   background-color: #999;
   height: auto;
-  padding: 25px;
+  padding: 26px 16px;
   margin: 0;
   border: 0;
   align-items: center;
+  border-radius: 3px;
 }
 .icn-grey:hover {
   background-color: #84858f;
@@ -2031,13 +2094,11 @@ nav ul li:hover ul.dd-orange::before {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: left;
-  gap: 20px;
 }
 
 .socials-top, .socials-bot {
   display: flex;
   flex-direction: row;
-  gap: 20px;
 }
 
 .social-links {
@@ -2049,7 +2110,8 @@ nav ul li:hover ul.dd-orange::before {
   color: #fff;
   border-radius: 1px;
   height: 55px;
-  width: 65px;
+  width: 95px;
+  margin: 10px 10px 0px 0px;
 }
 
 .fb:hover {
