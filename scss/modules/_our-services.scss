@@ -41,24 +41,22 @@
 
 
 .service-block-top, .service-block-bot{
-
-
-  h2{
-    font-size: 22px;
-    font-weight: 400;
-    margin: 10px 0px;
-  }
-
-  p{
-    margin: 10px 30px;
-    font-size: 13px;
-    line-height: 22px;
-    
-  }
-
   a{
     padding: 0px;
   }
+}
+
+.h2{
+  font-size: 22px;
+  font-weight: 400;
+  margin: 10px 0px;
+}
+
+.p{
+  margin: 10px 30px;
+  font-size: 13px;
+  line-height: 22px;
+  
 }
 
 .service-block-top>*{

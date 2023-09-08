@@ -18,6 +18,8 @@ text-decoration: none;
 }
 
 .btn-blk-dark{
+    width: -moz-fit-content;
+    width: fit-content;
     background-color: $black-btn;
     color: #fff;
     font-size: 20px;
@@ -86,6 +88,8 @@ align-items: center;
 //========== intro buttons ==================
 
 .btn-intro-blue-l{
+    width: -moz-fit-content;
+    width: fit-content;
     color: #fff;
     background-color: $blue-primary;
     font-size: 20px;
@@ -99,6 +103,8 @@ align-items: center;
 }
 
 .btn-intro-green-l{
+    width: -moz-fit-content;
+    width: fit-content;
     color: #fff;
     background-color: $green-primary;
     font-size: 20px;
