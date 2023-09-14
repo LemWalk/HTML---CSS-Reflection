@@ -19,7 +19,8 @@
 .flex-col{
     display: flex;
     flex-direction: column;
-    height: fit-content;
+    align-items: stretch;
+    flex-grow: 1;
 }
 
 //flex wrap

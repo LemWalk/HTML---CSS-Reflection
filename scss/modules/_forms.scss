@@ -6,6 +6,8 @@ form{
     background-color: $grey-light;
 }
 
+
+
 form h2 {
   color: $black-light;
     padding: 50px 0px 15px;
@@ -29,48 +31,77 @@ form h2 {
     color:$black-light;
 }
 
-.checkbox{
+
+#form-input-name{
+border: solid rgba($color: #999, $alpha: 0.4) 1px;
+border-radius: 2px;
+background-color: #fff;
+padding-right: 15px;
+border: $grey-light;
+height: 50px;
+width: 100%;
+&:focus {
+  outline: none;
+  box-shadow: 0px 0px 4px 0.9px skyblue;
+  width: 99.5%;
+  }
+}
+
+#form-input-email{
+  border: solid rgba($color: #999, $alpha: 0.4) 1px;
+  border-radius: 2px;
+  background-color: #fff;
+  padding-right: 15px;
+  border: $grey-light;
+  height: 50px;
+  width: 100%;
+  &:focus {
+    outline: none;
+    box-shadow: 0px 0px 4px 0.9px skyblue;
+    width: 99.5%;
+    }
+
+  }
+
+  .checkbox{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    color:$black-light;
+    color:$black-mid;
     font-weight: 300;
     padding: 15px 0px;
     gap: 15px;
-    line-height: 30px;
+    line-height: 30px; 
+    &:hover{
+      cursor: pointer;
+    } 
 }
-
-input[type=text] {
-  border: $grey-light;
-  height: 50px;
-  width: auto;
-}
-
-.form-input {
-border: solid rgba($color: #999, $alpha: 0.4) 1px;
-border-radius: 2px;
-}
-
-
-input[type=checkbox] {
-  transform: scale(3);
-}
-
 
 .tickbox{
-    max-height: 50px;
-    max-width: 50px;
-    color: black;
+  display: flex;
+  transform: scale(3);
     margin: 15px ;
-    accent-color: $black-light;
-    
+    &:hover{
+      cursor: pointer;
+    } 
 }
+
+input[type="checkbox"] {
+  display: inline;
+accent-color:$black-mid;
+}
+
+
 
 .form-text{
   font-size: 16px;
   font-weight: bold;
   line-height: 32px;
-  letter-spacing: 1px;
+  letter-spacing: 0.4px;
+  text-decoration: none;
+  &:hover{
+    cursor: pointer;
+  } 
 }
 
 .p-red{

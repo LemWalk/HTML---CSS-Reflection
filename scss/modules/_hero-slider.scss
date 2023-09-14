@@ -4,14 +4,15 @@
 }
 
 .hero-slider{
-    background-image: url(../img/thumbnails/img1.png);
-    background-color: darkgrey;
-    background-blend-mode: multiply;
+    display: flex;
+    align-items: center;
+    background-image:linear-gradient(270deg,transparent 25%,#000), url(../img/thumbnails/img1.png);
     height: 550px;    
     background-position: 50%;
     background-repeat: no-repeat;
     background-size:cover ;
-}
+    }
+
 
 .hero-container{   
     color: #fff;
@@ -21,7 +22,6 @@
     align-items: center;
     text-align: center;
     width: 100%;
-
 }
 
 .hero-title{
@@ -32,4 +32,5 @@ font-size: 40px;
 .hero-text{
     display: flex;
     font-size: 22px;
+    font-weight: bold;
 }

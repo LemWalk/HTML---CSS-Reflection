@@ -2,7 +2,8 @@
 
 @include mq(large) {
     .container-inner{
-        margin: 0 7%;
+        width: 86%;
+        max-width: 1400px;
     }
 }
 
@@ -145,7 +146,7 @@
         .intro-container{
             display: flex;
             flex-direction: row;
-            gap: 10px;
+            gap: 20px;
             
         }
         .intro-container>*{
@@ -174,10 +175,10 @@
         .service-block-bot{
             display: flex;
             flex-wrap: wrap;
-            gap: 20px;
+            gap: 30px;
         }
         .service-block-bot>*{
-            flex: 1 1 calc(50% - 40px);
+            flex: 1 1 calc(50% - 60px);
             
     }
     .view-outer-hidden{
@@ -193,10 +194,10 @@
         .service-block-top{
             display: flex;
             flex-wrap: wrap;
-            gap: 20px;
+            gap: 30px;
         }
         .service-block-top>*{
-            flex: 1 1 calc(33% - 40px);
+            flex: 1 1 calc(33% - 60px);
         }
 
     }
@@ -205,10 +206,10 @@
         .service-block-bot{
             display: flex;
             flex-wrap: wrap;
-            gap: 20px;
+            gap: 30px;
         }
         .service-block-bot>*{
-            flex: 1 1 calc(25% - 40px);
+            flex: 1 1 calc(25% - 60px);
             }
         }
     
@@ -244,6 +245,8 @@
         font-size: 26px;
         text-align: left;
         margin: 10px 0px;
+        width: 50%;
+        line-height:40px;
         }
 
         
@@ -265,13 +268,13 @@
         }
 
     .nav-bar-item-blue-pale:hover{
-            &::after{               
-                border-width: 45px 85px 0 85px;
-        }    
-    }
-    .nav-bar-item-blue:hover{
-        &::after{               
-            border-width: 45px 85px 0 85px;
+    &::after{               
+        border-width: 45px 85px 0 85px;
+    }    
+}
+.nav-bar-item-blue:hover{
+    &::after{               
+        border-width: 45px 85px 0 85px;
     }    
 }.nav-bar-item-red:hover{
     &::after{               
@@ -305,7 +308,7 @@
 
 %nav-lo{
     @include mq(medium) {
-        .search-bar{
+        #search-bar{
             display: none;
         }
         .search-bar-hidden{
@@ -313,6 +316,9 @@
         }
         .icn-black-light{
             display: none;
+        }
+        .icn-grey{
+            border-radius: 0px 3px 3px 0px;
         }
     }
     @include mq(large){
@@ -327,9 +333,7 @@
     @include mq(extra-large){
         .search-input-hidden{
             display: flex;
-        }
-        .icn-grey{
-            border-radius: 0px 3px 3px 0px;
-        }
     }
+}
+
 }

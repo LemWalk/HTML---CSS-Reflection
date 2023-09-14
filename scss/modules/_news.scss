@@ -6,7 +6,12 @@
 
 //========= styles ================
 
+.news-card{
+    padding: 0;
+}
+
 .news-title{
+width: -moz-fit-content;
 width: fit-content;
 align-items: center;
 color: $black-light;
@@ -41,7 +46,11 @@ color: $black-light;
     border-radius: 3px;
     box-shadow: 0px 0px 5px 0.5px rgba($color: $grey-light, $alpha: 3.0);
     margin: 10px 0px;
-    transition: transform ease 300ms;
+    transition: transform ease 600ms;
+    box-shadow: 0 3px 35px rgba(0,0,0,.1);
+    &:hover{
+        cursor: pointer;
+    }
     }
     
 .news-item:hover{
@@ -49,9 +58,8 @@ color: $black-light;
 }
 
 hr{
-    opacity: 60%;
+    opacity: 20%;
     margin: 20px 0px;
-
 }
 
 .news-text{
@@ -70,13 +78,18 @@ hr{
 
 .top-right-outer{
     position: relative;
+    height: 0;
     right:0; 
+    a{
+        padding: 10px 2px ;
+    }
 }
 
 
 .top-right-purple{
     position: absolute;    
     background-color: $purple-primary;
+    width: -moz-fit-content;
     width: fit-content;
     top: 10px;
     right: 0px;
@@ -84,26 +97,29 @@ hr{
     padding: 0;
     line-height: 14px;
     font-weight: bold;
+}
     
-    h5{
+    .h5{
     color: #fff;
     font-size: 12px;
     font-weight: bold;
-    padding: 0;
+    padding: 5px;
     margin: -10px 10px;
     letter-spacing: 0.5px;
-    }
-
-    a:hover{
+    line-height: 18px;
+    &:hover{
         text-decoration: underline;
         color: #fff;
     }
-}
+    }
+
+    
 
 
 .top-right-blue{
     position: absolute;    
     background-color: $blue-primary;
+    width: -moz-fit-content;
     width: fit-content;
     top: 10px;
     right: 0px;
@@ -152,8 +168,6 @@ hr{
     }
 }
 
-
-
 .news-bot{
     display: flex;
     flex-direction: row;
@@ -161,6 +175,10 @@ hr{
     justify-content: left;
     margin: 10px;
     gap: 30px;
+}
+
+.author-image{
+    border-radius: 100%;
 }
 
 #strong{

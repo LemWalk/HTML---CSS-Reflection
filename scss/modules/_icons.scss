@@ -34,10 +34,10 @@ border-radius: 3px;
 //========Nav Icons ======================
 
 .nav-icon-blue-pale{
+    display: block;
     color: $blue-pale-primary;
     transform: scale(1.4);
-    padding-bottom: 5px;
-    
+    padding-bottom: 5px;            
 }
 .nav-icon-blue{
     color: $blue-primary;

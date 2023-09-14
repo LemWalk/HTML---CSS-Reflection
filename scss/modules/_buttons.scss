@@ -14,6 +14,7 @@ text-decoration: none;
     margin: 30px 0px 50px;
     &:hover{
         background-color: $black;
+        cursor: pointer;
     }
 }
 
@@ -46,10 +47,15 @@ text-decoration: none;
     gap: 10px;
     &:hover{
         background-color: $purple-secondary;
+        cursor: pointer;
     }
 }
 
 // ================ nav buttons ==============
+
+.btn-reset{
+    padding: 0;
+}
 
 .btn-mouse{
 display: flex;
@@ -57,13 +63,14 @@ flex-direction: row;
 border: 0;
 color: #fff;
 background-color: $blue-primary ;
-padding: 5px 15px;
+padding: 15px 15px;
 font-size: 20px;
 gap: 10px;
 border-radius: 3px;
 align-items: center;
 &:hover{
     background-color: $blue-secondary ;
+    cursor: pointer;
 }
 }
 
@@ -80,6 +87,7 @@ border-radius: 3px;
 align-items: center;
 &:hover{
     background-color: #84858f ;
+    cursor: pointer;
 }
 }
 
@@ -95,8 +103,9 @@ align-items: center;
     font-size: 20px;
     border: 0;
     border-radius: 5px;
-    padding: 15px;
-    margin: 50px 0px 5px;
+    padding: 10px 30px;
+    margin: 30px 0px 5px;
+    line-height: 35px;
     &:hover{
         background-color: $blue-secondary;
     }
@@ -106,35 +115,48 @@ align-items: center;
     width: -moz-fit-content;
     width: fit-content;
     color: #fff;
-    background-color: $green-primary;
+    background-color:#00b67b;
     font-size: 20px;
     border: 0;
     border-radius: 5px;
-    padding: 15px;
-    margin: 50px 0px ;
+    padding: 10px 30px;
+    margin: 30px 0px ;
+    line-height: 35px;
     &:hover{
-        background-color: $green-secondary;
+        background-color: #009b69;
     }
 }
 
 //==========news buttons =====================
 
 .btn-news-purple{
+    display: flex;
+    width: -moz-fit-content;
+    width: fit-content;
     color: #fff;
     background-color: $purple-primary;
     border: 0;
     padding: 15px;
     border-radius: 5px;
-    margin: 20px 0px;
+    margin: 30px 0px;
+    &:hover{
+        cursor: pointer;
+    }
 }
 
 .btn-news-blue{
+    display: flex;
+    width: -moz-fit-content;
+    width: fit-content;
     color: #fff;
     background-color: $blue-primary;
     border: 0;
     padding: 15px;
     border-radius: 5px;
-    margin: 20px 0px;
+    margin: 30px 0px;
+    &:hover{
+        cursor: pointer;
+    }
 }
 
 //========== service buttons============

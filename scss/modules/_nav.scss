@@ -9,7 +9,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 15px 0px;
+    margin: 20px 0px;
 }
 
 .right-block{
@@ -22,6 +22,7 @@
     gap: 20px;
 }
 
+
 .nav-hidden{
     display: flex;
     flex-direction: row;
@@ -30,21 +31,41 @@
 }
 
 
-.search-bar{
+#search-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     background-color: $grey-light;
-    border: solid #ccc 2px ;
     opacity: 90%;
-    border-radius: 3px;
-    box-shadow: 0px 0px 10px 0.5px rgba($color: $grey-light, $alpha: 3.0);
-    justify-content: right;
+    border-radius: 1px;
     margin: 20px 0px;
     align-items: center;
+    padding-right: 10px ;
+    height: 40px;
+    border: solid 2px $grey-light;
+    outline: none;
+    box-shadow: 0px 0px 3px 0.5px rgba($color: #555, $alpha: 0.6);
+}
+
+#focus-blue{
+    height: 50px;
+    border: $grey-light;
+    &:focus {
+        outline: none;
+        box-shadow: 0px 0px 1px 0.9px skyblue;
+        width: 99.5%;
+        height: 100%;
+        }
+}
     
 input[type=text]{
     background-color: inherit;
+    padding-left: 15px;
     width: 90%;
-}
-}
+    outline: none;
+    border: 0;
+    }
+
 
 .search-bar-hidden{
     display: none;
@@ -54,11 +75,15 @@ input[type=text]{
     box-shadow: 0px 0px 10px 0.5px rgba($color: $grey-light, $alpha: 3.0);
     margin: 15px 0px;
     justify-content: right;
+    width: -moz-fit-content;
     width: fit-content;
 }
 
+
+
 .search-input-hidden{
-    width: 240px;
+    width: auto;
+    max-width: 240px;
 }
 
 //====== Burger Menu =================
