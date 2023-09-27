@@ -1,18 +1,21 @@
 //============= Side Menu ==================
 
+#side-nav-lo{
+  @extend %side-nav-lo;
+}
 
 .side-menu{
-  display: flex;
-  flex-direction: column;
+  display: none;
     position: fixed;
     top: 0;
     right: 0;
     background-color: $black-light;
     height: 100vh;
-    width: 260px;
+    width: 100%;
+    max-width: 300px;
     transition: all 0.5s;
-    z-index: 701;
-    overflow-y: scroll;  
+    z-index:2;
+    overflow-y: scroll; 
 }
 
 .side-menu-inner{
@@ -21,22 +24,13 @@
   width: 100%;
   border: 0;
   padding: 0;
-  // margin: 0px 20px;
 }
-
-
-
-.container-outer.active{
-    transform: translate(-260px);
-} 
-
 
 
 .side-menu-list{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   width: 100%;
   text-align: center;
   list-style: none;
@@ -107,12 +101,28 @@
 }
 
 .section-link{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
   font-size: 16px;
   list-style: none;
   border: 0;
   padding:10px;
   color: #fff;
   line-height: 22px;
+}
+
+.section-link-sec{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  font-size: 14px;
+  list-style: none;
+  border: 0;
+  padding:10px;
+  color: #fff;
+  line-height: 22px;
+  text-align: left;
 }
 
 .side-nav-p1{
@@ -133,31 +143,19 @@
 
 //==== Secondary Block ==============
 
-  .side-inner-secondary{
-    display: flex;
-    flex-direction: column;
-    border: 0;
-    padding: 0;
-    margin: 0px;
-    width: 100%;
-  }
-
-  .side-list-secondary{
-    display: flex;
-    flex-direction: column;
-    border: 0;
-    padding: 0;
-  }
 
   .side-list-item-wide{
+    font-size: 16px;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding: 20px;  
+      text-align: left;
+      padding: 20px 0px;  
       text-transform: uppercase;
       outline: 1px solid rgba(0,0,0,.25);
-      border: 1px solid hsla(0,0%,100%,.1);
+      border-top: 1px solid hsla(0,0%,100%,.1);
+      border-bottom: 1px solid rgba(0,0,0,.25);
       margin: 0px;
       &:hover{
         background-color: hsla(0,0%,100%,.05);
@@ -165,17 +163,21 @@
     }
 
   .side-list-item-dark-sml-wide{
+    font-size: 14px;
     display: flex;
-    flex-direction: column;
     border-top: 1px solid hsla(0,0%,100%,.05);
     background-color: rgba(0,0,0,.25);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding: 0px;  
     text-transform: uppercase;
     margin: 0px;
+  }
+
+  .margin-top{
+    margin-top: 20px;
+  }
+
+  .lrg-reapp{
+    display: none;
   }
 
 
@@ -197,3 +199,13 @@
 .overlay.active{
     display: block;
     }
+
+    .container-outer.active{
+      transform: translate(-300px);
+  } 
+  
+
+.side-menu.active{
+  display: flex;
+}
+    

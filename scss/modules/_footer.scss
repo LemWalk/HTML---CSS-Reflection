@@ -52,6 +52,7 @@ h4{
 .company-info{
 	display: flex;
 	flex-direction: column;
+	width: -moz-fit-content;
 	width: fit-content;
 	justify-content: left;
 	padding-bottom: 15px;
