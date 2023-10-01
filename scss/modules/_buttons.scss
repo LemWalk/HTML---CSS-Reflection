@@ -45,8 +45,110 @@ text-decoration: none;
     border-radius: 5px;
     margin: 20px 0px;
     gap: 10px;
+    width: -moz-fit-content;
+    width: fit-content;
     &:hover{
         background-color: $purple-secondary;
+        cursor: pointer;
+    }
+}
+
+.btn-slider-blue-pale{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #fff;
+    background-color: $blue-pale-primary;
+    font-size: 20px;
+    border: 0;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px 0px;
+    gap: 10px;
+    width: -moz-fit-content;
+    width: fit-content;
+    &:hover{
+        background-color: $blue-pale-secondary;
+        cursor: pointer;
+    }
+}
+
+.btn-slider-blue{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #fff;
+    background-color: $blue-primary;
+    font-size: 20px;
+    border: 0;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px 0px;
+    gap: 10px;
+    width: -moz-fit-content;
+    width: fit-content;
+    &:hover{
+        background-color: $blue-secondary;
+        cursor: pointer;
+    }
+}
+
+.btn-slider-green{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #fff;
+    background-color: $green-primary;
+    font-size: 20px;
+    border: 0;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px 0px;
+    gap: 10px;
+    width: -moz-fit-content;
+    width: fit-content;
+    &:hover{
+        background-color: $green-secondary;
+        cursor: pointer;
+    }
+}
+
+.btn-slider-red{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #fff;
+    background-color: $red-primary;
+    font-size: 20px;
+    border: 0;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px 0px;
+    gap: 10px;
+    width: -moz-fit-content;
+    width: fit-content;
+    &:hover{
+        background-color: $red-secondary;
+        cursor: pointer;
+    }
+}
+
+.btn-slider-red-pink{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #fff;
+    background-color: $red-pink-primary;
+    font-size: 20px;
+    border: 0;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px 0px;
+    gap: 10px;
+    width: -moz-fit-content;
+    width: fit-content;
+    &:hover{
+        background-color: $red-pink-secondary;
         cursor: pointer;
     }
 }

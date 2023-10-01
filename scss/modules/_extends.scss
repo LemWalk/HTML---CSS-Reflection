@@ -219,6 +219,16 @@
 
 //========== Hero slider layout ==================
 
+%hero-slider-lo{
+    @include mq(large){
+        .slick-initialized .slick-slide {
+            display: block;
+        }
+    }
+}
+
+
+
 %hero-lo{
     @include mq(large){
 

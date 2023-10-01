@@ -1,31 +1,18 @@
-//======= example code delete later ==========
 
-const cookieStyle = document.querySelector('.consent');
-const selectBody = document.querySelector('.body');
+const cookieMenu = document.querySelector('.cookie-overlay');
+const acceptButton = document.querySelector('.btn-acc');
+const manageButton = document.querySelector('.btn-manage');
 
-function acceptButton() {
-    const accept = document.querySelector('.accept-btn');
-    accept.addEventListener("click", function()  {
-        localStorage.setItem("cookieConsent", "true");
-        cookieStyle.style.visibility = 'hidden';
-        selectBody.classList.remove('covered');
-    });
-}
+if (localStorage.getItem('cookieAccept') === 'true') {
+  cookieMenu.classList.add('hidden')};
 
-function manageConsentButton() {
-    const manage = document.querySelector('.manage-btn');
-    manage.addEventListener("click", function() {
-        cookieStyle.style.visibility = 'visible';
-        selectBody.classList.toggle('covered');
-    });
-}
 
-document.addEventListener("DOMContentLoaded", function(){
-    if(!localStorage.getItem('cookieConsent')){
-      cookieStyle.style.visibility = "visible";
-      selectBody.classList.toggle('covered');
-    }
-    acceptButton();
-    manageConsentButton();
-  });
+acceptButton.addEventListener('click', () => {
+  cookieMenu.classList.toggle('hidden');
+  localStorage.setItem("cookieAccept", "true");
+});
 
+
+manageButton.addEventListener('click', () => {
+  cookieMenu.classList.toggle('hidden');
+});

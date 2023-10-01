@@ -3,14 +3,13 @@
     @extend %hero-lo;
 }
 
+#hero-slider-lo{
+    @extend %hero-slider-lo;
+}
+
 .hero-slider{
-    display: flex;
-    align-items: center;
-    background-image:linear-gradient(270deg,transparent 25%,#000), url(../img/thumbnails/img1.png);
-    height: 550px;    
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size:cover ;
+    display: block;
+    height: 550px;  
     }
 
 
@@ -24,6 +23,14 @@
     width: 100%;
 }
 
+
+
+.hero-item{
+    a{
+        padding: 0;
+    }
+}
+
 .hero-title{
     display: flex;
 font-size: 40px;
@@ -33,4 +40,69 @@ font-size: 40px;
     display: flex;
     font-size: 22px;
     font-weight: bold;
+}
+
+// ========= slick plugin css =========
+
+.slick-dots{
+    bottom: 50px;
+}
+
+.slick-initialized .slick-slide {
+    display: flex;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: 1;
+    color: white;
+}
+
+.slick-track{
+    margin: 0;
+}
+
+.slick-dots li button:before {
+    font-size: 14px;
+    color: #fff;
+}
+
+.test-slide{    
+    height: 550px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.flex-central{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide-1{
+    background-image:linear-gradient(270deg,transparent 25%,#000), url(../img/thumbnails/img1.png);
+}
+
+.slide-2{
+    background-image:linear-gradient(270deg,transparent 25%,#000), url(../img/thumbnails/img2.png);
+}
+
+.slide-3{
+    background-image:linear-gradient(270deg,transparent 25%,#000), url(../img/thumbnails/img3.png);
+}
+
+.slide-4{
+    background-image:linear-gradient(270deg,transparent 25%,#000), url(../img/thumbnails/img4.png);
+}
+
+.slide-5{
+    background-image:linear-gradient(270deg,transparent 25%,#000), url(../img/thumbnails/img5.png);
+}
+
+.slide-6{
+    background-image:linear-gradient(270deg,transparent 25%,#000), url(../img/thumbnails/img6.png);
+}
+
+.slide-7{
+    background-image:linear-gradient(270deg,transparent 25%,#000), url(../img/thumbnails/img7.png);
 }
