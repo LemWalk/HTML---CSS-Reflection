@@ -27,7 +27,7 @@
 
     <div class="btn-manage">Manage Consent</div>
 
-    <div class="cookie-overlay">
+    <div class="cookie-overlay" id="cookie-lo">
 
     <div class="cookie-menu">
       <div class="cookie-inner">
@@ -35,7 +35,7 @@
         <hr class="cookie-hr">
         <div><p class="cookie-text">Our website uses cookies. This helps us provide you with a good experience on our website. To see what cookies we use and what they do, and to opt-in on non-essential cookies click "change settings". For a detailed explanation, click on "<span class="policy-text">Privacy Policy</span>" otherwise click "Accept Cookies" to enter.</p></div>
         <hr class="cookie-hr">
-        <div cookie-btns>
+        <div class = "cookie-btns">
           <a href="#" class="cookie-btn-outer"><div class="btn-ch-set">Change Settings</div></a>
           <a href="#" class="cookie-btn-outer"><div class="btn-acc">Accept Cookies</div></a>
         </div>
@@ -46,6 +46,7 @@
 
   <!-- =======================================
   ======== Top-Nav ==================== -->
+    <div class="nav-container">    
 
   <header class="header">
     <div class="container-inner" id="nav-lo">
@@ -268,6 +269,8 @@
       </div>
     </nav>
 
+  </div>
+
 <!-- ======== Main Start ==================== -->
 
   <main>
@@ -276,11 +279,11 @@
     ========Hero slider ==================== -->
   <div class="hero-slider" id="hero-slider-lo">
 
-      <div class="autoplay">
+      <div class="autoplay" id="hero-lo">
 
         <div class="test-slide slide-1"> 
           <div class="container-inner flex-central">
-            <div class="hero-container" id="hero-lo">        
+            <div class="hero-container" >        
             <div class="hero-item">
               <h2 class="hero-title">The East of England's Leading Technology Company</h2>
             </div>    
@@ -295,8 +298,8 @@
         </div>  
   
         <div class="test-slide slide-2">
-          <div class="container-inner" flex-central>
-            <div class="hero-container" id="hero-lo">        
+          <div class="container-inner flex-central">
+            <div class="hero-container">        
             <div class="hero-item">
               <h2 class="hero-title">Bespoke Software</h2>
             </div>    
@@ -313,7 +316,7 @@
 
         <div class="test-slide slide-3">
           <div class="container-inner">
-            <div class="hero-container" id="hero-lo">        
+            <div class="hero-container">        
             <div class="hero-item">
               <h2 class="hero-title">IT Support</h2>
             </div>    
@@ -330,7 +333,7 @@
 
         <div class="test-slide slide-4">
           <div class="container-inner">
-            <div class="hero-container" id="hero-lo">        
+            <div class="hero-container">        
             <div class="hero-item">
               <h2 class="hero-title">Digital Marketing</h2>
             </div>    
@@ -347,7 +350,7 @@
 
         <div class="test-slide slide-5">
           <div class="container-inner">
-            <div class="hero-container" id="hero-lo">        
+            <div class="hero-container">        
             <div class="hero-item">
               <h2 class="hero-title">Telecoms Services</h2>
             </div>    
@@ -364,7 +367,7 @@
 
         <div class="test-slide slide-6">
           <div class="container-inner">
-            <div class="hero-container" id="hero-lo">        
+            <div class="hero-container">        
             <div class="hero-item">
               <h2 class="hero-title">Web Design</h2>
             </div>    
@@ -381,7 +384,7 @@
 
         <div class="test-slide slide-7">
           <div class="container-inner">
-            <div class="hero-container" id="hero-lo">        
+            <div class="hero-container">        
             <div class="hero-item">
               <h2 class="hero-title">Cyber Security</h2>
             </div>    
@@ -1190,7 +1193,6 @@
   <script src="js/jquery-3.7.0.min.js"></script>
   <script src="js/cookies.js"></script>
   <script src="js/slick/slick.min.js"></script>
-  
   <script>
     $(document).ready(function(){
       $('.autoplay').slick({
@@ -1206,7 +1208,7 @@
 });
 
   </script>
-
+  <script src="js/sticky.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

@@ -328,6 +328,7 @@ html {
   margin: 0;
   padding: 0;
   transition: all 0.4s ease-in-out;
+  background-color: #fff;
 }
 
 .container-inner {
@@ -685,11 +686,25 @@ a {
   #side-nav-lo .side-menu {
     max-width: 390px;
   }
+  #side-nav-lo .side-menu.active {
+    max-width: 390px;
+  }
   #side-nav-lo .lrg-disapp {
     display: none;
   }
   #side-nav-lo .lrg-reapp {
     display: flex;
+  }
+}
+
+@media (min-width: 976px) {
+  #cookie-lo .cookie-btns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  #cookie-lo .cookie-btns* {
+    flex: 1 1 50%;
   }
 }
 
@@ -802,10 +817,12 @@ a {
 .cookie-btns {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  margin-bottom: 10px;
 }
 
 .cookie-btn-outer {
-  margin: 0px 20px;
+  margin: 10px 20px;
 }
 
 .btn-acc {
@@ -821,6 +838,7 @@ a {
   margin: 0 20px;
   text-transform: uppercase;
   border-radius: 5px;
+  width: auto;
 }
 .btn-acc:hover {
   background-color: #7e57a0;
@@ -839,6 +857,7 @@ a {
   margin: 0 20px;
   text-transform: uppercase;
   border-radius: 5px;
+  width: auto;
 }
 .btn-ch-set:hover {
   background-color: #84858f;
@@ -2353,12 +2372,17 @@ nav ul li:hover ul.dd-orange::before {
   font-size: 40px;
 }
 
+.header {
+  background-color: #fff;
+  visibility: visible;
+}
+
 .nav-top-block {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 20px 0px;
+  padding: 20px 0px;
 }
 
 .right-block {
@@ -2468,6 +2492,16 @@ input[type=text] {
 
 .burger-menu.active .bar-bot {
   transform: translateY(-10px) rotate(45deg);
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  z-index: 10000;
+  transition: all 0.6s ease-in-out;
 }
 
 .icn-grey-light {
@@ -2647,17 +2681,23 @@ input[type=text] {
 }
 
 .side-menu {
-  display: none;
+  display: flex;
   position: fixed;
   top: 0;
   right: 0;
   background-color: #323544;
   height: 100vh;
-  width: 100%;
-  max-width: 300px;
+  width: auto;
+  max-width: 275px;
   transition: all 0.5s;
   z-index: 2;
   overflow-y: scroll;
+  z-index: -2;
+}
+
+.side-menu.active {
+  z-index: 2;
+  max-width: 275px;
 }
 
 .side-menu-inner {
@@ -2825,6 +2865,7 @@ input[type=text] {
   right: 0%;
   background-color: #323544;
   opacity: 0.4;
+  transition: all 0.5s;
 }
 
 .overlay.active {
@@ -2832,9 +2873,5 @@ input[type=text] {
 }
 
 .container-outer.active {
-  transform: translate(-300px);
-}
-
-.side-menu.active {
-  display: flex;
+  transform: translate(-275px);
 }/*# sourceMappingURL=application.css.map */

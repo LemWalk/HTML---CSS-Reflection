@@ -258,8 +258,7 @@
         width: 50%;
         line-height:40px;
         }
-
-        
+                
     }
 }
 
@@ -359,7 +358,10 @@
 			.hidden-lrg{
 				display: none;
 			}
-			.side-menu{
+            .side-menu{
+                max-width: 390px;
+            }
+			.side-menu.active {
 				max-width: 390px;
 			}
 			.lrg-disapp{
@@ -370,3 +372,19 @@
 			}
 		}
 	}
+
+//======== Cookies =====================
+
+%cookie-lo{
+    @include mq(large) {
+
+        .cookie-btns{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .cookie-btns*{
+            flex: 1 1 calc(50%);
+            }
+        }
+    }

@@ -1,3 +1,7 @@
+#cookie-lo{
+    @extend %cookie-lo;
+}
+
 .btn-manage{
     display: flex;
     position: fixed;
@@ -78,11 +82,13 @@ opacity: 0.9;
 
 .cookie-btns{
     display: flex;
-    flex-direction: column;   
+    flex-direction: column; 
+    width: 100%; 
+    margin-bottom: 10px;
 }
 
 .cookie-btn-outer{
-margin: 0px 20px;
+margin: 10px 20px;
 }
 
 .btn-acc{
@@ -98,6 +104,7 @@ margin: 0px 20px;
     margin: 0 20px;
     text-transform: uppercase;
     border-radius: 5px;
+    width: auto;
     &:hover{
         background-color: #7e57a0;
     }
@@ -116,6 +123,7 @@ margin: 0px 20px;
     margin: 0 20px;
     text-transform: uppercase;
     border-radius: 5px;
+    width: auto;
     &:hover{
         background-color: #84858f;
     }
