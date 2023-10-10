@@ -18,20 +18,18 @@ margin: 0;
 border: 0;
 align-items: center;
 border-radius: 3px;
-
-
 &:hover{
+    cursor: pointer;
     background-color: #84858f ;
-}
+    }
 }
 
 .icn-black-light{
     display: flex;
-    color: $black-light;
-    
+    color: $black-light;    
     margin: 10px;
 }
-//========Nav Icons ======================
+//========Nav bar Icons ======================
 
 .nav-icon-blue-pale{
     display: block;
@@ -69,10 +67,6 @@ border-radius: 3px;
     transform: scale(1.2);
     padding-bottom: 5px;
 }
-
-
-
-
 
 
 //=========Service Icons===================
@@ -140,10 +134,6 @@ border-radius: 3px;
     margin: 15px 0px;
     transform: scale(1.4);
 }
-
-
-
-
 
 
 // =========== footer socials ===========

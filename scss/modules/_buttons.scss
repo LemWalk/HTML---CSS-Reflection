@@ -33,6 +33,8 @@ text-decoration: none;
     }
 }
 
+//================= Slider Buttons ==============
+
 .btn-slider-purple{
     display: flex;
     flex-direction: row;
@@ -239,8 +241,8 @@ align-items: center;
     background-color: $purple-primary;
     border: 0;
     padding: 15px;
-    border-radius: 5px;
-    margin: 30px 0px;
+    border-radius: 3px;
+    margin: 15px 0px;
     &:hover{
         cursor: pointer;
     }
@@ -254,8 +256,8 @@ align-items: center;
     background-color: $blue-primary;
     border: 0;
     padding: 15px;
-    border-radius: 5px;
-    margin: 30px 0px;
+    border-radius: 3px;
+    margin: 15px 0px;
     &:hover{
         cursor: pointer;
     }
