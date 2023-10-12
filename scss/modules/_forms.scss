@@ -80,20 +80,39 @@ width: 100%;
 }
 
 .tickbox{
-  display: flex;
-  transform: scale(3);
-    margin: 15px ;
+  display: none;
+}
+
+.custom-tickbox{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  accent-color:$black-mid;
+  border: solid 3px $black-light;
+  border-radius: 3px;
+  background: transparent;
+  height: 32px;
+  width: 32px;
+  flex-shrink: 0;
+    margin: 0px;
     &:hover{
       cursor: pointer;
     } 
 }
 
-input[type="checkbox"] {
-  display: inline;
-accent-color:$black-mid;
-border-radius: 50px;
+.custom-tickbox::after{
+  display: none;
+  content: '\2714';
+  transform: scale(1.2);
+  color: #fff;
 }
 
+.custom-tickbox.active{
+  background-color: $black-light;
+  &::after{
+    display: flex;
+  }
+}
 
 
 .form-text{

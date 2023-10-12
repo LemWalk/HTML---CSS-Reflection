@@ -21,6 +21,14 @@ overlay.addEventListener('click', () => {
 });
 
 
+//======== Tick Box =======================
+
+const checkbox = document.querySelector('.checkbox');
+const tickbox = document.querySelector('.custom-tickbox');
+
+checkbox.addEventListener('click', () => {
+    tickbox.classList.toggle('active');
+})
 
 
 

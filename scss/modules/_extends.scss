@@ -172,6 +172,7 @@
     @include mq(medium){
         .service-block-bot{
             display: flex;
+            flex-direction: row;
             flex-wrap: wrap;
             gap: 30px;
         }
@@ -191,6 +192,7 @@
     @include mq(large){
         .service-block-top{
             display: flex;
+            flex-direction: row;
             flex-wrap: wrap;
             gap: 30px;
         }

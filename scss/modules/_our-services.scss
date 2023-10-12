@@ -54,6 +54,9 @@
 
 
 .service-block-top, .service-block-bot{
+    display: flex;
+  flex-direction: column;
+  gap: 30px;
   a{
     padding: 0px;
   }
@@ -72,9 +75,6 @@
   
 }
 
-.service-block-top>*{
-  margin-top: 15px;
-}
 
 
 .container-service-blue-pale{
@@ -89,8 +89,6 @@
     transition: transform ease 600ms;
     text-align: center;
     height: 300px;
-    margin-bottom: 30px;
-
     &:hover{
       cursor: pointer;
       transform: translate(0px, -10px);
@@ -124,8 +122,6 @@
       transition: transform ease 600ms;
       text-align: center;
       height: 300px;
-      margin-bottom: 30px;
-  
       &:hover{
         cursor: pointer;
         transform: translate(0px, -10px);
@@ -159,7 +155,6 @@
         text-align: center;
         height: 300px;
         margin-bottom: 30px;
-    
         &:hover{
           cursor: pointer;
           transform: translate(0px, -10px);
@@ -192,8 +187,6 @@
           transition: transform ease 600ms;
           text-align: center;
           height: 300px;
-          margin-bottom: 15px;
-          
           &:hover{
             cursor: pointer;
             transform: translate(0px, -10px);
@@ -226,8 +219,6 @@
             transition: transform ease 600ms;
             text-align: center;
             height: 300px;
-            margin-bottom: 30px;
-        
             &:hover{
               cursor: pointer;
               transform: translate(0px, -10px);
@@ -260,8 +251,6 @@
               transition: transform ease 600ms;
               text-align: center;
               height: 300px;
-              margin-bottom: 30px;
-          
               &:hover{
                 cursor: pointer;
                 transform: translate(0px, -10px);
@@ -297,8 +286,7 @@
                 margin-bottom: 30px;
                 .icn-service-orange{
                   transform: scale(1.4);
-                }
-            
+                }            
                 &:hover{
                   cursor: pointer;
                   transform: translate(0px, -10px);
