@@ -25,10 +25,14 @@ overlay.addEventListener('click', () => {
 
 const checkbox = document.querySelector('.checkbox');
 const tickbox = document.querySelector('.custom-tickbox');
+const formText = document.querySelector('.form-text')
 
 checkbox.addEventListener('click', () => {
     tickbox.classList.toggle('active');
 })
 
+formText.addEventListener('click', () => {
+    tickbox.classList.toggle('active');
+})
 
 

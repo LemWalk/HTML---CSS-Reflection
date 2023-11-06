@@ -5,7 +5,7 @@
 }
 
 .side-menu{
-  display: flex;
+  display: none;
     position: fixed;
     top: 0;
     right: 0;
@@ -20,8 +20,9 @@
 }
 
 .side-menu.active{
+  display: block;
   z-index: 2;
-  max-width: 275px;
+  width: 275px;
 }
 
 
@@ -192,20 +193,18 @@
 
 .overlay{
     display: none;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0%;
-    bottom: 0%;
-    left: 0%;
-    right: 0%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     background-color: $black-light;
     opacity: 0.4;
     transition: all 0.5s;
 }
 
 .overlay.active{
-    display: block;
+    display: flex;
     }
 
     .container-outer.active{

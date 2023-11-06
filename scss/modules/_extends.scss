@@ -1,10 +1,11 @@
 //========= Container Margin ==============
 
-@include mq(extra-large) {
+@include mq(large) {
     .container-inner{
-        max-width: 88%;
+        padding: 0 5%;
     }
 }
+
 
 //==========Footer Bot Layout =================
 
@@ -127,8 +128,6 @@
     }
 }
 
-
-
 //============ Company Intro Layout =================
 
 %company-intro-lo{
@@ -215,8 +214,6 @@
     
     }
 
-
-
 //========== Hero slider layout ==================
 
 %hero-slider-lo{
@@ -228,8 +225,15 @@
 }
 
 
-
 %hero-lo{
+    @include mq(medium) {
+        .hero-text{
+            margin: 10px auto;
+            width: 70%;
+        }
+    }
+
+
     @include mq(large){
 
         .hero-container{
@@ -255,10 +259,9 @@
         font-size: 26px;
         text-align: left;
         margin: 10px 0px;
-        width: 50%;
+        width: 70%;
         line-height:40px;
         }
-                
     }
 }
 
@@ -309,8 +312,6 @@
     }   
 
 }
-
-
 
 
 //========= Nav =============================

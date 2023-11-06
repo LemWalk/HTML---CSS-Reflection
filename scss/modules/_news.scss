@@ -92,6 +92,9 @@ color: $black-light;
 }
 
 .news-para{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
     line-height: 24px;
         }
 

@@ -12,7 +12,6 @@
     height: 550px;  
     }
 
-
 .hero-container{   
     color: #fff;
     display:flex;
@@ -22,8 +21,6 @@
     text-align: center;
     width: 100%;
 }
-
-
 
 .hero-item{
     a{
@@ -60,6 +57,9 @@ margin: 10px;
 }
 
 .slick-track{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     margin: 0;
 }
 
@@ -73,7 +73,7 @@ margin: 10px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-position: 50%;
+    background-position: center;
     background-repeat: no-repeat;
     color: #fff;
 }
@@ -86,28 +86,35 @@ margin: 10px;
 
 .slide-1{
     background-image:linear-gradient(270deg,transparent 25%,#000), url(../img/thumbnails/img1.png);
+    background-size: cover;
 }
 
 .slide-2{
     background-image:linear-gradient(270deg,transparent 25%,#000), url(../img/thumbnails/img2.png);
+    background-size: cover;
 }
 
 .slide-3{
     background-image:linear-gradient(270deg,transparent 25%,#000), url(../img/thumbnails/img3.png);
+    background-size: cover;
 }
 
 .slide-4{
     background-image:linear-gradient(270deg,transparent 25%,#000), url(../img/thumbnails/img4.png);
+    background-size: cover;
 }
 
 .slide-5{
     background-image:linear-gradient(270deg,transparent 25%,#000), url(../img/thumbnails/img5.png);
+    background-size: cover;
 }
 
 .slide-6{
     background-image:linear-gradient(270deg,transparent 25%,#000), url(../img/thumbnails/img6.png);
+    background-size: cover;
 }
 
 .slide-7{
     background-image:linear-gradient(270deg,transparent 25%,#000), url(../img/thumbnails/img7.png);
+    background-size: cover;
 }
