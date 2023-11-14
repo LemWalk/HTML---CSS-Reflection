@@ -38,9 +38,9 @@ color: $black-light;
 }
 
 .text-grey{
-    color: #888;
-    font-size: 14px;
-    font-weight: 300;
+    color: rgba(51, 54, 69, 0.5);
+    font-size: 0.85rem;
+    font-weight: 400;
 }
 
 .news-top{
@@ -71,7 +71,8 @@ color: $black-light;
 }
 
 .hr{
-    opacity: 30%;
+    opacity: 40%;
+    color:  rgba(204, 204, 204);
     margin: 20px 0px;
 }
 

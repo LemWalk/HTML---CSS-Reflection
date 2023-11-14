@@ -232,6 +232,8 @@ align-items: center;
 
 .btn-news-purple{
     display: flex;
+    align-items: center;
+    gap: 10px;
     width: -moz-fit-content;
     width: fit-content;
     color: #fff;
@@ -247,6 +249,8 @@ align-items: center;
 
 .btn-news-blue{
     display: flex;
+    align-items: center;
+    gap: 10px;
     width: -moz-fit-content;
     width: fit-content;
     color: #fff;
@@ -260,6 +264,43 @@ align-items: center;
     }
 }
 
+//==== Hover Buttons ===============
+
+%hover-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 240px;
+    color: #fff;
+    border: 0;
+    padding: 15px;
+    border-radius: 3px;
+    margin: 15px 0px;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.btn-hover-blue{
+    @extend %hover-button;
+    background-color: $blue-primary;
+}
+
+.btn-hover-purple{
+    @extend %hover-button;
+    background-color: $purple-primary;
+}
+
+.btn-hover-blue-pale{
+    @extend %hover-button;
+    background-color: $blue-pale-primary;
+}
+
+.btn-hover-green{
+    @extend %hover-button;
+    background-color: $green-primary;
+}
 //========== service buttons============
 
 .btn-service-blue-pale{

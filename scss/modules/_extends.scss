@@ -359,18 +359,23 @@
 			.hidden-lrg{
 				display: none;
 			}
-            .side-menu{
-                max-width: 390px;
-            }
-			.side-menu.active {
-				max-width: 390px;
-			}
 			.lrg-disapp{
 				display: none;
 			}
 			.lrg-reapp{
 				display: flex;
 			}
+            .side-menu{
+                width: 350px;
+            }
+			.side-menu.active {
+				width: 350px;
+                max-width: 350px;
+			}
+            .container-outer.active{
+                transform: translate(-350px);
+            } 
+            
 		}
 	}
 
