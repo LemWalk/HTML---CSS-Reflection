@@ -587,15 +587,12 @@
           <div><i class="fa-solid fa-star fa-2xl" style="color: #ffa500;"></i></div>
         </div>
 
-          
-        <div>
-
           <div class="review">
             <p>Netmatters stood out from the start. Great guys and very easy to work with. Both the build and digital marketing teams are clearly skilled -they know their stuff! They delivered a website to our (high!) expectations and went over and above to ensure we were satisfied clients - and we are!</p>
           </div>
 
           <div class="author-name">
-            <p class="text-grey">Eleanor Bishop, Head of Marketing - <a href="#" class="link-white">Ashcroft Partnership LLP</a></p>
+            <p class="news-text-grey">Eleanor Bishop, Head of Marketing - <a href="#" class="link-white">Ashcroft Partnership LLP</a></p>
           </div>
 
         <div class="intro-btns">
@@ -605,7 +602,6 @@
           <div>
             <a href="#"><div class="btn-intro-green-l">TRUSTPILOT REVIEWS <i class="fa-solid fa-arrow-right" style="color:white;"></i></div></a>
           </div>
-        </div>
 
       </div>
 
@@ -751,7 +747,7 @@
   ====== Client carousel ======== -->
 
 	<div class="carousel">
-      <div class="carousel-container  autoplay-carousel">
+      <div class="carousel-container autoplay-carousel">
               
         <div class="img-container">  
           <div class="pop-con">
@@ -767,7 +763,7 @@
           <div class="pop-con">
           <div class="pop-up">
             <h3>One Traveller</h3>
-            <p class="pop-up-text"> One Traveller, founded in 2007, is a leading provider of solo holidays for over 50s.</p>
+            <p class="pop-up-text"> <a class="link-white-bold" href="#">One Traveller</a>, founded in 2007, is a leading provider of solo holidays for over 50s.</p>
             <span class="btn-hover-purple">VIEW OUR CASE STUDY <i class="fa-solid fa-arrow-right fa-lrg" style="color:inherit;"></i></span>
           </div>
             <div class="box-arrow"></div>
@@ -1305,16 +1301,17 @@
 <script>
   $(document).ready(function(){
     $('.autoplay-carousel').slick({
-draggable : false,      
-slidesToShow: 1,
-slidesToScroll: 1,
-autoplay: true,
-autoplaySpeed: 4000,
-infintie : true,
-dots : false,
-arrows : false,
-variableWidth: true,
-// variableHeight : true,
+      variableWidth: true,
+  autoplay: true,
+  pauseOnHover: true,
+  dots: false,
+  arrows: false,
+  infinite: true,
+  autoplaySpeed: 4000,
+  cssEase: "ease-in-out",
+  speed: 300,
+  slidesToShow: 1,
+  slidesToScroll: 1,
 });
 });
 </script>

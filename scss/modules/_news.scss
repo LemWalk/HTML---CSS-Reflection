@@ -37,6 +37,12 @@ color: $black-light;
     margin: 0;
 }
 
+.news-text-grey{
+    color: #a3a8ac;
+    font-size: 0.85rem;
+    font-weight: 400;
+}
+
 .text-grey{
     color: rgba(51, 54, 69, 0.5);
     font-size: 0.85rem;
@@ -84,7 +90,6 @@ color: $black-light;
     align-items: stretch;
     margin: 8%;
     line-height: 20px;
-
     p{
         color: $grey;
         font-size: 13px;

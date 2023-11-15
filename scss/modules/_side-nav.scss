@@ -5,7 +5,7 @@
 }
 
 .side-menu{
-  display: none;
+  display: block;
     position: fixed;
     top: 0;
     right: 0;
@@ -13,15 +13,15 @@
     height: 100vh;
     width: auto;
     transition: all 0.5s;
-    z-index:2;
     overflow-y: scroll;
-    z-index: -2;
+    z-index: -200;
 }
 
 .side-menu.active{
-  display: block;
   z-index: 2;
-  width: 275px;
+  width:auto;
+  max-width: 275px;
+  transition: all 0.5s;
 }
 
 
@@ -208,6 +208,7 @@
 
     .container-outer.active{
       transform: translate(-275px);
+      transition: all 0.5s;
   } 
   
 

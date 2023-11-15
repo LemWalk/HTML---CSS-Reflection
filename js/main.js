@@ -11,6 +11,9 @@ burgerMenu.classList.toggle('active');
 sideMenu.classList.toggle('active');
 containerOuter.classList.toggle('active');
 overlay.classList.toggle('active');
+document.querySelector('html').style.overflowY = 'hidden';
+containerOuter.style.overflowY = 'auto';
+containerOuter.style.height = '100vh';
 });
 
 overlay.addEventListener('click', () => {
@@ -18,6 +21,7 @@ overlay.addEventListener('click', () => {
     sideMenu.classList.toggle('active');
     containerOuter.classList.toggle('active');
     overlay.classList.toggle('active');
+    document.querySelector('html').style.overflowY = 'auto';
 });
 
 
