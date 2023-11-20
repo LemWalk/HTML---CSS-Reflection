@@ -22,6 +22,7 @@ overlay.addEventListener('click', () => {
     containerOuter.classList.toggle('active');
     overlay.classList.toggle('active');
     document.querySelector('html').style.overflowY = 'auto';
+    containerOuter.style.height = 'auto';
 });
 
 

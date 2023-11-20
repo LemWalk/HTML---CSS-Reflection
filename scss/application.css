@@ -315,6 +315,10 @@ template {
   font-size: 16px;
 }
 
+main {
+  margin-top: 175px;
+}
+
 .container-outer {
   display: flex;
   flex-direction: column;
@@ -413,9 +417,17 @@ a {
   flex-wrap: wrap;
 }
 
+@media (min-width: 752px) {
+  main {
+    margin-top: 110px;
+  }
+}
 @media (min-width: 976px) {
   .container-inner {
     padding: 0 5%;
+  }
+  main {
+    margin-top: 211px;
   }
 }
 @media (min-width: 752px) {
@@ -1261,7 +1273,7 @@ a {
   gap: 50px;
 }
 
-.slick-list.draggable {
+.slick-list {
   overflow: visible;
 }
 
@@ -2626,6 +2638,10 @@ input[type=text] {
 }
 
 .sticky {
+  transform: translateY(-100%);
+}
+
+.nav-container {
   position: fixed;
   top: 0;
   width: 100%;

@@ -1,18 +1,11 @@
-// .nav-container-sticky{
-//     transition: all 0.5s;
-//     z-index: 100000;
-// }
 
+#nav-lo{
+    @extend %nav-lo;
+}
 
 .header{
     background-color: #fff;
     visibility: visible;
-}
-
-
-
-#nav-lo{
-    @extend %nav-lo;
 }
 
 
@@ -144,8 +137,17 @@ input[type=text]{
 
 //================================
 
+// .sticky{
+//         transform: translateY(-100%);
+// }
+
+.sticky{
+    transform: translateY(-100%);
+}
+
+
 // In CSS, define the styles for the sticky class
-.sticky {
+.nav-container{
     position: fixed;
     top: 0;
     width: 100%;
@@ -154,3 +156,4 @@ input[type=text]{
     z-index: 10000;
     transition: all 0.6s ease-in-out;
 }
+
