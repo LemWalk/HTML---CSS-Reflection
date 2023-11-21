@@ -11,19 +11,23 @@
     right: 0;
     background-color: $black-light;
     height: 100vh;
-    width: auto;
+    width: 275px;
     transition: all 0.5s;
     overflow-y: scroll;
     z-index: -200;
+    @include mq(large) {
+      width: 350px;
+    }
 }
 
 .side-menu.active{
   z-index: 2;
-  width:auto;
-  max-width: 275px;
+  width: 275px;
   transition: all 0.5s;
+  @include mq(large) {
+    width: 350px;
+  }
 }
-
 
 .side-menu-inner{
   display: flex;
@@ -209,6 +213,9 @@
     .container-outer.active{
       transform: translate(-275px);
       transition: all 0.5s;
+      @include mq(large) {
+        transform: translate(-350px);
+      }
   } 
   
 

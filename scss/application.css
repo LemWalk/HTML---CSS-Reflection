@@ -701,15 +701,6 @@ a {
   #side-nav-lo .lrg-reapp {
     display: flex;
   }
-  #side-nav-lo .side-menu {
-    max-width: 350px;
-  }
-  #side-nav-lo .side-menu.active {
-    max-width: 305px;
-  }
-  #side-nav-lo .container-outer.active {
-    transform: translate(-350px);
-  }
 }
 
 @media (min-width: 976px) {
@@ -790,7 +781,7 @@ a {
   left: 0;
   right: 0;
   background-color: rgba(0, 0, 0, 0.7);
-  z-index: 1000;
+  z-index: 10001;
   overflow: hidden;
 }
 
@@ -2836,17 +2827,26 @@ input[type=text] {
   right: 0;
   background-color: #323544;
   height: 100vh;
-  width: auto;
+  width: 275px;
   transition: all 0.5s;
   overflow-y: scroll;
   z-index: -200;
 }
+@media (min-width: 976px) {
+  .side-menu {
+    width: 350px;
+  }
+}
 
 .side-menu.active {
   z-index: 2;
-  width: auto;
-  max-width: 275px;
+  width: 275px;
   transition: all 0.5s;
+}
+@media (min-width: 976px) {
+  .side-menu.active {
+    width: 350px;
+  }
 }
 
 .side-menu-inner {
@@ -3022,4 +3022,9 @@ input[type=text] {
 .container-outer.active {
   transform: translate(-275px);
   transition: all 0.5s;
+}
+@media (min-width: 976px) {
+  .container-outer.active {
+    transform: translate(-350px);
+  }
 }/*# sourceMappingURL=application.css.map */

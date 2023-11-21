@@ -5,6 +5,8 @@ const burgerMenu = document.querySelector('.burger-menu');
 const sideMenu = document.querySelector('.side-menu');
 const overlay = document.querySelector('.overlay');
 const containerOuter = document.querySelector('.container-outer');
+const sideMenuActive = document.querySelector('.side-menu.active');
+const containerOuterActive = document.querySelector('.container-outer.active');
 
 burgerMenu.addEventListener('click', () => {
 burgerMenu.classList.toggle('active');

@@ -14,9 +14,8 @@
     main{
         margin-top: 211px;
     }
+    
 }
-
-
 
 
 //==========Footer Bot Layout =================
@@ -365,6 +364,7 @@
 
 %side-nav-lo{
 	@include mq(large){
+
 			.margin-top{
 					margin-top: 0;
 			}
@@ -376,22 +376,10 @@
 			}
 			.lrg-reapp{
 				display: flex;
-			}          
-            
-            .side-menu{
-                max-width: 350px;
-            }
-            .side-menu.active{
-                max-width: 305px;
-            }
-            
-            .container-outer.active{
-                transform: translate(-350px);
-            } 
-		}
-	}
-
-
+			} 
+        
+        }
+    }
 //======== Cookies =====================
 
 %cookie-lo{
