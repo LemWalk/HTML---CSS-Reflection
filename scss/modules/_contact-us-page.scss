@@ -1,0 +1,122 @@
+
+.contact-title-box{
+    background-color: $black-mid;
+    padding: 24px 0px;
+    margin: 0 0 50px 0;
+}
+
+.contact-title-lrg{
+    font-size: 2.25rem;
+    font-weight: 400;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+//====== Offices ============
+
+// .office-container{
+//     display: flex;
+//     flex-direction: column;
+// }
+
+.office-inner{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0;
+    margin-top: 20px;    
+    margin-bottom: 40px;
+}
+
+.office-block{
+    display: flex;
+    flex-direction: column;    
+    border: solid grey 2px;
+    border-radius: 15px;
+}
+
+.img-office{
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+}
+
+.office-title{
+    margin-bottom: 15px;
+}
+
+.office-title-link{
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 400;
+    color: #121419;
+    padding: 0;
+    margin: 0;
+    &:hover{
+
+        text-decoration: underline;
+    }
+}
+
+.office-address{
+    font-size: 16px;
+    line-height: 22px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+
+.office-info{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    height: 100%;
+}
+
+.office-telephone-number{
+    font-size: 26px;
+    line-height: 28px;
+    color: #926fb1;
+    text-decoration: none;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+.office-block{
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-office-box{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.btn-office{
+    font-size: 0.9rem;
+    border-radius: 3px;
+    padding: 5px 30px;
+    color: #fff;
+    background-color: #926fb1; 
+    &:hover{
+        background-color: #7e57a0;
+    }
+}
+
+.office-map{
+    display: flex;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.img-office-map{
+    object-fit: cover;
+    border-radius: 0 0 15px 15px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
