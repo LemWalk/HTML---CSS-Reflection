@@ -1381,7 +1381,7 @@ form h2 {
   color: #323544;
 }
 
-#form-input-name {
+.form-input-box, #form-input-telephone, #form-input-company-name, #form-input-message, #form-input-name, #form-input-email {
   border: solid rgba(153, 153, 153, 0.4) 1px;
   border-radius: 2px;
   background-color: #fff;
@@ -1390,23 +1390,7 @@ form h2 {
   height: 50px;
   width: 100%;
 }
-#form-input-name:focus {
-  border: #5bc0de solid 1px;
-  outline: 0;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(91, 192, 222, 0.6);
-  width: 99.5%;
-}
-
-#form-input-email {
-  border: solid rgba(153, 153, 153, 0.4) 1px;
-  border-radius: 2px;
-  background-color: #fff;
-  padding-right: 15px;
-  border: #ddd;
-  height: 50px;
-  width: 100%;
-}
-#form-input-email:focus {
+.form-input-box:focus, #form-input-telephone:focus, #form-input-company-name:focus, #form-input-message:focus, #form-input-name:focus, #form-input-email:focus {
   border: #5bc0de solid 1px;
   outline: 0;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(91, 192, 222, 0.6);
@@ -3142,4 +3126,16 @@ input[type=text] {
   width: 100%;
   margin: 0;
   padding: 0;
+  height: 100%;
+}
+
+.contact-form {
+  background-color: #e6e7e9;
+  border-radius: 10px;
+  padding: 30px;
+  margin-bottom: 50px;
+}
+
+.form-inner {
+  width: 100%;
 }/*# sourceMappingURL=application.css.map */

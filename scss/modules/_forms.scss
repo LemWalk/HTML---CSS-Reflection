@@ -33,8 +33,10 @@ form h2 {
 }
 
 
-#form-input-name{
-border: solid rgba($color: #999, $alpha: 0.4) 1px;
+//====== Template for form input boxes ==============
+
+.form-input-box{
+  border: solid rgba($color: #999, $alpha: 0.4) 1px;
 border-radius: 2px;
 background-color: #fff;
 padding-right: 15px;
@@ -49,22 +51,11 @@ width: 100%;
   }
 }
 
-#form-input-email{
-  border: solid rgba($color: #999, $alpha: 0.4) 1px;
-  border-radius: 2px;
-  background-color: #fff;
-  padding-right: 15px;
-  border: $grey-light;
-  height: 50px;
-  width: 100%;
-  &:focus {
-    border: #5bc0de solid 1px;
-    outline: 0;
-    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(91,192,222,.6);
-    width: 99.5%;
-    }
+#form-input-name, #form-input-email{
+  @extend.form-input-box
+}
 
-  }
+
 
   .checkbox{
     display: flex;

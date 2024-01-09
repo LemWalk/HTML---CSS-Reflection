@@ -14,7 +14,9 @@
       "default",
       {
         "ignore": [
-          "accent-color"
+          "accent-color",
+          "-webkit-text-size-adjust",
+          "-webkit-appearance"
         ]
       }
     ],
