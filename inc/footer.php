@@ -340,6 +340,7 @@
   <script src="js/jquery-3.7.0.min.js"></script>
   <script src="js/cookies.js"></script>
   <script src="js/slick/slick.min.js"></script>
+  <script src="js/contact-page.js"></script>
   <script>
     $(document).ready(function(){
       $('.autoplay').slick({

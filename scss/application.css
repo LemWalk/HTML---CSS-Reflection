@@ -714,6 +714,64 @@ a {
   }
 }
 
+@media (min-width: 752px) {
+  #home-top-lo .home-top-inner {
+    display: block;
+  }
+}
+
+@media (min-width: 976px) {
+  #page-title-lo {
+    background-color: transparent;
+  }
+  #page-title-lo .contact-title-lrg {
+    color: #333645;
+  }
+}
+
+@media (min-width: 976px) {
+  #office-cards-lo .office-inner {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  #office-cards-lo .office-inner > * {
+    flex: 1 1 calc(50% - 30px);
+  }
+}
+
+@media (min-width: 1244px) {
+  #business-contact-lo .business-contact-inner {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 30px;
+  }
+  #business-contact-lo .business-contact-details {
+    width: 34%;
+  }
+  #business-contact-lo .contact-form {
+    width: 66%;
+  }
+}
+
+@media (min-width: 485px) {
+  #contact-form-lo .contact-bottom-row {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+@media (min-width: 976px) {
+  #contact-form-lo .input-boxes-contact {
+    flex-direction: row;
+    flex-wrap: wrap;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+  }
+  #contact-form-lo .input-boxes-contact > * {
+    flex: 1 1 calc(50% - 15px);
+  }
+}
+
 .news-img img {
   width: 100%;
   -o-object-fit: cover;
@@ -1381,16 +1439,16 @@ form h2 {
   color: #323544;
 }
 
-.form-input-box, #form-input-telephone, #form-input-company-name, #form-input-message, #form-input-name, #form-input-email {
+.form-input-box, #form-input-message, #form-input-telephone, #form-input-company-name, #form-input-name, #form-input-email {
   border: solid rgba(153, 153, 153, 0.4) 1px;
   border-radius: 2px;
   background-color: #fff;
-  padding-right: 15px;
-  border: #ddd;
+  padding: 5px 15px;
+  border: 1px solid #ddd;
   height: 50px;
   width: 100%;
 }
-.form-input-box:focus, #form-input-telephone:focus, #form-input-company-name:focus, #form-input-message:focus, #form-input-name:focus, #form-input-email:focus {
+.form-input-box:focus, #form-input-message:focus, #form-input-telephone:focus, #form-input-company-name:focus, #form-input-name:focus, #form-input-email:focus {
   border: #5bc0de solid 1px;
   outline: 0;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(91, 192, 222, 0.6);
@@ -3013,6 +3071,22 @@ input[type=text] {
   }
 }
 
+#home-top-lo {
+  border-top: 1px solid #333645;
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
+}
+
+.home-top-inner {
+  display: none;
+}
+
+.home-top-text {
+  color: #333645;
+  font-size: 0.8rem;
+  margin: 0;
+  padding: 14px 0 13px;
+}
+
 .contact-title-box {
   background-color: #333645;
   padding: 24px 0px;
@@ -3030,7 +3104,7 @@ input[type=text] {
 .office-inner {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 30px;
   padding: 0;
   margin-top: 20px;
   margin-bottom: 40px;
@@ -3039,7 +3113,6 @@ input[type=text] {
 .office-block {
   display: flex;
   flex-direction: column;
-  border: solid grey 2px;
   border-radius: 15px;
 }
 
@@ -3048,6 +3121,11 @@ input[type=text] {
      object-fit: cover;
   border-radius: 15px 15px 0 0;
   width: 100%;
+  display: flex;
+}
+
+.office-top {
+  box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
 }
 
 .office-title {
@@ -3078,7 +3156,7 @@ input[type=text] {
   display: flex;
   flex-direction: column;
   text-align: left;
-  height: 100%;
+  border: solid #ccc 1px;
 }
 
 .office-telephone-number {
@@ -3127,6 +3205,76 @@ input[type=text] {
   margin: 0;
   padding: 0;
   height: 100%;
+  display: flex;
+}
+
+.business-contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-bottom: 25px;
+}
+
+.sales-email {
+  padding: 0;
+}
+
+.contact-email {
+  color: #926fb1;
+  font-size: 26px;
+  line-height: 28px;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 0;
+}
+.contact-email:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.contact-text, .out-of-hours-title-box {
+  color: #333645;
+  font-weight: 600;
+  margin: 0;
+}
+
+.out-of-hours-title-box {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  text-decoration: none;
+  align-items: center;
+  width: -moz-max-content;
+  width: max-content;
+}
+.out-of-hours-title-box:hover {
+  cursor: pointer;
+}
+.out-of-hours-title-box:hover .out-of-hours-title {
+  text-decoration: underline;
+}
+
+.out-of-hours-title {
+  margin: 0;
+}
+
+.out-of-hours-details {
+  display: none;
+  flex-direction: column;
+  gap: 25px;
+  padding-top: 25px;
+  transition: all 1s;
+}
+
+.out-of-hours-details.active {
+  display: flex;
+  transition: bottom 1000ms;
+}
+
+.out-of-hours-text-light {
+  color: #666;
+  font-weight: 400;
+  margin: 0;
 }
 
 .contact-form {
@@ -3138,4 +3286,36 @@ input[type=text] {
 
 .form-inner {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-boxes-contact {
+  display: flex;
+  flex-direction: column;
+}
+
+#form-input-message {
+  height: 88px;
+  padding-top: 10px;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #555;
+}
+
+.small-print {
+  margin-bottom: 30px;
+}
+
+.contact-bottom-row {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+}
+
+.field-text {
+  font-size: 85%;
+  color: #333645;
+  margin: 0;
 }/*# sourceMappingURL=application.css.map */

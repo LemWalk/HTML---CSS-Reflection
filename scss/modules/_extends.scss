@@ -395,3 +395,93 @@
             }
         }
     }
+
+
+//====================================
+// ====== Contact Us Page ============
+//====================================
+
+
+// ===== Home / office bar ===========
+
+%home-top-lo{
+    @include mq(medium) {
+        .home-top-inner{
+            display: block;
+        }
+    }
+}
+
+
+// ===== Page Title ==================
+
+%page-title-lo{
+    @include mq(large){
+            background-color: transparent;
+        .contact-title-lrg{
+            color: $black-mid;
+        }
+    }
+}
+
+
+// ===== Office Cards =================
+
+%office-cards-lo{
+    @include mq(large){
+        .office-inner{
+            flex-direction: row;
+            flex-wrap: wrap;
+            // width: calc(40% - 30px);
+        }
+        .office-inner>*{
+            flex: 1 1 calc(50% - 30px);
+        }
+    }
+}
+
+// ===== Business Information =========
+
+%business-contact-lo{
+    @include mq(extra-large){
+        .business-contact-inner{
+            display: flex;
+            flex-direction: row-reverse;
+            gap: 30px;
+        }
+
+        .business-contact-details{
+            width: 34%;
+        }
+
+        .contact-form{
+            width: 66% ;
+        }
+    }
+}
+
+
+// ===== Contact Form ==================
+
+%contact-form-lo{
+    @include mq(small) {
+        .contact-bottom-row{
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            width: 100%;
+        }
+    }
+
+    @include mq(large){
+        .input-boxes-contact{
+            flex-direction: row;
+            flex-wrap: wrap;
+            column-gap: 30px;
+        }
+
+        .input-boxes-contact>*{
+            flex: 1 1 calc(50% - 15px);
+        }
+
+    }
+}

@@ -39,8 +39,8 @@ form h2 {
   border: solid rgba($color: #999, $alpha: 0.4) 1px;
 border-radius: 2px;
 background-color: #fff;
-padding-right: 15px;
-border: $grey-light;
+padding: 5px 15px;
+border: 1px solid $grey-light;
 height: 50px;
 width: 100%;
 &:focus {
@@ -121,3 +121,5 @@ width: 100%;
 .p-red{
 color: #d24d57;
 }
+
+

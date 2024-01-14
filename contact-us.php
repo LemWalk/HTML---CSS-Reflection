@@ -1,11 +1,22 @@
 <?php
     include 'inc/header.php';
 ?>
+
 <main>  
+
+<!-- ===== Home / Office bar ====== -->
+
+<div id="home-top-lo">
+    <div class="container-inner">
+        <div class="home-top-inner">
+            <p class="home-top-text"><strong>Home</strong> / Our Offices</p>
+        </div>
+    </div>
+</div>
 
 <!-- ===== Page Title ===== -->
 
-    <div class="contact-title-box">
+    <div id="page-title-lo" class="contact-title-box">
         <div class="container-inner">
             <h1 class="contact-title-lrg">Our offices</h1>
         </div>
@@ -13,7 +24,7 @@
 
 <!-- ===== Office cards ===== -->
 
-    <div class="office-container">
+    <div id="office-cards-lo" class="office-container">
         <div class="container-inner">
             <div class="office-inner">
 
@@ -164,31 +175,35 @@
 
 <!-- ===== Business Info ===== -->
 
-    <div class="business-contact-container">
+    <div class="business-contact-container" id="business-contact-lo">
         <div class="container-inner">
             <div class="business-contact-inner">
 
                 <div class="business-contact-details">
                     <p class="contact-text">Email us on:</p>
-                    <p class="contact-email">sales@netmatters.com</p>
+                    <a href="mailto:sales@netmatters.com" class="sales-email"><p class="contact-email">sales@netmatters.com</p></a>
                     <p class="contact-text">Business hours:</p>
                     <p class="contact-text">Monday - Friday 07:00 - 18:00</p>
                     <div class="out-of-hours-box">
-                        <div class="out-of-hours-title">
-                            <p class="">Out of Hours IT Support</p> <i class="fa-solid fa-chevron-down fa-2xs"></i>
+                        <div class="out-of-hours-title-box">
+                            <p class="out-of-hours-title">Out of Hours IT Support</p> <i class="fa-solid fa-chevron-down fa-sml fa-regular"></i>
                         </div>
                         <div class="out-of-hours-details">
                             <p class="out-of-hours-text-light">Netmatters IT are offering an Out of Hours service for Emergency and Critical tasks.</p>
-                            <p class="out-of-hours-text-dark">Monday - Friday 18:00 - 22:00 <br> Saturday 08:00 - 16:00 <br>  Sunday 10:00 - 18:00</p>
+                            <p class="contact-text">Monday - Friday 18:00 - 22:00 <br> Saturday 08:00 - 16:00 <br>  Sunday 10:00 - 18:00</p>
                             <p class="out-of-hours-text-light">To log a critical task, you will need to call our main line number and select Option 2 to leave an Out of Hours  voicemail. A technician will contact you on the number provided within 45 minutes of your call. </p>
                         </div>
                     </div>
                 </div>
 
-                <form class="contact-form">
+
+<!-- ===== Contact Form ===== -->
+
+
+                <form class="contact-form" id="contact-form-lo">
                     <div class="form-inner">
 
-                        <div class="input-boxes">
+                        <div class="input-boxes-contact">
 			
                             <div class="data-input">
                                 <label id="name-id" for="form-input-name">Your Name <span class="p-red">*</span></label>
@@ -212,7 +227,8 @@
 
                             <div class="data-input">
                                 <label id="message-id" for="form-input-message">Your Message <span class="p-red">*</span></label>
-                                <input id="form-input-message" type="text" placeholder="Hi, I am interested in discussing a Our Offices solution, could you please give me a call or send an email?">
+                                <!-- <input id="form-input-message" type="text" placeholder="Hi, I am interested in discussing a Our Offices solution, could you please give me a call or send an email?"> -->
+                                <textarea name="form-input-message" id="form-input-message" cols="30" rows="10" placeholder="">Hi, I am interested in discussing a Our Offices solution, could you please give me a call or send an email?</textarea>
                             </div>
 
                         </div>
@@ -230,10 +246,10 @@
                     <div class="contact-bottom-row">
 
                         <div class="field-required">
-                            <p><span class="p-red">* </span>Fields Required</p>
+                            <p class="field-text"><span class="p-red">* </span>Fields Required</p>
                         </div>
                         
-                        <div>
+                        <div id="contact-submit-btn">
                             <button type="submit" class="btn-blk">SEND ENQUIRY</button>
                         </div>                        
 
