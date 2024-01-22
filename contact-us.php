@@ -1,4 +1,5 @@
 <?php
+    include 'inc/form-validation.php';
     include 'inc/header.php';
 ?>
 
@@ -200,36 +201,35 @@
 <!-- ===== Contact Form ===== -->
 
 
-                <form class="contact-form" id="contact-form-lo">
+                <form class="contact-form" id="contact-form-lo" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?> ">
                     <div class="form-inner">
 
                         <div class="input-boxes-contact">
 			
                             <div class="data-input">
                                 <label id="name-id" for="form-input-name">Your Name <span class="p-red">*</span></label>
-                                <input id="form-input-name" type="text">
+                                <input id="form-input-name" type="text" value="<?php echo $name;?>" name="name">
                             </div>
 
                             <div class="data-input">
                                 <label id="company-name-id" for="form-input-company-name">Company Name</label>
-                                <input id="form-input-company-name" type="text">
+                                <input id="form-input-company-name" type="text" value="<?php echo $company_name;?>" name="company_name">
                             </div>
 
                             <div class="data-input">
                                 <label id="e-mail-id" for="form-input-email">Your Email <span class="p-red">*</span></label>
-                                <input id="form-input-email" type="email">
+                                <input id="form-input-email" type="email" value="<?php echo $email;?>" name="email">
                             </div>
 
                             <div class="data-input">
                                 <label id="telephone-id" for="form-input-telephone">Your Telephone Number <span class="p-red">*</span></label>
-                                <input id="form-input-telephone" type="tel" pattern="" minlength="" maxlength="">
+                                <input id="form-input-telephone" name="telephone" type="tel" minlength="10" maxlength="13" value="<?php echo $telephone;?>">
                             </div>
 
                             <div class="data-input">
                                 <label id="message-id" for="form-input-message">Your Message <span class="p-red">*</span></label>
                                 <!-- <input id="form-input-message" type="text" placeholder="Hi, I am interested in discussing a Our Offices solution, could you please give me a call or send an email?"> -->
-                                <textarea name="form-input-message" id="form-input-message" cols="30" rows="10" placeholder="">Hi, I am interested in discussing a Our Offices solution, could you please give me a call or send an email?</textarea>
-                            </div>
+                                <textarea name="message" id="form-input-message" cols="50" rows="10" placeholder="" value="<?php echo $message;?>"> Hi, I am interested in discussing a Our Offices solution, could you please give me a call or send an email?" </textarea>                            </div>
 
                         </div>
 
@@ -270,5 +270,5 @@
 
 
 <?php
-  include 'inc/footer.php';
+    include 'inc/footer.php';
 ?>

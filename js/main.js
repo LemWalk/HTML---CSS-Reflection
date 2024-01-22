@@ -35,12 +35,16 @@ const tickbox = document.querySelector('.custom-tickbox');
 const formText = document.querySelector('.form-text')
 
 
-checkbox.addEventListener('click', () => {
+function check_box() {
     tickbox.classList.toggle('active');
-})
+}
 
-formText.addEventListener('click', () => {
-    tickbox.classList.toggle('active');
-})
+// function form_text() {
+//     tickbox.classList.toggle('active');
+// }
+
+checkbox.addEventListener('click', check_box);
+
+formText.addEventListener('click', check_box);
 
 

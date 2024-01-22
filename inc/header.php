@@ -35,7 +35,7 @@
           <hr class="cookie-hr">
           <div class = "cookie-btns">
             <a class="cookie-btn-outer"><div class="btn-ch-set">Change Settings</div></a>
-            <a class="cookie-btn-outer"><div class="btn-acc">Accept Cookies</div></a>
+            <a class="cookie-btn-outer"><div class="btn-acc" id="btn-accept">Accept Cookies</div></a>
           </div>
         </div>
       </div>
