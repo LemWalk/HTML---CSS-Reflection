@@ -7,57 +7,57 @@ $telephoneRegex = "";
 
 
 
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-
-    //     if (empty($_POST["name"])) {
-    //         $nameErr = "Name is required";
-    //     } else {            
-    //         $name = test_input($_POST["name"]);
-    //         if (!preg_match("/^[a-zA-Z-' ]*$/",$name)) {
-    //             $nameErr = "Only letters and white space allowed";
-    //         }
-    //     }
+        if (empty($_POST["name"])) {
+            $nameErr = "Name is required";
+        } else {            
+            $name = test_input($_POST["name"]);
+            if (!preg_match("/^[a-zA-Z-' ]*$/",$name)) {
+                $nameErr = "Only letters and white space allowed";
+            }
+        }
     
-    //     if (empty($_POST["company_name"])) {
-    //         $company_name = "";
-    //     } else {
-    //         $company_name = test_input($_POST["company_name"]);
-    //     }
+        if (empty($_POST["company_name"])) {
+            $company_name = "";
+        } else {
+            $company_name = test_input($_POST["company_name"]);
+        }
         
     
-    //     if (empty($_POST["email"])) {
-    //         $emailErr = "Email is required";
-    //     } else {
-    //         $email = test_input($_POST["email"]);
-    //         // if (!preg_match($emailRegex, $email)) {
-    //         //     $nameErr = "Invalid email";
-    //     // }
-    // }
+        if (empty($_POST["email"])) {
+            $emailErr = "Email is required";
+        } else {
+            $email = test_input($_POST["email"]);
+            // if (!preg_match($emailRegex, $email)) {
+            //     $nameErr = "Invalid email";
+        // }
+    }
 
         
-    //     if (empty($_POST["telephone"])) {
-    //         $telephone = "";
-    //     } else {
-    //         $telephone = test_input($_POST["telephone"]);
-    //         if (!preg_match($emailRegex, $email)) {
-    //             $nameErr = "Invalid email";
-    //         }
-    //     }    
+        if (empty($_POST["telephone"])) {
+            $telephoneErr = "Telephone number is required";
+        } else {
+            $telephone = test_input($_POST["telephone"]);
+            if (!preg_match($emailRegex, $email)) {
+                $nameErr = "Invalid email";
+            }
+        }    
 
 
-    //     if (empty($_POST["message"])) {
-    //         $messageErr = "Message is required";
-    //     } else {
-    //         $message = test_input($_POST["message"]);
-    //     }
+        if (empty($_POST["message"])) {
+            $messageErr = "Message is required";
+        } else {
+            $message = test_input($_POST["message"]);
+        }
 
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-        $name = test_input($_POST["name"]);
-        $company_name = test_input($_POST["company_name"]);
-        $email = test_input($_POST["email"]);      
-        $telephone = test_input($_POST["telephone"]);
-        $message = test_input($_POST["message"]);
+
+        // $name = test_input($_POST["name"]);
+        // $company_name = test_input($_POST["company_name"]);
+        // $email = test_input($_POST["email"]);      
+        // $telephone = test_input($_POST["telephone"]);
+        // $message = test_input($_POST["message"]);
 
 
 
@@ -116,13 +116,6 @@ $telephoneRegex = "";
 //     $stmt = $dbenquiries->prepare(
 //         "INSERT INTO enquiries (name, cname, email, telephone, message) VALUES (?, ?, ?, ?, ?)"
 //     );
-//     $stmt->bindParam(1, $name);
-//     $stmt->bindParam(2, $cname);
-//     $stmt->bindParam(3, $email);
-//     $stmt->bindParam(4, $telephone);
-//     $stmt->bindParam(5, $message);
-//     $stmt->execute();
-//     $name = $cname = $email = $telephone = $message ="";
-// }
+//
 
 

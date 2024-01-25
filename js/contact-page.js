@@ -20,11 +20,11 @@ function display_details() {
 
 // const form = document.querySelector('form');
 
-const submit_btn = document.querySelector.getElementById('contact-submit-btn');
+const submit_btn = document.querySelector.getElementById('#contact-submit-btn');
 
-// submit_btn.addEventListener('submit', (event) => {
-//     event.preventDefault();
-// });
+submit_btn.addEventListener('submit', (event) => {
+    event.preventDefault();
+});
 
 
 

@@ -7,6 +7,7 @@ include 'inc/header.php';
 
   <main>
 
+
     <!-- =======================================
     ========Hero slider ==================== -->
   <div class="hero-slider" id="hero-slider-lo">
@@ -134,14 +135,6 @@ include 'inc/header.php';
       </div>
 
       
-
-      
-
-
-        <!-- ============== slide 1 ==================== -->
-    
-
-
       </div>
 
     <!-- =========================================
@@ -373,8 +366,13 @@ include 'inc/header.php';
     
       <div class="news-col">
 
-        <a href="#" class="news-card">   
-      <div class="flex-col">
+      <?php
+        include 'inc/news_articles.php';
+      ?>
+
+
+      <!-- <div class="flex-col">
+      <a href="#" class="news-card">
         <div class="news-item">
           <div class="top-right-outer">
           <div class="top-right-blue">
@@ -399,13 +397,13 @@ include 'inc/header.php';
           </div>         
           
         </div>
-        
-      </div>
-    </a>
+        </a>
+      </div> --> 
         
 
         
-      <div class="flex-col"><a href="#" class="news-card"> 
+      <!-- <div class="flex-col">
+        <a href="#" class="news-card"> 
         <div class="news-item">
           <div class="top-right-outer">
           <div class="top-right-purple">
@@ -430,11 +428,11 @@ include 'inc/header.php';
           
         </div>
       </a>
-      </div>
+      </div> -->
         
 
-      
-      <div class="flex-col med-dis"> 
+
+      <!-- <div class="flex-col med-dis"> 
         <a href="#" class="news-card">      
         <div class="news-item">
           <div class="top-right-outer">
@@ -460,8 +458,9 @@ include 'inc/header.php';
           </div>
         </div>       
       </a>      
-      </div>   
+      </div>    -->
       
+    
 
       <div class="view-outer">
         <a class="view-all" href="#">
@@ -642,7 +641,6 @@ include 'inc/header.php';
   include 'inc/news_letter_sign_up.php';
   ?>
   
-
 
   </main>
       
