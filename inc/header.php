@@ -50,12 +50,12 @@
 
       <div class="nav-top-block">
         
-        <a href="#" class="img-reset"><img class="nm-logo-dark" src="img/nm-logo-dark.png" alt="Netmatters Logo"></a>     
+        <a href="index.php" class="img-reset"><img class="nm-logo-dark" src="img/nm-logo-dark.png" alt="Netmatters Logo"></a>     
 
         <div class="right-block">
         <div class="nav-hidden">
           <a href="#" class="btn-reset"><span class="btn-mouse"><i class="fa-solid fa-computer-mouse" style="color: #fff;"></i>SUPPORT</span></a>
-          <a href="#" class="btn-reset"><span class="btn-plane"><i class="fa-solid fa-paper-plane" style="color: #fff;"></i>CONTACT</span></a>
+          <a href="contact-us.php" class="btn-reset"><span class="btn-plane"><i class="fa-solid fa-paper-plane" style="color: #fff;"></i>CONTACT</span></a>
         </div>
 
         <div class="search-bar-hidden">

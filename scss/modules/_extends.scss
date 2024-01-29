@@ -432,7 +432,6 @@
         .office-inner{
             flex-direction: row;
             flex-wrap: wrap;
-            // width: calc(40% - 30px);
         }
         .office-inner>*{
             flex: 1 1 calc(50% - 30px);
@@ -444,19 +443,18 @@
 
 %business-contact-lo{
     @include mq(extra-large){
-        .business-contact-inner{
-            display: flex;
-            flex-direction: row-reverse;
-            gap: 30px;
-        }
 
         .business-contact-details{
             width: 34%;
+            float: right;
+            clear: both;
+            padding-left: 30px;
         }
 
         .contact-form{
             width: 66% ;
         }
+
     }
 }
 

@@ -163,11 +163,20 @@
     @extend %business-contact-lo;
 }
 
+
 .business-contact-details{
     display: flex;
     flex-direction: column;
     gap: 25px;
     margin-bottom: 25px;
+}
+
+.business-contact-inner{
+    transition: all 1s;
+}
+
+.business-contact-inner.active{
+    padding-bottom: 30px;
 }
 
 .sales-email{
@@ -191,6 +200,8 @@
     color: $black-mid;
     font-weight: 600;
     margin: 0;
+    font-size: 16px;
+    line-height: 1.875rem;
 }
 
 // .out-of-hours-box{
@@ -205,6 +216,7 @@
     text-decoration: none;
     align-items: center;
     width: max-content;
+    padding-bottom: 30px;
     &:hover{
         .out-of-hours-title{
             text-decoration: underline;
@@ -219,20 +231,23 @@
 
 
 .out-of-hours-details{
-    display: none;
+    display: flex;
     flex-direction: column;
     gap: 25px;
-    padding-top: 25px;
     transition: all 1s;
+    max-height: 0;
+    overflow: hidden;
 }
 
 .out-of-hours-details.active{
-    display: flex;
-    transition: bottom 1000ms;
+    max-height: 600px;
+    
 }
 
 
 .out-of-hours-text-light{
+    font-size: 16px;
+    line-height: 1.875rem;
     color: #666;
     font-weight: 400;
     margin: 0;
@@ -268,7 +283,7 @@
 
 #form-input-message{
     @extend.form-input-box;
-    height: 88px;
+    min-height: 88px;
     padding-top: 10px;
     font-size: 14px;
     line-height: 1.43;
@@ -277,6 +292,13 @@
 
 .small-print{
     margin-bottom: 30px;
+}
+
+.small-print-text{
+    margin: 0;
+    font-weight: 600;
+    font-size: 11px;
+    color: $black-mid;
 }
 
 .contact-bottom-row{
@@ -292,28 +314,98 @@
     margin: 0 ;
 }
 
-//=================
+//=======
 
-// .checkbox-2{
-//     @extend.checkbox;
-// }
+@import 'forms';
 
-// .custom-tickbox-2{
-//     @extend.custom-tickbox;
-// }
+.checkbox-2{
+    @extend.checkbox;
+};
 
-// .tickbox-2{
-//     @extend.tickbox;
-// }
+.custom-tickbox-2{
+    @extend.custom-tickbox;
+};
 
-// .form-text-2{
-//     @extend.form-text
-// }
+.tickbox-2{
+    @extend.tickbox;
+};
 
-// color: #a94442;
-// background-color: #f2dede;
-// border-color: #ebccd1;
+.form-text-2{
+    @extend.form-text
+};
 
-// color: #3c763d;
-//     background-color: #dff0d8;
-//     border-color: #d6e9c6;
+
+//========= Error / Success Messages =============
+
+.submit_message_box{
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 0px;
+    font-size: 1rem;
+    align-items: center;
+    margin-bottom: 10px
+
+};
+
+
+.hidden{
+    display: none !important;
+}
+
+
+.submit-successful{
+    display: flex;
+    color: #fff;
+    background-color: #2ecc71;;
+    width: 100%;
+    padding: 15px;
+    margin: 10px;   
+    border-radius: 1px;
+    align-items: center;
+    justify-content: space-between;
+};
+
+.submit_message_close{
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    width: 25px;
+    background-color: $green-primary;
+    &:hover{
+    background-color: #74ce99;
+    }
+    padding: 5px;
+border: 1px #fff solid;
+border-radius: 2px;
+}
+
+#error-input{
+    border: 3px solid #a94442 !important;
+}
+
+// input:invalid {
+//     border: 1px solid #a94442 !important;
+//   }
+
+
+
+.submit-failed{
+display: flex;
+color: #a94442;
+background-color: #e98989;
+border: solid 1px #e47b7b;
+width: 100%;
+padding: 15px;
+margin: 10px;
+text-align: center;
+border-radius: 1px;
+};
+
+
+
+
+
+

@@ -39,12 +39,21 @@ function check_box() {
     tickbox.classList.toggle('active');
 }
 
-// function form_text() {
-//     tickbox.classList.toggle('active');
-// }
-
 checkbox.addEventListener('click', check_box);
 
-formText.addEventListener('click', check_box);
+// formText.addEventListener('click', check_box);
+
+//=========== Tick box - 2 ======================
+
+const checkbox2 = document.querySelector('.checkbox-2');
+const tickbox2 = document.querySelector('.custom-tickbox-2');
+const formText2 = document.querySelector('.form-text-2')
 
 
+function check_box2() {
+    tickbox2.classList.toggle('active');
+}
+
+checkbox2.addEventListener('click', check_box2);
+
+formText2.addEventListener('click', check_box2);

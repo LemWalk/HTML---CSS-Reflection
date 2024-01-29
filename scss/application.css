@@ -740,13 +740,11 @@ a {
 }
 
 @media (min-width: 1244px) {
-  #business-contact-lo .business-contact-inner {
-    display: flex;
-    flex-direction: row-reverse;
-    gap: 30px;
-  }
   #business-contact-lo .business-contact-details {
     width: 34%;
+    float: right;
+    clear: both;
+    padding-left: 30px;
   }
   #business-contact-lo .contact-form {
     width: 66%;
@@ -1455,7 +1453,7 @@ form h2 {
   width: 99.5%;
 }
 
-.checkbox {
+.checkbox, .checkbox-2 {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -1465,15 +1463,15 @@ form h2 {
   gap: 20px;
   line-height: 30px;
 }
-.checkbox:hover {
+.checkbox:hover, .checkbox-2:hover {
   cursor: pointer;
 }
 
-.tickbox {
+.tickbox, .tickbox-2 {
   display: none;
 }
 
-.custom-tickbox {
+.custom-tickbox, .custom-tickbox-2 {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -1486,32 +1484,32 @@ form h2 {
   flex-shrink: 0;
   margin: 0px;
 }
-.custom-tickbox:hover {
+.custom-tickbox:hover, .custom-tickbox-2:hover {
   cursor: pointer;
 }
 
-.custom-tickbox::after {
+.custom-tickbox::after, .custom-tickbox-2::after {
   display: none;
   content: "✔";
   transform: scale(1.2);
   color: #fff;
 }
 
-.custom-tickbox.active {
+.custom-tickbox.active, .active.custom-tickbox-2 {
   background-color: #323544;
 }
-.custom-tickbox.active::after {
+.custom-tickbox.active::after, .active.custom-tickbox-2::after {
   display: flex;
 }
 
-.form-text {
+.form-text, .form-text-2 {
   font-size: 16px;
   font-weight: bold;
   line-height: 32px;
   letter-spacing: 0.4px;
   text-decoration: none;
 }
-.form-text:hover {
+.form-text:hover, .form-text-2:hover {
   cursor: pointer;
 }
 
@@ -2604,7 +2602,7 @@ nav ul li:hover ul.dd-orange::before {
 }
 
 input[type=text] {
-  background-color: inherit;
+  background-color: #fff;
   padding-left: 15px;
   width: 90%;
   outline: none;
@@ -3215,6 +3213,14 @@ input[type=text] {
   margin-bottom: 25px;
 }
 
+.business-contact-inner {
+  transition: all 1s;
+}
+
+.business-contact-inner.active {
+  padding-bottom: 30px;
+}
+
 .sales-email {
   padding: 0;
 }
@@ -3236,6 +3242,8 @@ input[type=text] {
   color: #333645;
   font-weight: 600;
   margin: 0;
+  font-size: 16px;
+  line-height: 1.875rem;
 }
 
 .out-of-hours-title-box {
@@ -3246,6 +3254,7 @@ input[type=text] {
   align-items: center;
   width: -moz-max-content;
   width: max-content;
+  padding-bottom: 30px;
 }
 .out-of-hours-title-box:hover {
   cursor: pointer;
@@ -3259,19 +3268,21 @@ input[type=text] {
 }
 
 .out-of-hours-details {
-  display: none;
+  display: flex;
   flex-direction: column;
   gap: 25px;
-  padding-top: 25px;
   transition: all 1s;
+  max-height: 0;
+  overflow: hidden;
 }
 
 .out-of-hours-details.active {
-  display: flex;
-  transition: bottom 1000ms;
+  max-height: 600px;
 }
 
 .out-of-hours-text-light {
+  font-size: 16px;
+  line-height: 1.875rem;
   color: #666;
   font-weight: 400;
   margin: 0;
@@ -3296,7 +3307,7 @@ input[type=text] {
 }
 
 #form-input-message {
-  height: 88px;
+  min-height: 88px;
   padding-top: 10px;
   font-size: 14px;
   line-height: 1.43;
@@ -3305,6 +3316,13 @@ input[type=text] {
 
 .small-print {
   margin-bottom: 30px;
+}
+
+.small-print-text {
+  margin: 0;
+  font-weight: 600;
+  font-size: 11px;
+  color: #333645;
 }
 
 .contact-bottom-row {
@@ -3318,4 +3336,169 @@ input[type=text] {
   font-size: 85%;
   color: #333645;
   margin: 0;
+}
+
+form {
+  background-color: #ddd;
+  padding-bottom: 50px;
+}
+
+form h2 {
+  color: #323544;
+  padding: 50px 0px 15px;
+  font-size: 32px;
+  margin: 0;
+  font-weight: 500;
+}
+
+.input-boxes {
+  display: flex;
+  flex-direction: column;
+}
+
+.data-input {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  row-gap: 10px;
+  font-weight: bold;
+  color: #323544;
+}
+
+.form-input-box, #form-input-name, #form-input-email, #form-input-telephone, #form-input-company-name, #form-input-message {
+  border: solid rgba(153, 153, 153, 0.4) 1px;
+  border-radius: 2px;
+  background-color: #fff;
+  padding: 5px 15px;
+  border: 1px solid #ddd;
+  height: 50px;
+  width: 100%;
+}
+.form-input-box:focus, #form-input-name:focus, #form-input-email:focus, #form-input-telephone:focus, #form-input-company-name:focus, #form-input-message:focus {
+  border: #5bc0de solid 1px;
+  outline: 0;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(91, 192, 222, 0.6);
+  width: 99.5%;
+}
+
+.checkbox, .checkbox-2 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  color: #333645;
+  font-weight: 300;
+  padding: 15px 0px;
+  gap: 20px;
+  line-height: 30px;
+}
+.checkbox:hover, .checkbox-2:hover {
+  cursor: pointer;
+}
+
+.tickbox, .tickbox-2 {
+  display: none;
+}
+
+.custom-tickbox, .custom-tickbox-2 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  accent-color: #333645;
+  border: solid 3px #323544;
+  border-radius: 3px;
+  background: transparent;
+  height: 32px;
+  width: 32px;
+  flex-shrink: 0;
+  margin: 0px;
+}
+.custom-tickbox:hover, .custom-tickbox-2:hover {
+  cursor: pointer;
+}
+
+.custom-tickbox::after, .custom-tickbox-2::after {
+  display: none;
+  content: "✔";
+  transform: scale(1.2);
+  color: #fff;
+}
+
+.custom-tickbox.active, .active.custom-tickbox-2 {
+  background-color: #323544;
+}
+.custom-tickbox.active::after, .active.custom-tickbox-2::after {
+  display: flex;
+}
+
+.form-text, .form-text-2 {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 32px;
+  letter-spacing: 0.4px;
+  text-decoration: none;
+}
+.form-text:hover, .form-text-2:hover {
+  cursor: pointer;
+}
+
+.p-red {
+  color: #d24d57;
+}
+
+.submit_message_box {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 0px;
+  font-size: 1rem;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.submit-successful {
+  display: flex;
+  color: #fff;
+  background-color: #2ecc71;
+  width: 100%;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 1px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.submit_message_close {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  width: 25px;
+  background-color: #2ecc7a;
+  padding: 5px;
+  border: 1px #fff solid;
+  border-radius: 2px;
+}
+.submit_message_close:hover {
+  background-color: #74ce99;
+}
+
+#error-input {
+  border: 3px solid #a94442 !important;
+}
+
+.submit-failed {
+  display: flex;
+  color: #a94442;
+  background-color: #e98989;
+  border: solid 1px #e47b7b;
+  width: 100%;
+  padding: 15px;
+  margin: 10px;
+  text-align: center;
+  border-radius: 1px;
 }/*# sourceMappingURL=application.css.map */

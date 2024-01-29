@@ -204,11 +204,15 @@
                 <form class="contact-form" id="contact-form-lo" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?> ">
                     <div class="form-inner">
 
+                    <div class="submit_message_box">
+                        <div  class="submit-successful">Submission Successful!<i class=" submit_message_close fa-solid fa-x fa-xs"></i></div>
+                    </div>
+                                        
                         <div class="input-boxes-contact">
-			
+		
                             <div class="data-input">
                                 <label id="name-id" for="form-input-name">Your Name <span class="p-red">*</span></label>
-                                <input id="form-input-name" type="text" value="<?php echo $name;?>" name="name">
+                                <input class="form-input-box" id="form-input-name" type="text" value="<?php echo $name;?>" name="name" required>
                             </div>
 
                             <div class="data-input">
@@ -218,25 +222,25 @@
 
                             <div class="data-input">
                                 <label id="e-mail-id" for="form-input-email">Your Email <span class="p-red">*</span></label>
-                                <input id="form-input-email" type="email" value="<?php echo $email;?>" name="email">
+                                <input id="form-input-email" type="email" value="<?php echo $email;?>" name="email" required>
                             </div>
 
                             <div class="data-input">
                                 <label id="telephone-id" for="form-input-telephone">Your Telephone Number <span class="p-red">*</span></label>
-                                <input id="form-input-telephone" name="telephone" type="tel" minlength="10" maxlength="13" value="<?php echo $telephone;?>">
+                                <input id="form-input-telephone" name="telephone" type="tel" minlength="10" maxlength="13" value="<?php echo $telephone;?>"required >
                             </div>
 
                             <div class="data-input">
                                 <label id="message-id" for="form-input-message">Your Message <span class="p-red">*</span></label>
-                                <!-- <input id="form-input-message" type="text" placeholder="Hi, I am interested in discussing a Our Offices solution, could you please give me a call or send an email?"> -->
-                                <textarea name="message" id="form-input-message" cols="50" rows="10" placeholder="" value="<?php echo $message;?>"> Hi, I am interested in discussing a Our Offices solution, could you please give me a call or send an email?" </textarea>                            </div>
+                                <textarea name="message" id="form-input-message" cols="50" rows="10" placeholder="" value="<?php echo $message;?>" required> Hi, I am interested in discussing a Our Offices solution, could you please give me a call or send an email?" </textarea>                    
+                            </div>
 
                         </div>
 
-                        <div class="checkbox">
-                            <div class="custom-tickbox"></div>
-                                <input type="checkbox" class="tickbox" id="checkbox-id" name="#" value="#">
-                                <label for="checkbox-id" class="form-text">Please tick this box if you wish to receive marketing information from us. Please see our <a href="#" class="link-blk">Privacy Policy</a> for more information on how we keep your data safe.</label>
+                        <div class="checkbox-2">
+                            <span class="custom-tickbox-2"></span>
+                                <input type="checkbox" class="tickbox-2" id="checkbox-id" name="#" value="#">
+                                <label for="checkbox-id" class="form-text-2">Please tick this box if you wish to receive marketing information from us. Please see our <a href="#" class="link-blk">Privacy Policy</a> for more information on how we keep your data safe.</label>
                         </div>
 
                         <div class="small-print">
@@ -249,12 +253,12 @@
                             <p class="field-text"><span class="p-red">* </span>Fields Required</p>
                         </div>
                         
-                        <div id="contact-submit-btn">
-                            <button type="submit" class="btn-blk">SEND ENQUIRY</button>
-                        </div>                        
+                        <div id="contact-submit-btn-box">
+                            <button id="contact-submit-btn" type="submit" class="btn-blk" >SEND ENQUIRY</button>
+                        </div>   
+                        
+                        </div>                
 
-                        </div>
-                                        
                     </div>
                 </form> 
             
