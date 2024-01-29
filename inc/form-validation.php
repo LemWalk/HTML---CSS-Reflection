@@ -60,14 +60,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             empty($messageErr)
         )   {
             
-            ?>
-            <script>
+        
+            // <script>
 
-                function displaySuccessMessage(){
-                        successMessage.style.display = 'flex';
-                    }
+            //     function displaySuccessMessage(){
+            //             successMessage.style.display = 'flex';
+            //         }
             
-                const successMessage = document.querySelector('.submit_message_box');
+            //     const successMessage = document.querySelector('.submit_message_box');
 
                 // function displaySuccessMessage() {
                 //     $.ajax({
@@ -83,12 +83,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 //     });
                 //     }
 
-                displaySuccessMessage();
-                console.log('It works');
+            //     displaySuccessMessage();
+            //     console.log('It works');
 
-            </script>"
+            // </script>"
 
-            <?php
+            
 
                 try{
 
