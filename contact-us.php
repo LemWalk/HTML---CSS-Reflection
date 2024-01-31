@@ -3,6 +3,7 @@
     include 'inc/header.php';
 ?>
 
+
 <main>  
 
 <!-- ===== Home / Office bar ====== -->
@@ -204,9 +205,30 @@
                 <form class="contact-form" id="contact-form-lo" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?> ">
                     <div class="form-inner">
 
-                    <div class="submit_message_box">
-                        <div  class="submit-successful">Submission Successful!<i class=" submit_message_close fa-solid fa-x fa-xs"></i></div>
-                    </div>
+
+                    <!-- <?php if($_SESSION['form_valid'] == true) { 
+                        
+                        // echo"hidden";
+                        echo "<div class=\"submit_message_box\"> ";
+                        echo " <div  class=\"submit-successful \">Submission Successful!<i class=\" submit_message_close fa-solid fa-x fa-xs\"></i></div> ";
+
+                        // echo " <div  class=\"submit-failed\">Submission Unsuccessful!<i class=\" submit_message_close_error fa-solid fa-x fa-xs\"></i></div> ";
+
+                        echo "</div> ";
+                        
+                    }
+                        
+                        ?>  
+ -->
+                        <div class="submit_message_box"> 
+                            <div  class="submit-successful <?php  if($_SESSION['form_valid'] == false){echo"hidden";} ?>">Submission Successful!<i class=" submit_message_close fa-solid fa-x fa-xs"></i></div> 
+
+                            <!-- <div  class="submit-failed">Submission Unsuccessful!<i class=" submit_message_close_error fa-solid fa-x fa-xs"></i></div>  -->
+
+                        </div> 
+                        
+                        
+                
                                         
                         <div class="input-boxes-contact">
 		

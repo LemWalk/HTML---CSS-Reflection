@@ -14,6 +14,8 @@ accordion.addEventListener('click', (display_details));
 
 // ===== Success Message Close =====
 
+// let successBox = document.getElementsByClassName('submit_message_box');
+
 const btn_success_close = document.querySelector('.submit_message_close');
 const successMessage = document.querySelector('.submit_message_box');
 
@@ -59,17 +61,17 @@ btn_success_close.addEventListener('click', (closeSuccessMessage));
 
 //========= Email Validation ==============================
 
-// let email = document.getElementById("form-input-email");
-// const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
-// let successBox = document.getElementsByClassName('submit_message_box');
+let email = document.getElementById("form-input-email");
+const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
 
-// if(emailValidation(email.value)){
+
+// if(emailValidation(email.value) = false){
 //     successBox.innerHTML =`Hello`;
 // }
 
 // function emailValidation () {
 //     if(!regex.test(email.value) || email.value === '') {
-//             email.style.border = '3px solid #d64541;';
+//             email.style.border = '3px solid #d64541 !important;';
 //             email.style.boxShadow = '0 0 8px #d45b5b';
 //             // console.log('email invalid');
 //             return true;

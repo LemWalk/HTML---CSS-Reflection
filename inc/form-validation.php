@@ -1,10 +1,43 @@
 <?php
+session_start();
+
+if (!isset($_SESSION['success']))
+    {
+        $_SESSION['success'] = false;
+    
+    }
+
+    if (!isset($_SESSION['form_valid']))
+    {
+        $_SESSION['form_valid'] = false;
+    }
+    
+    if (!isset($_SESSION['errorMessage']))
+    {
+        $_SESSION['errorMessage'] = [];
+    }
+    
+
+    function test_input($data) {
+        $data = trim($data);
+        $data = stripslashes($data);
+        $data = htmlspecialchars($data);
+        return $data;
+    }
+
+
+
+
+
 
 // define variables and set to empty values
 $nameErr = $company_nameErr = $emailErr = $telephoneErr = $messageErr = "";
 $name = $company_name = $email = $telephone = $message = "";
 $emailRegex = "/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/";
 $telephoneRegex = "/^(?:(?:\+?44\s?(?:\(\d{1,5}\)|\d{1,5})|\d{4}|\d{5})\s?\d{3}\s?\d{3}\s?)$/";
+
+
+
 
 
 
@@ -29,7 +62,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $email = test_input($_POST["email"]);
             if (!preg_match($emailRegex, $email)) {
                 $emailErr = "Invalid email";
-
             }
     }
 
@@ -61,6 +93,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         )   {
             
         
+        //    <script>document.getElementById('email-input-message').style.border = '3px solid #d64541 !important;';</script><?php
+
+
             // <script>
 
             //     function displaySuccessMessage(){
@@ -82,18 +117,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 //         }
                 //     });
                 //     }
+                
+                
 
-            //     displaySuccessMessage();
+            //     displaySuccessMessage(); 
             //     console.log('It works');
 
             // </script>"
 
-            
+    
 
                 try{
 
-                    global $form_validation;
-                    $form_validation = true;
+                    // global $form_validation;
+                    // $form_validation = true;
+
+                    $_SESSION['form_valid'] = true;
 
                     require_once "connection.php";
                     $query = "INSERT INTO contact_form (name, company_name, email, telephone, message) 
@@ -113,27 +152,27 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     $stmt = null;
                     header('Location: contact-us.php#contact-form-lo');
                     die();
+                    
         
                 } catch (PDOException $e) {
                     die("Query Failed: " . $e->getMessage());
                 }
             
-
+                // $_SESSION['form_valid'] = false;
             } 
-
             
     } else {
             // header("Location:./contact-us.php#contact-form-lo");
         }
 
-    
-    function test_input($data) {
-        $data = trim($data);
-        $data = stripslashes($data);
-        $data = htmlspecialchars($data);
-        return $data;
-    }
 
+
+        if($_SESSION['form_valid'] == true){
+            unset($_SESSION['form_valid']);
+        }
+        
+
+    
 
 //======================================================
                             
