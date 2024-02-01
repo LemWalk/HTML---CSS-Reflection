@@ -71,7 +71,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         } else {
             $telephone = test_input($_POST["telephone"]);
             if (!preg_match($telephoneRegex, $telephone)) {
-                $nameErr = "Invalid email";
+                $telephoneErr = "Invalid telephone number";
 
             }
         }    
@@ -92,45 +92,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             empty($messageErr)
         )   {
             
-        
-        //    <script>document.getElementById('email-input-message').style.border = '3px solid #d64541 !important;';</script><?php
-
-
-            // <script>
-
-            //     function displaySuccessMessage(){
-            //             successMessage.style.display = 'flex';
-            //         }
-            
-            //     const successMessage = document.querySelector('.submit_message_box');
-
-                // function displaySuccessMessage() {
-                //     $.ajax({
-                //         url: 'contact-us.php',
-                //         type: 'POST',
-                //         data: { success: true },
-                //         success: function(response) {
-                //         echo $('.submit_message_box').css('display', 'flex');
-                //         },
-                //         error: function(xhr, status, error) {
-                //         console.log(error);
-                //         }
-                //     });
-                //     }
-                
-                
-
-            //     displaySuccessMessage(); 
-            //     console.log('It works');
-
-            // </script>"
-
-    
-
                 try{
-
-                    // global $form_validation;
-                    // $form_validation = true;
 
                     $_SESSION['form_valid'] = true;
 
@@ -167,11 +129,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
 
-        if($_SESSION['form_valid'] == true){
-            unset($_SESSION['form_valid']);
-        }
+        // if($_SESSION['form_valid'] == true){
+            // unset($_SESSION['form_valid']);
+            // $_SESSION['form_valid'] == false;
+        // }
         
 
+        session_destroy();
     
 
 //======================================================

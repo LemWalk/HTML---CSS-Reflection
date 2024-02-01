@@ -17,75 +17,19 @@ accordion.addEventListener('click', (display_details));
 // let successBox = document.getElementsByClassName('submit_message_box');
 
 const btn_success_close = document.querySelector('.submit_message_close');
+const btn_error_close = document.querySelector('.submit_message_close_error');
 const successMessage = document.querySelector('.submit_message_box');
+const errorMessage = document.querySelector('.submit-failed');
+
 
 function closeSuccessMessage() {
     successMessage.style.display = 'none';
 }
-
-
-
+function closeErrorMessage() {
+    errorMessage.style.display = 'none';
+}
 btn_success_close.addEventListener('click', (closeSuccessMessage));
+btn_error_close.addEventListener('click', (closeErrorMessage));
 
 
 
-// ===== Form Validation =====
-
-// const successMessage = document.querySelector('.submit_message_box');
-
-// function displaySuccessMessage(){
-//             successMessage.style.display = 'flex';
-//         }
-// displaySuccessMessage();
-
-// console.log('It works');
-
-
-//========== Prevent Default in the form ================
-
-// const form = document.getElementById('contact-submit-btn');
-
-// form.addEventListener('submit', function(event) {
-//     event.preventDefault();
-// });
-
-// form.addEventListener('submit', (event) => {
-//     event.preventDefault();
-// });
-
-// document.querySelector('form').addEventListener('submit', function(event) {
-//     event.preventDefault();
-// });
-
-
-
-//========= Email Validation ==============================
-
-let email = document.getElementById("form-input-email");
-const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
-
-
-// if(emailValidation(email.value) = false){
-//     successBox.innerHTML =`Hello`;
-// }
-
-// function emailValidation () {
-//     if(!regex.test(email.value) || email.value === '') {
-//             email.style.border = '3px solid #d64541 !important;';
-//             email.style.boxShadow = '0 0 8px #d45b5b';
-//             // console.log('email invalid');
-//             return true;
-//         } else {
-//             email.style.border = 'solid 1px #555';
-//             email.style.boxShadow = '';
-//             email.placeholder = '';
-//             // console.log('email is valid');
-//             clearError();
-//             return false;
-//         }
-//     }
-
-
-    // ===== Event Listeners =========
-
-// submit_btn.addEventListener('click', (emailValidation));

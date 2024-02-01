@@ -205,36 +205,51 @@
                 <form class="contact-form" id="contact-form-lo" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?> ">
                     <div class="form-inner">
 
-
-                    <!-- <?php if($_SESSION['form_valid'] == true) { 
-                        
-                        // echo"hidden";
+                    <?php 
+                    
+                    if($_SESSION['form_valid'] == true) { 
                         echo "<div class=\"submit_message_box\"> ";
                         echo " <div  class=\"submit-successful \">Submission Successful!<i class=\" submit_message_close fa-solid fa-x fa-xs\"></i></div> ";
-
-                        // echo " <div  class=\"submit-failed\">Submission Unsuccessful!<i class=\" submit_message_close_error fa-solid fa-x fa-xs\"></i></div> ";
-
-                        echo "</div> ";
-                        
+                        echo "</div> ";                        
                     }
-                        
-                        ?>  
- -->
-                        <div class="submit_message_box"> 
-                            <div  class="submit-successful <?php  if($_SESSION['form_valid'] == false){echo"hidden";} ?>">Submission Successful!<i class=" submit_message_close fa-solid fa-x fa-xs"></i></div> 
 
-                            <!-- <div  class="submit-failed">Submission Unsuccessful!<i class=" submit_message_close_error fa-solid fa-x fa-xs"></i></div>  -->
+                    if(
+                        !empty($nameErr) ||
+                        !empty($company_nameErr) ||
+                        !empty($emailErr) ||
+                        !empty($telephoneErr) ||
+                        !empty($messageErr)) 
+                            { 
+                                echo "<div class=\"submit_message_box\"> ";
+                                echo " <div  class=\"submit-failed\">Submission Unsuccessful: <br><br> ";
+                                
+                                if(!empty($nameErr)){
+                                    echo htmlspecialchars("Name error: $nameErr");
+                                    echo "<br><br>";
+                                }
 
-                        </div> 
-                        
-                        
-                
-                                        
+                                if(!empty($emailErr)){
+                                    echo htmlspecialchars("Email error: $emailErr");
+                                    echo"<br><br>";
+                                }
+
+                                if(!empty($telephoneErr)){
+                                    echo htmlspecialchars("Telephone error: $telephoneErr");
+                                    echo"<br><br>";
+                                }
+                                
+                                
+                                echo" <i class=\" submit_message_close_error fa-solid fa-x fa-xs\"></i></div> ";
+                                echo "</div> ";                        
+                            };
+
+                        ?>   
+
                         <div class="input-boxes-contact">
 		
                             <div class="data-input">
                                 <label id="name-id" for="form-input-name">Your Name <span class="p-red">*</span></label>
-                                <input class="form-input-box" id="form-input-name" type="text" value="<?php echo $name;?>" name="name" required>
+                                <input class="form-input-box" id="form-input-name" type="text" value="<?php echo $name;?>" name="name" required <?php if(!empty($nameErr)) {echo 'style="border: 1px solid #a94442 !important;"';} ?> >
                             </div>
 
                             <div class="data-input">
@@ -244,17 +259,18 @@
 
                             <div class="data-input">
                                 <label id="e-mail-id" for="form-input-email">Your Email <span class="p-red">*</span></label>
-                                <input id="form-input-email" type="email" value="<?php echo $email;?>" name="email" required>
+                                <input id="form-input-email" type="email" value="<?php echo $email;?>" name="email" required  <?php if(!empty($emailErr)) {echo 'style="border: 1px solid #a94442 !important;"';} ?> >
                             </div>
 
                             <div class="data-input">
                                 <label id="telephone-id" for="form-input-telephone">Your Telephone Number <span class="p-red">*</span></label>
-                                <input id="form-input-telephone" name="telephone" type="tel" minlength="10" maxlength="13" value="<?php echo $telephone;?>"required >
+                                <input id="form-input-telephone" name="telephone" type="tel" minlength="10" maxlength="13" value="<?php echo $telephone;?>" required <?php if(!empty($telephoneErr)) {echo 'style="border: 1px solid #a94442 !important;"';} ?> >
                             </div>
 
                             <div class="data-input">
                                 <label id="message-id" for="form-input-message">Your Message <span class="p-red">*</span></label>
-                                <textarea name="message" id="form-input-message" cols="50" rows="10" placeholder="" value="<?php echo $message;?>" required> Hi, I am interested in discussing a Our Offices solution, could you please give me a call or send an email?" </textarea>                    
+                                <textarea name="message" id="form-input-message" cols="50" rows="10" placeholder="" value="<?php echo $message;?>" required <?php if(!empty($messageErr)) {echo 'style="border: 1px solid #a94442 !important;"';} ?> >Hi, I am interested in discussing a Our Offices solution, could you please give me a call or send an email?" 
+                                </textarea>                    
                             </div>
 
                         </div>

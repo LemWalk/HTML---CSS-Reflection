@@ -3487,7 +3487,7 @@ form h2 {
   background-color: #74ce99;
 }
 
-#error-input {
+.error-input {
   border: 3px solid #a94442 !important;
 }
 
@@ -3499,7 +3499,7 @@ form h2 {
   width: 100%;
   padding: 15px;
   margin: 10px;
-  text-align: center;
+  text-align: left;
   border-radius: 1px;
   justify-content: space-between;
   align-items: center;
