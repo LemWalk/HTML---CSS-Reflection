@@ -2602,7 +2602,7 @@ nav ul li:hover ul.dd-orange::before {
 }
 
 input[type=text] {
-  background-color: #fff;
+  background-color: inherit;
   padding-left: 15px;
   width: 90%;
   outline: none;
