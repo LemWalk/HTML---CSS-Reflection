@@ -1,3 +1,8 @@
+
+<?php
+include 'inc/header.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -269,6 +274,7 @@
   </div>
 
 
+
 <!-- ======== Main Start ==================== -->
 
   <main>
@@ -400,9 +406,6 @@
       </div>
 
       
-
-      
-
 
         <!-- ============== slide 1 ==================== -->
     
@@ -639,8 +642,18 @@
     
       <div class="news-col">
 
+
+      <?php
+        include 'inc/news_articles.php';
+      ?>
+
+
+      <!-- <div class="flex-col">
+      <a href="#" class="news-card">
+
         <a href="#" class="news-card">   
       <div class="flex-col">
+
         <div class="news-item">
           <div class="top-right-outer">
           <div class="top-right-blue">
@@ -665,6 +678,15 @@
           </div>         
           
         </div>
+
+        </a>
+      </div> --> 
+        
+
+        
+      <!-- <div class="flex-col">
+        <a href="#" class="news-card"> 
+
         
       </div>
     </a>
@@ -672,6 +694,7 @@
 
         
       <div class="flex-col"><a href="#" class="news-card"> 
+
         <div class="news-item">
           <div class="top-right-outer">
           <div class="top-right-purple">
@@ -696,11 +719,19 @@
           
         </div>
       </a>
+
+      </div> -->
+        
+
+
+      <!-- <div class="flex-col med-dis"> 
+
       </div>
         
 
       
       <div class="flex-col med-dis"> 
+
         <a href="#" class="news-card">      
         <div class="news-item">
           <div class="top-right-outer">
@@ -726,8 +757,13 @@
           </div>
         </div>       
       </a>      
+
+      </div>    
+      
+
       </div>   
       
+
 
       <div class="view-outer">
         <a class="view-all" href="#">
@@ -904,6 +940,18 @@
   
   <!-- =========================================
   ====== Form (Newsletter sign up) ======== -->
+
+  <?php
+  include 'inc/news_letter_sign_up.php';
+  ?>
+  
+
+  </main>
+      
+<?php
+  include 'inc/footer.php';
+?>
+
 
   <form action="#" method="get" >
 		<div class="container-inner" id="form-lo">
@@ -1320,4 +1368,5 @@
   <script src="js/main.js"></script>
 </body>
 </html>
+
 
